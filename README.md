@@ -1,7 +1,7 @@
 # 日志
 
 **2016-08-26**
-- 【晚上】pandas的十分钟入门：[pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html "10 Minutes to pandas")
+- 【晚上】pandas的十分钟入门：[pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html "10 Minutes to pandas")。但是很显然10分钟是无法搞定的。
 - 【晚上】解析stata的字典文件——dct文档。
 - 【下午】添加了[SigComm15论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm15.md "SigComm15")文件。等待明天把内容补全。
 - 【下午】继续阅读《统计思维》
