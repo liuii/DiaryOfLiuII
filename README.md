@@ -1,6 +1,7 @@
 # 日志
 
 **2016-08-26**
+- 【下午】添加了[SigComm15论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm15.md "SigComm15")
 - 【下午】继续阅读《统计思维》
 - 【上午】准备周日开学典礼的「专业介绍」。
 - 【上午】安排新学期课程的实验时间
