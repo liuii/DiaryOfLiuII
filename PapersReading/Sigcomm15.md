@@ -2,5 +2,5 @@
 假期阅读了几十篇SigComm15的论文，选取其中比较有趣的几篇作为总结。
 ----
 > Analysis of Game Bot’s Behavioral Characteristics in Social Interaction Networks of MMORPG
-
+[\[文章地址\]](http://www.acm.org)
 - 这篇文章
