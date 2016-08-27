@@ -3,7 +3,7 @@
 
 #### `G03P02` Analysis of Game Bot’s Behavioral Characteristics in Social Interaction Networks of MMORPG  
 - 这篇文章主要讨论如何鉴别`永恒之塔`游戏中的机器人玩家。
-- 这篇文章的最主要的特点是：将整个游戏的社交活动分为六个独立的网络，分别为`1好友`、`2私信`、`3帮派`、`4交易`、`5邮件`和`6商店`。另外将玩家活动分为五种情况：`Bot-All`、`Bot-Bot`、`Human-All`、`All-All`。通过研究这五种关系在六个网络中的行为模式来进行分类。
+- 这篇文章的最主要的特点是：将整个游戏的社交活动分为六个独立的网络，分别为`1好友`、`2私信`、`3帮派`、`4交易`、`5邮件`和`6商店`。另外将玩家活动分为五种情况：`Bot-All`、`Bot-Bot`、`Human-All`、`Human-Human`、`All-All`。通过研究这五种关系在六个网络中的行为模式来进行分类。
 - 文章中的统计工具主要用到了`Jaccord Coefficient`和`Pearson Coefficient`。
 - **思考与假设**：*把一个大的用户网络分为多个分离的子网络，然后对用户进行分析是一个很有趣的思路。*
 
