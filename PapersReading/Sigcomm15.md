@@ -34,6 +34,7 @@ Accelerating Multicast Communications in Physical Layer
 - 这篇文章利用了`Free-Space`光通信技术（类似于`LiFi`），其目的是在数据中的机架顶端布置`Free-Space`光通信的发送端和接收端，同时在天花板上布置`Ceiling Mirror`。同时每个机架上方包含一个液晶控制的分离器。
 - 利用这种方式来进行`MultiCast`，提高`MultiCast`的性能。
 - **思考与假设**：*带有空间位置的拓扑变换，具有很大的优化空间，应该可以提出更多的解决方案。*  
+
 #### `G03P10` i-tee: A fully automated Cyber Defense Competition for Students
 - 这是一个用于`网络安全`教学实验的开源平台。
 - **思考与假设**：*未来如果开展`网络安全`的教学可以考虑采用这一平台，并在其之上进行进一步的开发。*
