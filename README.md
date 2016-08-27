@@ -1,5 +1,8 @@
 # 日志
 
+**2016-08-27**
+- 【上午】总结了假期阅读的论文：[`SigComm15`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm15.md "SigComm15")
+
 **2016-08-26**
 - 【晚上】`pandas`的十分钟入门：[`10 Minutes to pandas`](http://pandas.pydata.org/pandas-docs/stable/10min.html "10 Minutes to pandas")。但是很显然10分钟是无法搞定的。
 - 【晚上】解析`stata`的字典文件——`dct`文档。
