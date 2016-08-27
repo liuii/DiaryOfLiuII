@@ -4,7 +4,6 @@
 #### `G03P02` Analysis of Game Bot’s Behavioral Characteristics in Social Interaction Networks of MMORPG  
 - 这篇文章
 
-----
 #### `G03P02` Analysis of Game Bot’s Behavioral Characteristics in Social Interaction Networks of MMORPG  
 - 这篇文章  
 
