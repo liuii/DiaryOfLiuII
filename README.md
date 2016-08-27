@@ -1,6 +1,7 @@
 # 日志
 
 **2016-08-27**
+- 【下午】继续修改明天开学典礼的《`专业介绍`》。
 - 【上午】总结了假期阅读的论文：[`SigComm15`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm15.md "SigComm15")
 
 **2016-08-26**
