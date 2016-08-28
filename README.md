@@ -3,7 +3,7 @@
 **2016-08-28**  
 - 【下午】整理了Python.re的参考文档：[Python正则表达式指南](https://github.com/liuii/DiaryOfLiuII/blob/master/PythonDocument/re.md "Python Regex")  
 - 【下午】安装`OmniMarkupPreviwer`，快捷键<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>O</kbd>。  
-- 【下午】`数豆子`  
+- 【下午】`**数豆子**`  
 - 【上午】参加2016级开学典礼，并做《`物联网工程专业介绍`》。
 
 **2016-08-27**  
