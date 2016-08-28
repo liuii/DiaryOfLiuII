@@ -1,6 +1,7 @@
 # 日志
 
 **2016-08-28**  
+- 【晚上】考虑创造一个`哨兵`，不过没有拿定主意使用`requests`还是`pycurl`。
 - 【下午】整理了Python.re的参考文档：[Python正则表达式指南](https://github.com/liuii/DiaryOfLiuII/blob/master/PythonDocument/re.md "Python Regex")  
 - 【下午】安装`OmniMarkupPreviwer`，快捷键<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>O</kbd>。  
 - 【下午】**`数豆子`**  
