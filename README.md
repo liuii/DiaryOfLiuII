@@ -1,6 +1,8 @@
 # 日志
 
 **2016-08-29**  
+- 【上午】阅读论文`A First Look into Transnational Routing Detours`，手记参见：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】学院楼又断网了，而网络中心只能看到楼宇内存在环路，无法看到具体哪个房间出了问题，`SDN`之路还是很漫长，而又充满挑战性。  
 - 【上午】添加	`SigComm16`论文阅读笔记入口：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】清理机器上的过期文档。  
 
