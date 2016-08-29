@@ -1,5 +1,9 @@
 # 日志
 
+**2016-08-29**  
+- 【上午】添加	`SigComm16`论文阅读笔记入口：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】清理机器上的过期文档。  
+
 **2016-08-28**  
 - 【晚上】考虑创造一个`哨兵`，不过没有拿定主意使用`requests`还是`pycurl`。
 - 【下午】整理了Python.re的参考文档：[Python正则表达式指南](https://github.com/liuii/DiaryOfLiuII/blob/master/PythonDocument/re.md "Python Regex")  
