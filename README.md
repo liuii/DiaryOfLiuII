@@ -1,8 +1,10 @@
 # 日志
 
 **2016-08-29**  
+- 【晚上】用`pandas`解析`FWF`格式的`codebook`，为进一步熟悉`统计学习`做准备。
+- 【晚上】阅读`计算机网络`相关书籍，重点阅读了`DHT`（分布式哈希表）的内容，以及传输层的`差错控制`与`拥塞机制`，在今天高吞吐量的情况下，传统的`TCP`就需要超低的`丢包率`才能保持吞吐率，所以对传输层的`拥塞机制`其实还有很多的改进空间。  
 - 【下午】阅读论文`Achieving Consistent SDN Control With Declarative Applications`，手记参见：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
-- 【下午】简单了解一下`Prolog`语言。
+- 【下午】简单了解一下`Prolog`语言。  
 - 【下午】阅读论文`A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure`，手记参见：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`A First Look into Transnational Routing Detours`，手记参见：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】学院楼又断网了，而网络中心只能看到楼宇内存在环路，无法看到具体哪个房间出了问题，`SDN`之路还是很漫长，而又充满挑战性。  
