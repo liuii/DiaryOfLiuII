@@ -17,7 +17,7 @@ quicksort([X|Xs]) -->
     { partition(Xs, X, Smaller, Bigger) },
     quicksort(Smaller), [X], quicksort(Bigger).
 ```
-- **小结**  
+- **==小结==**  
 - 本文提出了使用申诉式语言作为`SDN`应用对`Flow`的要求。
 - 本文提出了使用投票机制来使得方案能够满足更多的`SDN App`的需求，文章最后和`Static Priority`以及`Athensk`进行了比较。  
 
