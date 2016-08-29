@@ -1,6 +1,7 @@
 # 日志
 
 **2016-08-29**  
+- 【下午】阅读论文`Achieving Consistent SDN Control With Declarative Applications`，手记参见：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【下午】简单了解一下`Prolog`语言。
 - 【下午】阅读论文`A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure`，手记参见：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`A First Look into Transnational Routing Detours`，手记参见：[`SigComm16`论文阅读手记](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  

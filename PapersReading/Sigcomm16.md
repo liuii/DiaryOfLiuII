@@ -1,6 +1,6 @@
 # SigComm16论文阅读手记   
 
-#### `G12P02` `2016-08-30` Achieving Consistent SDN Control With Declarative Applications  
+#### `G12P03` `2016-08-30` Achieving Consistent SDN Control With Declarative Applications  
 - `Prolog`：一种用于人工智能和计算机语言学的逻辑编程语言。下面是该语言实现的`Qsort`：  
 ``` Prolog
 partition([], _, [], []).
@@ -17,7 +17,9 @@ quicksort([X|Xs]) -->
     { partition(Xs, X, Smaller, Bigger) },
     quicksort(Smaller), [X], quicksort(Bigger).
 ```
--   
+- **小结**  
+- 本文提出了使用申诉式语言作为`SDN`应用对`Flow`的要求。
+- 本文提出了使用投票机制来使得方案能够满足更多的`SDN App`的需求，文章最后和`Static Priority`以及`Athensk`进行了比较。  
 
 ----
 #### `G12P02` `2016-08-29` A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure  
