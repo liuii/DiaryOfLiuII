@@ -1,6 +1,6 @@
 # 日志  
 
-**2016-08-29**  
+**2016-08-30**  
 - 【晚上】添加[`Python文档集`](https://github.com/liuii/DiaryOfLiuII/blob/master/PythonDocument/helpList.md "Python Documents")  
 - 【晚上】尝试使用`iPython`和`jupyter`的`notebook`功能，这种类似于草稿式的工作方式，非常方便。  
 - 【下午】阅读`网络层`协议。  

@@ -1,5 +1,16 @@
 # SigComm16论文阅读手记   
 
+#### `G12P04` `2016-08-31` Application-specific Acceleration Framework for Mobile Applications  
+- `TCP Acceleration`、`SPDY`和`Compression`是用来降低移动应用响应（`Response`）时间，提升用户体验的方法。其中`SPDY`是`Google`的一种开放式协议，主要利用了`Compression`、`Multiplexing`、`Prioritization`技术，来降低网页传输的时延。  
+- `Extractocol`是一种用来自动化提取Android应用程序`应用层协议行为`的技术。这篇文章位于：[`ACM`](http://dl.acm.org/citation.cfm?id=2790003)。本文利用了这个技术来分析Android应用，`Extractocol`的输入是Android应用的二进制包`.pkg`，输出`Request`和`Response`的特征，特征是利用正则表达式（`Regex`）来表示的。另外`Extractocol`还会产生`Request`和`Response`之间的依赖关系。  
+- `mitmproxy`是一个基于控制台的代理，可以用`pip install mitmproxy`来进行安装，官网位于[mitmproxy](https://mitmproxy.org)。本文利用它来实现的`proxy`实验平台。  
+- **==小结==**  
+- 本文的目的在于降低移动应用的响应时间，以提高用户体验。文章的思路为三步：  
+- (1) 利用`Extractocol`对`Android App`进行分析，获取该`App`的`Request`和`Response`的正则化表达（`Regex`），以及这些`Request`和`Response`之间的依赖关系。  
+- (2) 从这些相互依赖的`Request`和`Response`中，寻找可以预取的机会。  
+- (3) 然后根据寻找的机会进行编程，本文目前是使用的静态编程的方法，人工处理App的`预存优化`。文中提到他们的下一目标是`自动化处理`Android App的优化，`自动生成代码`。  
+- 相信这个类型的研究方向能给**开发组**的同学以启迪。  
+
 #### `G12P03` `2016-08-29` Achieving Consistent SDN Control With Declarative Applications  
 - `Prolog`：一种用于人工智能和计算机语言学的逻辑编程语言。下面是该语言实现的`Qsort`：  
 ``` Prolog
