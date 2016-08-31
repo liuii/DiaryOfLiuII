@@ -3,6 +3,7 @@
 **2016-08-31**  
 - 【晚上】完成`统计思维`的cp1，此外`jupyter notebook`的`--pylab=inline`参数需要从内部执行，命令为`%pylab inline`或`%matplotlib inline`。  
 - 【晚上】阅读`路由算法`。  
+- 【下午】前往国际学院讨论安排外方课程实验的安排细节。
 - 【下午】阅读论文`Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【下午】阅读论文`Building Application-Aware Network Environments Using SDN for Optimizing Hadoop Applications`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】协助国际学院安排外方课程的实验。  
