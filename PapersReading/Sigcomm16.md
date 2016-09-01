@@ -1,5 +1,42 @@
 # SigComm16论文阅读手记   
 
+#### `G12P10` `2016-09-01` Horse: towards an SDN traffic dynamics simulator for large scale networks  
+- `Source Routing`可以为分组选择需要经过的部分或全部路由器，相关阅读：`DSR协议`。  
+- [`MiniNet`](http://mininet.org)是网络实验的虚拟平台。但是这个平台缺乏弹性，对巨型网络拓扑结构或巨大的负载的分析缺乏足够的支持。  
+- `OpenFlow`是一种网络层协议。`OpenFlow`交换机将原来完全由交换机/路由器控制的报文转发过程转化为由`OpenFlow交换机`（`OpenFlow Switch`）和`控制服务器`（`Controller`）来共同完成，从而实现了数据转发和路由控制的分离。控制器可以通过事先规定好的接口操作来控制`OpenFlow交换机`中的流表，从而达到控制数据转发的目的。  
+- **==小结==**  
+- 文章提出了一种新的网络实验仿真环境`Horse`，其主要的特点就是拥有可扩展的能力。  
+- `Horse`仿真器的架构分为两层：`数据平面`和`控制平面`。  
+- `数据平面`包含网络的`拓扑`、`事件`（例如链路失效、流，这些会被用于更新网络的拓扑）、`传输统计和网络状态`。  
+- `控制平面`包括`监控器`（用来监控`数据平面`的传输统计与网络状态、）、`策略生成器`（根据用户输入的策略配置文件来生成控制策略）、`指令集`（执行策略，控制`数据平面`的网络拓扑）。  
+- 策略配置文件如下所示：  
+``` Javascript
+"load balancing" : "edge->core",
+"application based peering" : "e1->e3" : "http",
+"rate limiting" : "e2->e4" : "500 Mbps"
+```
+
+----
+#### `G12P09` `2016-09-01` FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming  
+- 很多的网络控制平面的计算依赖于`网络的状态`，例如路由算法中的`最短路径`依赖于`网络的拓扑`，`QoS`依赖于`拓扑`和`资源分配`，`安全功能`依赖于配置的`安全策略`。  
+- `OpenDaylight`是由Linux基金会主持的开源协作平台。其目标是为了推动SDN、NFV的创新实施。  
+- `ONOS`也是一个`SDN`框架，[`ONOS`](https://wiki.onosproject.org/display/ONOS/Wiki+Home)  
+- **==小结==**  
+- `FAST`是`Function Automation SysTem`的缩写，该系统是本文提出的一种用于解决`SDN`中状态依赖的问题。该系统主要解决两个问题：`对状态依赖进行自动跟踪`与`高效的重新执行调度`。  
+- 例如在部署了`Dijkstra`路由算法的网络中，如果没能订阅某个可达链路的的状态，可能会导致计算得出的路径与网络拓扑不一致。所以现在的方法就是简单的过度订阅，订阅拓扑中每一个链路的状态变化，这会导致没有必要的重新计算。  
+- 在某个QoS路由中，如果为某条路径保留了带宽，当改路径不可用的时候，需要首先释放保留的带宽，再寻找新的路径，否则会产生类似于“内存泄漏”式的带宽保留。在原始方法中，释放带宽的保留将会产生一个连锁式的反应。  
+- 所以本文提出的方式就是把`State Changes`对开发者`透明`，由`FAST`来自动完成`状态依赖的跟踪`和`调度的重新执行`。  
+
+----
+#### `G12P08` `2016-09-01` Efficient Remapping of Internet Routing Events  
+- `Routing Events`包含：路由器重新配置、链路失败、软件错误以及调度维护等。  
+- `DTRACK`是一种用来预测与跟踪互联网路径变化的工具，详细描述可以参看文章：`DTRACK: A System to Predict and Track Internet Path Changes`。  
+- `PlanetLab`是用来研究计算机网络与分布式系统的实验平台，它包含一组可用的计算机。只有带有`PlanetLab`节点的大学和企业才可以使用。但是在`PlanetLab`中也有一些免费的公共服务：`CoDeeN`、`Coral Content Distribution Network`可用。  
+- **==小结==**  
+- 现有的路由事件处理机制会导致两种后果：`(1)`路由信息过期，那些由于路由事件受到影响的其他路径的重新映射会延迟。`(2)`无法观测一个路有事件的影响范围，因为在重新映射受该事件影响的路径之前，可能会有另外一个路由事件出现。  
+- 本文提出当检测到路由事件后，计算路由事件变化的范围，然后对此范围可能影响的路径进行更新。  
+
+----
 #### `G12P07` `2016-08-31` Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users  
 - `QoE`（`Quality of Experience`）是用户对某种服务体验的度量，`QoE`尤其关注用户体验（`User Experience`）。`QoE`与`QoS`不同，后者试图从提供者（`Vendor`）的角度对服务质量进行客观的测量，而前者则是从使用者（`Custom`）的角度进行主观的测量。  
 - 以网络服务为例`QoS`通常关注于`BandWidth`，而`QoE`则关注应用端的`Response Time`。  

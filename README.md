@@ -1,5 +1,11 @@
 # 日志  
 
+**2019-09-01**  
+- 【上午】阅读论文`Horse: towards an SDN traffic dynamics simulator for large scale networks`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】**`数豆子`**  
+- 【上午】阅读论文`FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】阅读论文`Efficient Remapping of Internet Routing Events`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+
 **2016-08-31**  
 - 【晚上】完成`统计思维`的cp1，此外`jupyter notebook`的`--pylab=inline`参数需要从内部执行，命令为`%pylab inline`或`%matplotlib inline`。  
 - 【晚上】阅读`路由算法`。  
