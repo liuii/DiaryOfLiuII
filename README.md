@@ -1,6 +1,10 @@
 # 日志  
 
-**2019-09-01**  
+**2016-09-02**  
+- 【上午】到南院实验室安装`pygame`（安装之前需要升级`pip`，因为之前的库里没有`pygame`）。安装过程很简单，但是传系统用的时间太长了。  
+
+**2016-09-01**  
+- 【下午】阅读《[`理解矩阵`](http://mp.weixin.qq.com/s?__biz=MzA5ODUxOTA5Mg==&mid=2652550062&idx=1&sn=637311ee56d7249e32c378c33e88404e&scene=1&srcid=09011aGyY7gyzNrgM204AbuA#rd)》一文，醍醐灌顶。  
 - 【上午】阅读论文`Horse: towards an SDN traffic dynamics simulator for large scale networks`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】**`数豆子`**  
 - 【上午】阅读论文`FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
