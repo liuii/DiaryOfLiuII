@@ -1,5 +1,8 @@
 # 日志  
 
+**2016-09-07**  
+- 【上午】添加文档`快速在机房创建临时WEB服务器`，参见：[`PythonHttpServer`](https://github.com/liuii/DiaryOfLiuII/blob/master/PythonDocument/httpServer.md "Python HTTPServer")。  
+
 **2016-09-06**  
 - 【晚上】外方的`Tutorial`，另外可以用`Python3`的内置模块来开启`WEB服务器`了：`python -m http.server 80`。  
 - 【下午】参加公子的家长会，漫长的一个下午。  
