@@ -1,5 +1,25 @@
 # SigComm16论文阅读手记   
 
+#### `G12P13` `2016-09-07` \* Named Data Networking Based Smart Home Lighting  
+- `Named Data Networking, NDN`是一个研究物联网的架构平台，替代原有通讯中关注于`where`，改为关注于`what`。[`项目地址`](https://named-data.net)，包括架构与实验平台等。  
+- `Information Centric Networks, ICNs`以信息为中心的网络，NDN就是一种ICN。  
+- `Push`与`Pull`两种模式的差别：前者服务器占据主动，后者客户端占据主动。  
+- `Forwarding Interest Base, FIB`是NDN用作路由表的一种数据结构，用来保存对外接口与名字之间的映射。  
+- **==小结==**  
+- 这是一篇涉及**物联网**的文章。  
+- NDN为了实现基于带状态转发的request/response架构，使用了两种类型的分组：`Interest`和`Data`。这两种类型的分组都提供`URI-like names`。这两种数据包内在支持`Multicast`。并且去除了数据获取与数据位置的耦合度。  
+- 本文提到的家庭智能照明系统包括：  
+- `Home Router`用来连接所有IoT设备的无线路由器。  
+- `Smart Contrller`是带有无线接口（802.11g）IoT平台（树莓派）。  
+- `Light Node`是一个传统的灯泡，连接到一个智能控制设备，可以打开或关闭他。  
+- `Occupancy Detector`是一个运动传感器，用来跟踪人的移动（出入房间）。  
+- `Luminosity Detector`是一个亮度传感器，用于测量室内亮度。  
+- `Smart Home Controller`是运行在智能控制器上的应用，基于房间的人员情况以及亮度来控制灯光。  
+- 这套系统使用的为：`Raspberry Pis`（Raspbian Wheezy）和`router`（OpenWrt 12.09）。NDN转发守护进程使用的是[`NFD`](http://named-data.net/doc/NFD/current/)。端点用Python开发，使用了`PyNDN`客户端库。  
+- 该系统具有以下特点：基于NDN Push的通讯；基于名字的多路组播；FIB优化。  
+- 该系统通过使用`Interest Filtering`对FIB进行了优化。  
+
+----
 #### `G12P12` `2016-09-07` Modular SDN Compiler Design with Intermediate Representation  
 - `SDN`的功能就是把控制平面和数据平面去耦，控制平面使用高级语言进行控制，数据平面使用低级规则来进行控制。  
 - `Frenetic`，`Maple`，`Merlin`，`P4`是现在使用的控制平面高级语言。  
