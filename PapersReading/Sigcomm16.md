@@ -1,5 +1,72 @@
 # SigComm16论文阅读手记   
 
+#### `G12P12` `2016-09-07` Modular SDN Compiler Design with Intermediate Representation  
+- `SDN`的功能就是把控制平面和数据平面去耦，控制平面使用高级语言进行控制，数据平面使用低级规则来进行控制。  
+- `Frenetic`，`Maple`，`Merlin`，`P4`是现在使用的控制平面高级语言。  
+- `OpenFlow`，`PoF`，`ACI`是目前使用的数据平面低级规则。  
+- `IR`（`Intermediate Language`）是编译中的一种技术，提供一种中间语言来对计算机程序进行分析。  
+- `RYU`是一种基于组件的SDN框架，项目主页：[`RYU`](https://osrg.github.io/ryu/)  
+- **==小结==**  
+- 目前的SDN基本上都是一种高级语言针对一种低级规则进行编译。这种情况存在两个缺点：  
+- 第一，不同的SDN平台之间无法混用，同时很多优化技术只能针对某一种SDN服务，例如：`VeriFlow`优化技术只能应用于`OpenFlow rules`。  
+- 第二，在数据平面，不同的顶级控制语言可能会造成冲突，简单的合并规则有可能会失去程序原有的意图。
+- 因此本位提出了`Semantic Rule, SR`（类似于编译中的IR），作为中间层规则。所有的SDN程序首先在前端编译为`SRs`，然后在中间层对其进行优化，优化之后在后端编译为底层规则。  
+- SR被定义为一个三元组：`<Scope, Constraint, Degree of Freedom (DOF)>`。  
+- `Scope`用来指定SR操作的资源，类似于`OpenFlow Rule`中指定的`Match Fields`。  
+- `Constraint`指定`Scope`之上的`Action`，并关联元组`(guard, action)`其中*guard*表示条件的限定（例如跳数、延迟等要求），如果满足*guard*则执行*action*。  
+- `DOF`则用来指定`Constraint`的可更改的程度。  
+- 编译过程：
+``` Java
+//Program Intent
+Connect A and D on f in 3 hops, while traversing C
+
+//Semantcs Rules, forbid used to avoid loop
+A f, FORWARD 3 {h<3; h=h+1}, towards C and forbid A
+C f, FORWARD 2 {h<3; h=h+1}, towards D and forbid C 
+D f, FORWARD 2 {h<3; h=h+1}, forward 2
+
+//Rules
+A f, FORWARD 3; 
+C f, FORWARD 2; 
+D f, FORWARD 2
+```
+
+----
+#### `G12P11` `2016-09-07` Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies  
+- `Datapath-Oblivious`是一种无感知的数据通路。  
+- `OpenDaylight`和`Floodlight`都是目前主流的`SDN`控制器。相关的技术资料在[`SDNLAB`](http://www.sdnlab.com)上很多。  
+- `datapath-oblivious algorithmic policies`可参考论文：`Maple: Simplifying sdn programming using algorithmic policies`。  
+- **==小结==**  
+- 本文重点讲述了两个新的本质算法：`map-explore`和`table-design`。  
+- `map-explore`利用通用编程语言实现了一种新奇高效的形式，混合了`symbolic（map）`与`direct（explore）`，用以实现`a multi-table oblivious program`。并产生一种叫做`explorer graph`的数据结构。  
+- `table-design`用来分开数据流图的程序，和合并表的工作。  
+- 为了实现其目标`Magellan`引入一套复杂的编译器（*Compiler*）和运行时（*Runtime*）系统。
+- AP（`Algorithm Policies`）实例：  
+``` Java
+// Program: Static-Example
+onPacket(p) {
+x = macSrc;
+if (x > 4) {y = hostTable[macDst];} else {y = 1;} 
+ egress = [2 * y]; }
+```
+- 将控制结构转化为跳转指令后：  
+``` ASM
+L2: cjump (macSrc > 4) L3 L5
+L3: y = hostTable[macDst]
+L4: jump L6
+L5: y = 1
+L6: egress = [2 * y]
+```
+- 加入数据依赖关系后：  
+``` C
+L1: g = (macSrc > 4)
+L2: if g: y = hostTable[macDst]
+L3: if !g: y = 1
+L4: egress = [2 * y]
+```
+- 最终生成数据流图。  
+
+----
 #### `G12P10` `2016-09-01` Horse: towards an SDN traffic dynamics simulator for large scale networks  
 - `Source Routing`可以为分组选择需要经过的部分或全部路由器，相关阅读：`DSR协议`。  
 - [`MiniNet`](http://mininet.org)是网络实验的虚拟平台。但是这个平台缺乏弹性，对巨型网络拓扑结构或巨大的负载的分析缺乏足够的支持。  

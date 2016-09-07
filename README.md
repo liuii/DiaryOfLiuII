@@ -1,6 +1,9 @@
 # 日志  
 
 **2016-09-07**  
+- 【上午】阅读论文`Modular SDN Compiler Design with Intermediate Representation`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】**`数豆子`**  
+- 【上午】阅读论文`Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】添加文档`快速在机房创建临时WEB服务器`，参见：[`PythonHttpServer`](https://github.com/liuii/DiaryOfLiuII/blob/master/PythonDocument/httpServer.md "Python HTTPServer")。  
 
 **2016-09-06**  
