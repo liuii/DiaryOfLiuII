@@ -1,5 +1,54 @@
 # SigComm16论文阅读手记   
 
+#### `G12P17` `2016-09-08` Privacy-Aware Infrastructure for Managing Personal Data  
+- `Service-level agreement, SLA`设备级许可。  
+- **==小结==**  
+- 本文提出了一种位于家庭中的隐私数据许可设备。本文提出的内容是计算机与社会学科的解决方案，起因是欧盟希望能够通过法律来保护用户的个人隐私。  
+
+----
+#### `G12P16` `2016-09-08` PieBridge: A Cross-DR scale Large Data Transmission Scheduling System  
+- `DR`：Datacenter Region  
+- `IDC`：Internet Datacenter  
+- `residual network`是网络流当中的一个概念。  
+- **==小结==**  
+- 在现有的数据中心的数据同步中，存在着以下问题：  
+- `1.` 数据同步需要大量的带宽，而服务器的接口带宽在数据中心之间是有限的。  
+- `2.` 数据传输对时间敏感，而当前的网络无法支持这种实时的要求。  
+- 本文提出的`PieBridge`是一个广域网范围的数据传输中心平台。它通过高效的调度选择传输源来降低数据同步的完成时间。  
+- `PieBridge`的调度算法在每一个数据传输期间包括三个过程：选择子任务、最大传输调度和子任务合并：  
+- `1.` 首先将一个传输任务分解为多个子任务队列。  
+- `2.` 用最大流算法（增广路径）进行调度。  
+- `3.` 对拥有相同的源与目的的子任务进行合并，以减少下一次调度的运算量。  
+
+----
+#### `G12P15` `2016-09-08` Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas  
+- `Locator/Identifier Separation Protocol, LISP`（RFC6830）。在目前的IP协议架构中，`IP地址`被用作命名空间，并用于两种不同的目的：  
+- `1.` 做为`End-Point`的`Identifier`提供在当前本地网络寻址环境中的唯一的标识。
+- `2.` 作为拓扑的`Locator`用于路由目的。  
+- `LISP`协议试图分离这两者，并改进网络的扩展性、支持数据中心中的虚拟机迁移、IPv6过渡、增强域内传输工程。  
+- `Stub network`是一个非正式的术语，用来描述只有一条逻辑链路接入到互联网当中。  
+- **==小结==**  
+- 本文是对LISP基础设施的性能测量。  
+- LISP从语义学上将IP地址分为两个分类：`Rout- ing LOCators, RLOCs`用于因特网的核心；`Endpoint IDentifiers, EIDs)`则用于`Stub Network`。  
+- `Stub Network`内部的通讯使用`EIDs`进行传统的路由和转发。  
+- 域间的通讯需要一个额外的`map-and-encapsulate`操作——将使用`EID地址`的分组封装为使用`RLOC地址`的分组，从而将`EID`映射至`RLOCs`。  
+- 在*LISP*与*non-LISP*网络之间通信的实现需要一种新的网络设备：*`PxTR`*。它包括两张类型的代理（*proxy*）：`Proxy Ingress Tunnel Routers, PITRs`和`Proxy Egress Tunnel Rou- ters, PETRs`。  
+- `PITRs`广播LISP节点的`EID前缀`，以便`非LISP节点`可以访问它们。同时`PITRs`用他们自己的`RLOCs地址`将`非LISP分组`进行封装并路由至`目的RLOCs`。  
+- `PETRs`允许`LISP节点`发送分组至`非LISP节点`。`PETRs`将`LISP分组`进行解封，将其转换为传统的`IP分组`并将其转发至传统的互联网。  
+- 文章中利用几个不同的探针节点，利用ping测量了LISP网络与现有网络之间的差别。  
+
+----
+#### `G12P14` `2016-09-08` PathCache: A Path Prediction Toolkit  
+- `RIPE Atlas`和`CAIDA’s Ark`都是网络测量平台。  
+- `PathCache`允许用户重新使用traceroute对网络路径的测量结果。  
+- 本文使用了`CAIDA’s Ark`、`RIPE Atlas`和`iPlane`平台的*traceroute*数据。  
+- `BGP`：边际网关协议。`BGPStream API`是本文使用的`BGP`监控器。  
+- `Best-effort`指尽力而为，意味着该网络不给于任何承诺，TCP/IP就是一种尽力而为的网络。  
+- **==小结==**  
+- 本文提出的*PathCache*通过先验数据集来预测路径，因此研究者不需要等待测量结束就可以得到一条测量路径。  
+- 常用的路径预测方法中，当需要计算大量路径或无法直接测量路径的时候，通常会使用算法仿真。但是这种方法的精度无法满足那些对安全敏感的应用，例如`Tor`的客户端（因为这种协议的目的就是尽量的避免被窃听）。`PathCache`不需要客户端发送它自己的探测结果，而且它带有的元数据和数据源能够对预测的路径进行有效性的验证和评估。  
+
+----
 #### `G12P13` `2016-09-07` \* Named Data Networking Based Smart Home Lighting  
 - `Named Data Networking, NDN`是一个研究物联网的架构平台，替代原有通讯中关注于`where`，改为关注于`what`。[`项目地址`](https://named-data.net)，包括架构与实验平台等。  
 - `Information Centric Networks, ICNs`以信息为中心的网络，NDN就是一种ICN。  

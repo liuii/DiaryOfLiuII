@@ -1,5 +1,12 @@
 # 日志  
 
+**2016-09-08**  
+- 【下午】阅读网络流内容：[`文献1`](http://www.cnblogs.com/ZJUT-jiangnan/p/3632525.html)，[`文献2`](http://blog.csdn.net/y990041769/article/details/21026445)，[`文献3`](https://zh.wikipedia.org/wiki/网络流)，[`文献4`](https://en.wikipedia.org/wiki/Flow_network)。  
+- 【下午】阅读论文`Privacy-Aware Infrastructure for Managing Personal Data`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】阅读论文`PieBridge: A Cross-DR scale Large Data Transmission Scheduling System`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】阅读论文`Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】阅读论文`PathCache: A Path Prediction Toolkit`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+
 **2016-09-07**  
 - 【晚上】**`数豆子`**  
 - 【下午】听课`Computational Thinking and Algorithms`，顺手写了`LifeGame`和`Recursive`，从现在的势头看这门课的学生很危险啊。  
