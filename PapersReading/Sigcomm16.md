@@ -1,5 +1,41 @@
 # SigComm16论文阅读手记   
 
+#### `G12P20` `2016-09-09` \* TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost  
+- `device-free localization, DfL`不需要额外设备的定位，例如利用无处不在的WiFi信号的`Received Signal Strength, RSS`信息来进行定位。  
+- **==小结==**  
+- 目前利用WiFi信号的RSS来进行定位的指纹方法，但是这种方法即使在环境没有任何变化的情况下也非常的慢，此外频繁的更新每个定位点的RSS也需要大量的人力花费。  
+- `DfL`方法不需要目标物携带任何设备，将物体置于每个位置，然后记录其各接收器的信号强度作为指纹。当目标进入房间后，对指纹进行比对，然后获得其位置。但是RSS指纹会过期，所以需要不断的更新，这会带来人力成本和时间成本的支出。  
+- 指纹库可以表达为具有如下性质的一个二维矩阵，通过提取Reference矩阵和Largely Distorted矩阵，来减少更新的时间。  
+
+----
+#### `G12P19` `2016-09-09` SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization  
+- `Service-level agreement, SLA`是指提供服务的企业与客户之间就服务的品质、水准、性能等方面所达成的双方共同认可的协议或契约。  
+- **==小结==**  
+- `SLA-NFV`是利用了软件和可编程硬件的混合式基础架构，用于增强NFV遵守SLAs的能力,比纯软件实现服务链降低了超过60%的延迟。  
+- 该原型是基于`OpenStack`和`NetFPGA`实现。  
+- `SLA-NFV`的架构分为三层：  
+- `1.` `Orchestrator`用来执行服务链，并决定VNF的部署、销毁和迁移。为了实现这一目标，`Orchestrator`周期性的向`NF Managers`查询最近的VNFs的性能。`Step1`实现延迟需求，使用贪心策略来快速找到最低延迟的路径。`Step2`实现吞吐量的需求，检查最快路径中每个实例的吞吐量，如果某些实例不能达到要求，则标记为*infinite*，然后重新执行`Step1`。算法结束于两种状态：找到了合格的路径和没有合格的路径，对于后者则需要部署新的实例。  
+- `2.` `NF Managers`用来控制NF的生命周期。  
+- `3.` 通过结合`programmable SDPA`硬件和`NFV`软件来实现高性能和灵活性。为了实现这一目标，本文为SDPA扩展了状态相关的接口以便迁移各种类型、各种流的状态。  
+
+----
+#### `G12P18` `2016-09-09` Rethinking the Design of OpenFlow Switch Counters  
+- `OpenFlow`是一种通过网络访问交换机或路由器转发层的通讯协议。  
+- `ONetSwitch`是叠锶公司作为全球首款基于Zynq器件实现的OpenFlow Switch产品，作为理想的SDN教育科研平台，具备“软件可编程，逻辑可重构，硬件可扩展”能力，是面向SDN/OpenFlow的可编程交换机。  
+- `OFS`是OpenFlow Switcher。  
+- 在网络设备里面区分不同的路径是一个很自然的选择，因为网络设备的首要任务是转发网络包，不同的网络包，在设备里面的处理路径不同。  
+- `fast path`就是那些可以依据已有状态转发的路径，在这些路径上，网关，二层地址等都已经准备好了，不需要缓存数据包，而是可以直接转发。  
+- `slow path`是那些需要额外信息的包，比如查找路由，解析MAC地址等。
+- `first path`是设备收到流上第一个包所走过的路径，比如tcp里面的syn包，有些实现把三次握手都放到first path里面处理，而有些只需处理syn包，其他包就进入fast path的处理路径。  
+- 在NP或者ASIC里面也需要区分`slow path`和`fast path`，`fast path`上的包都放在`SRAM`里面，而`slow path`的包放在`DRAM`里面。  
+- 不过这也非绝对。决定处理路径的是对于速度的考虑。处理器的速度，内存的速度等。访问内存的速度由速度和带宽两个因素决定。因此，把`SRAM`放到`fast path`上，也是很自然的选择。  
+- 系统的性能要从两方面考虑，硬件的设计和软件的设计，这两个方面的配合或者是分工，决定着系统的性能。  
+- **==小结==**  
+- 本文旨在解决在交换中通过使用CPU Cache来减少内存的使用。本文提出了`CACTI`（CAche CounTIng）以达到近乎0内存占用。  
+- 本文分别在`ONetSwitch`和`FPGA-based PCI Express`平台上进行了实现。  
+- 本文的核心内容为OFS的Counter设计。  
+
+----
 #### `G12P17` `2016-09-08` Privacy-Aware Infrastructure for Managing Personal Data  
 - `Service-level agreement, SLA`设备级许可。  
 - **==小结==**  

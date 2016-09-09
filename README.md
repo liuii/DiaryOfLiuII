@@ -1,5 +1,11 @@
 # 日志  
 
+**2016-09-09**  
+- 【下午】阅读论文`TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】阅读论文`SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】阅读论文`Rethinking the Design of OpenFlow Switch Counters`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】阅读`CasonChan`的OpenFlow手记：[cnblogs](http://www.cnblogs.com/CasonChan/category/706782.html)。  
+
 **2016-09-08**  
 - 【晚上】微信推送说大王出了新教程，购买学习。  
 - 【下午】阅读《`Data Structure and Algorithm in Python`》。  
