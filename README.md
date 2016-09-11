@@ -1,5 +1,13 @@
 # 日志  
 
+**2016-09-11**  
+- 【上午】建立教学日志网站：[`Goto`](http://liuii.github.io)。  
+- 【上午】备课，下礼拜的《计算思维》。  
+
+**2016-09-10**  
+- 【下午】阅读《`Data Structure and Algorithm in Python`》。  
+- 【上午】**`数豆子`**  
+
 **2016-09-09**  
 - 【下午】阅读论文`TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
