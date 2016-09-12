@@ -5,7 +5,7 @@
 - 【上午】阅读论文`Taming the Flow Table Overflow in OpenFlow Switch`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
 **2016-09-11**  
-- 【上午】**`数豆子`**，不得不感叹学校行政部门下发的数据表格式简直令人发指。  
+- 【上午】**`数豆子`**，不得不感叹学校行政部门下发的数据表格式简直令人发指，为了对数据进行快速定位只好写了十来个宏来处理不同的数据格式。  
 - 【下午】阅读《`Data Structure and Algorithm in Python`》。  
 - 【上午】建立教学日志网站：[`Goto`](http://liuii.github.io)。  
 - 【上午】备课，下礼拜的《计算思维》。  
