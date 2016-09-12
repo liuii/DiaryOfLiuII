@@ -1,5 +1,34 @@
 # SigComm16论文阅读手记   
 
+#### `G12P21` `2016-09-12` Taming the Flow Table Overflow in OpenFlow Switch  
+- `OpenFlow Switch, OFS`是支持OpenFlow的交换机。  
+- `Content-Addressable Memory, CAM`与传统的存储器的差别在于，传统的存储器通过给出地址，然后返回数据。而`CAM`则是给出数据返回地址或者地址列表。  
+- `Ternary Content-Addressable Memory, TCAM`与`CAM`的差别在于：`CAM`的搜索数据只能包含`1`与`0`。而`TCAM`则支持第三种匹配`X`，表示对此位不关心。因此被广泛的用于流表的检索当中。  
+- `Quad data rate, QDR`是一种四倍速的数据传输方式，通过对时钟信号进行90度的相移，这样两个信号可以得到两个上升沿和两个下降沿，所以在一个时钟周期内可以传送四次数据。  
+- `Static random-access memory, SRAM`比`DRAM`速度快、密度低、成本高的存储芯片，包括前两种都属于快速存储器，被广泛的用于OFS的流表当中。  
+- `pipeline-able`是OpenFlow中用来处理分组的流水线，通常由多个流表构成，每个流表包含多个条目。  
+- **==小结==**  
+- 本文的核心在于介绍一种用来改良流表溢出的方法。  
+- 尽管在OFS中广泛的应用TCAM/QDR/SRAM等高速内存来构成流表，但是高速内存的发展落后于网络的需求。在OFS的流表有很大的可能产生溢出，从而导致OFS与其控制器之间产生大量的分组。  
+- `Flow Table Sharing, FTS`是本文提出的用来缓解流表溢出的方法，其核心思想是将任务繁重的交换机中无法命中的流表的分组，转发到工作负载较轻的交换机上。
+- 这个方案存在两个需要解决的问题：如何让SDN交换机随机的选择一个正确的端口，如何在不改动硬件的情况下，让这个`过程`在通用的SDN交换机中是`pipeline-able`的。  
+- `FTS`利用在流表中添加一个`flow missed`的条目，从而将flow交给一个`SELECT`组，由包含在组中的出口选择算法来决定转发的端口，算法如下：  
+``` C
+init outport = 0
+// packet arrival
+if not overflow
+	outport = CONTROLLER;
+else if overflow
+	outport = (outport + 1) mod N;
+// avoid loop
+if outport == inport
+	outport = (outport + 1) mod N;
+return outport;
+```
+- 该算法直到`flow-table`有了空间可以添加新的流表入口，才将目的端口设置为`CONTROLLER`。  
+- 该算法的测试与评价在`MiniNet`平台上完成。  
+
+----
 #### `G12P20` `2016-09-09` \* TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost  
 - `device-free localization, DfL`不需要额外设备的定位，例如利用无处不在的WiFi信号的`Received Signal Strength, RSS`信息来进行定位。  
 - **==小结==**  

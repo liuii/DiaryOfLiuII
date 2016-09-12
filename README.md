@@ -1,5 +1,9 @@
 # 日志  
 
+**2016-09-12**  
+- 【上午】`再次`替`S`代实验课。  
+- 【上午】阅读论文`Taming the Flow Table Overflow in OpenFlow Switch`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+
 **2016-09-11**  
 - 【上午】**`数豆子`**，不得不感叹学校行政部门下发的数据表格式简直令人发指。  
 - 【下午】阅读《`Data Structure and Algorithm in Python`》。  
