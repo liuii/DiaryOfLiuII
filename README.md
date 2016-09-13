@@ -1,7 +1,12 @@
 # 日志  
 
+**2016-09-13**  
+- 【上午】阅读论文`A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】阅读论文`A 60Gbps DPI Prototype based on Memory-Centric FPGA`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+
 **2016-09-12**  
-- 【上午】`再次`替`S`代实验课。  
+- 【下午】听课《`计算思维与算法`》  
+- 【上午】`再次`替`S`代实验课，再次上到了12点半。  
 - 【上午】阅读论文`Taming the Flow Table Overflow in OpenFlow Switch`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
 **2016-09-11**  

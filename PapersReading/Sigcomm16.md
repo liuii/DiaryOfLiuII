@@ -1,5 +1,25 @@
 # SigComm16论文阅读手记   
 
+#### `G13P02` `2016-09-13` A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch  
+- `Open vSwitch`即开放虚拟交换标准，为网络管理员提供虚拟VM之间或内部的流量可见性和控制。本质上就是用软件来实现的虚拟交换机，再将虚拟机与虚拟交换机进行连接。  
+- `Data Plane Development Kit, DPDK`是用于快速包处理的一组数据平面库和网络接口控制驱动，[DPDK](http://dpdk.org)。  
+- **==小结==**  
+- 通常某些复杂的服务会被重新分解为多个独立的虚拟网络功能（NFVs），而这些NFVs通常会被部署在同一台物理服务器之上的独立虚拟机中，这些虚拟机通常使用虚拟交换进行连接。  
+- 本文提出了一种优化的方案，通过为需要互相通信的虚拟机之间创建一个绕过vSwitch的点对点逻辑链路，来提高虚拟机之间通过vSwitch进行分组交换的透明度和动态性。  
+- **透明性**指的是，一个利用本文方案的应用不需要做出任何改变，对于一个附加在vSwitch上的Openflow控制器不需要注意到这些改变。  
+- **动态性**指的是根据对OpenFlow规则的分析，可以为VMs返回`VM-VM`或者`VM-vSwitch-VM`的链路。  
+
+----
+#### `G13P01` `2016-09-13` A 60Gbps DPI Prototype based on Memory-Centric FPGA  
+- `Deep Packet Inspection, DPI`也被称为`Complete Packet Inspection, CPI`、`Information eXtraction, IX`。通过对数据包的数据部分进行检测（有时也对头部进行检测），来发现不符合协议的分组、病毒、垃圾邮件、入侵，或者定义标准来决定如何处理该分组（放行或发送到其他目的地），或者是出于收集统计信息的目的。  
+- `Aho-Corasick algorithm`是用于`String Pattern Matching, SPM`中的字符串搜索算法。  
+- `Snort`和`Emerging Threats`是两个常用的DPI测试字典。  
+- **==小结==**  
+- 目前的DPI架构当中，主要利用Aho-Corasick Algorithm来创建一个高效的有限自动机，而其瓶颈是内存的速度。  
+- 本文实现的系统，包含48个并行引擎和两层的内存架构。一个辅助的多核CPU用来根据字典生成确定性有限自动机（`deterministic finite automaton, DFA`）。  
+- 两层内存结构中的片内RAM用来存储一小部分的`State Transition Table, STT`，而外部的大容量DRAM则用来存储完整的STT。文章发现经过优化在片内部分只存储256个State就可以达到非常低的`Cache Miss Rate`。  
+
+----
 #### `G12P21` `2016-09-12` Taming the Flow Table Overflow in OpenFlow Switch  
 - `OpenFlow Switch, OFS`是支持OpenFlow的交换机。  
 - `Content-Addressable Memory, CAM`与传统的存储器的差别在于，传统的存储器通过给出地址，然后返回数据。而`CAM`则是给出数据返回地址或者地址列表。  
