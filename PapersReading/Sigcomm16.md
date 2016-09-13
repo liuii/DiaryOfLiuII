@@ -1,5 +1,16 @@
 # SigComm16论文阅读手记   
 
+#### `G13P03` `2016-09-13` Application Driven Network: providing On-Demand Services for Applications  
+- `Application Driven Network, ADN`是一种为应用提供按需服务的泛型。在ADN中，物理网络被分为若干个逻辑上分离的子网，每个子网可以拥有自己独立的网络架构和协议，并为一个特定的应用服务。  
+- **==小结==**  
+- 文章首先指出传统高效使用资源架构的网络无法提供良好的用户体验。  
+- 带宽的保证可以通过使用静态保留的方式来实现，但是这种方法对资源的利用率很低，一个应用无法使用另外一个应用的保留带宽。通常应用的带宽利用率很低而且其传输通常属于爆发性的。因此`work-conservation`通常只提供最小的带宽保证。  
+- 本文试图满足三个目的：在满足应用程序需求效率的同时满足资源效率，提供最小的性能保证，改进IP网络以便为不同的应用提供基于需求的QoS。  
+- 基于快/慢神经控制理论，ADN针对时间、空间和价值，提供了`slow control`和`fast control`。`Slow Controller`以网络拓扑结构和通信性能等变化缓慢的参数作为输入，来决定最佳的网络分片和操作点。`Fast Controller`以变化较快的交换队列和链路状态等参数作为输入，并使用`Kalman Filter Algorithm`以最小的开销在最佳的控制点去操作每一个网络分片。  
+- ADN由三个部分组成：
+  - 用来完成应用需求和网络分片之间映射的`协调器`。  
+
+----
 #### `G13P02` `2016-09-13` A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch  
 - `Open vSwitch`即开放虚拟交换标准，为网络管理员提供虚拟VM之间或内部的流量可见性和控制。本质上就是用软件来实现的虚拟交换机，再将虚拟机与虚拟交换机进行连接。  
 - `Data Plane Development Kit, DPDK`是用于快速包处理的一组数据平面库和网络接口控制驱动，[DPDK](http://dpdk.org)。  
