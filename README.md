@@ -1,6 +1,8 @@
 # 日志  
 
 **2016-09-13**  
+- 【下午】阅读论文`ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【下午】阅读论文`Application Driven Network: providing On-Demand Services for Applications`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`A 60Gbps DPI Prototype based on Memory-Centric FPGA`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
