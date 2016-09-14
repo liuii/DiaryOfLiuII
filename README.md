@@ -1,6 +1,8 @@
 # 日志  
 
 **2016-09-14**  
+- 【下午】听课《`计算思维与算法`》  
+- 【下午】《`计算思维`》上课。  
 - 【上午】阅读论文`EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`Cases for Including a Reference Monitor to SDN`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`Capture and Replay: Reproducible Network Experiments in Mininet`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
