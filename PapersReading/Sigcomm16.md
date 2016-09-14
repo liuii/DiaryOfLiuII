@@ -1,5 +1,26 @@
 # SigComm16论文阅读手记   
 
+#### `G13P05` `2016-09-14` Capture and Replay: Reproducible Network Experiments in Mininet  
+- `Mininet`是在网络社区中非常流行的网络仿真器，与以往的仿真器相比，它能够在顶层允许执行Linux应用程序。可以为网络拓扑指定静态的带宽、延迟、丢包率等参数。  
+- `Dynamic Adaptive Streaming over HTTP, DASH`也被称为`MPEG-DASH`是一种类似于苹果的`HTTP Live Streaming, HLS`技术，通过将视频文件分割为小的片段，然后客户端根据自己的网络状况来选择下载哪一种码率的片段，从而达到流媒体传输的质量保证。  
+- `iPerf`用来进行网络评估的工具。  
+- `Multipath TCP, MPTCP`是TCP的一种演化，它使用多个TCP subflow在不同的网络路径上传输。  
+- **==小结==**  
+- Mininet可以通过使用静态的参数来对网络进行评估，尽管这一度量能够提供有用的洞察，但是在真实世界中的网络评估中带宽总是动态变化的，这就向网络研究提出了特殊的挑战。  
+- 在本文中作者提出他们对真实世界中的带宽进行了跟踪，然后将这些跟踪的结果在Mininet中重现。  
+- 本文在现实环境中使用多种技术手段来获得网络参数：不同的QoS特点、不同的网络路径和端点。
+- 本文主要完成了以下三项工作，工作成果位于[`cAr`](http://www.dvs.tu-darmstadt.de/cAr)：  
+  1. 支持可变带宽的Mininet API。  
+  2. 可以重演带宽轨迹的Mininet API。  
+  3. 被整合到一个基础设施以分布、选择和部署轨迹的捕获原型。  
+- 在监测网络状态时，要考虑到不同的协议有不同的表写，例如UDP没有拥塞控制协议，而TCP具有拥塞控制协议通常会低估网络的可用带宽，尤其是在有丢包的情况下。所以本文推荐使用iperf来对UDP进行监控。  
+- 通常在Mininet中利用*`tc`*来监控传输，但是Mininet中如果要更改带宽就要复位*`tc`*，所以本文对Mininet进行了扩展，使得其可以平滑的进行带宽修改。现实世界的带宽变化轨迹被存放于一个中心的仓库，本文扩展了Mininet，使其能够重演带宽变化轨迹：  
+``` Python
+tc = prepareTC(id="-KGHLD5ID5lQvyJJ6bEF")
+tc.startShaping(host, link)
+```
+
+----
 #### `G13P04` `2016-09-13` ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking  
 - `BGP`边界网关协议，用于自治系统之间的传输协议。  
 - `IP Hijacking`是指自治系统错误的宣告了自己内部的地址前缀，从而导致分组进入到错误的路径的情况。通常也被称为：`BGP Hijacking`、`Prefix Hijacking`、`Route Hijacking`。  
