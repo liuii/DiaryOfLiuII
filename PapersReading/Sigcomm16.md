@@ -1,8 +1,36 @@
 # SigComm16论文阅读手记   
 
-#### `G13P05` `2016-09-14` Capture and Replay: Reproducible Network Experiments in Mininet  
-
+#### `G13P07` `2016-09-14` EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi  
+- `Open Service Gateway initiative, OSGi`是一个针对Java的模块系统和服务平台，可以完全动态的部署那些在一个独立的Java虚拟机环境中不存在的组件模块。应用程序或者组件以bundles的形式被远程安装、启动、停止、更新和卸载，而不需要重新启动Java虚拟机。  
+- `Phonegap`一种为JavaScript提供原生API接口的框架。  
 - **==小结==**  
+- 快速部署的移动互联网吸引着大量的终端用户去创建移动应用，但是传统的部署方式无法满足他们的要求。因此本文提出了一种基于OSGi的交叉部署环境`EasyApp`。  
+- 目前针对终端用户的App生成工具（例如MIT App Inventor）提供了一个在线的创建App的平台，用户通过拖拽来生成自己的App。但是这类的平台存在以下三个缺点：  
+  1. 只支持原生的Android SDK组件。  
+  2. 只能支持Android平台。  
+  3. 部署过程的学习成本依然很高。  
+- 因此本文提出的平台旨在解决上面提到的三个缺陷。  
+
+----
+#### `G13P06` `2016-09-14` Cases for Including a Reference Monitor to SDN  
+- `north-bound interfaces, NBIs`是在SDN中，逻辑控制中枢所提供的诸如拓扑发现、端点连通性等服务的接口。可以通过NBIs由网络管理员或运行在SDN控制器顶层的网络应用程序来进行访问，并自动化的执行网络操作任务。  
+- `ONOS`一种SDN控制器，是基于Java并利用了Java OSGi框架，这个框架允许允许在运行时动态的加载模块。  
+- `south-bound interfaces, SBIs`是SDN控制器面向数据层面（Data Plane）的接口。  
+- **==小结==**  
+- 尽管NBIs可以减少大量的网络错误配置，但是无法完全的防止所有的错误配置。而且错误的使用了NBIs会导致严重的后果，一个NBI的顶层命令，会影响多个底层的NBI命令，会重新配置整个网络的数据平面。  
+- 此外，一个自动化执行网络操作任务的程序，有可能会因为错误使用NBIs命令的软件bug导致错误的配置。因为NBIs可能非常简单，但是其实现会非常复杂。另外错误配置也可能来源自多个顶层应用程序之间的相互操作。  
+- 例如SDN控制的顶层应用程序之间可能存在资源竞争、直接或间接的相互影响。另外错误也可能来自恶意的行为，例如一个抵抗力弱的应用可能被通过重编路由对整个网络造成伤害。  
+- 尽管现有的一些网络验证技术可以检测到网络的配置错误，甚至可以检查控制器与应用程序之间的接口来保护控制器。但是这些技术和检查无法防止控制器发送那些导致数据平面错误配置的配置命令。  
+- 本文作者之前曾提出了在SDN控制器中包含一个`Reference Monitor`，用来为控制器提供一个可信组件，该可信组件可以依据给定的策略来许可控制器命令的发送。本文做出了这个概念的基于`ONOS`的验证原型。  
+- 通常一个SDN网络分为三层：  
+  1. 应用平面  
+  2. 控制平面  
+  3. 数据平面  
+- 应用平面和控制平面之间是NBIs，控制平面和数据平面之间是SBIs。本文是在控制平面中添加了一个`Reference Monitor`组件。  
+- 本文对ONOS做出两个较大的改变：  
+  1. 在发送一个OpenFlow消息之前，首先调用Reference Monitor，被Reference Monitor拒绝的消息将不会发送并产生一个Exception。  
+  2. 扩展了SBI函数的调用，要求调用方将自己的Application ID作为参数信息的一部分。  
+
 
 
 ----
