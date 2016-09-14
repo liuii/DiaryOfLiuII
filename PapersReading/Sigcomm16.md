@@ -1,6 +1,12 @@
 # SigComm16论文阅读手记   
 
 #### `G13P05` `2016-09-14` Capture and Replay: Reproducible Network Experiments in Mininet  
+
+- **==小结==**  
+
+
+----
+#### `G13P05` `2016-09-14` Capture and Replay: Reproducible Network Experiments in Mininet  
 - `Mininet`是在网络社区中非常流行的网络仿真器，与以往的仿真器相比，它能够在顶层允许执行Linux应用程序。可以为网络拓扑指定静态的带宽、延迟、丢包率等参数。  
 - `Dynamic Adaptive Streaming over HTTP, DASH`也被称为`MPEG-DASH`是一种类似于苹果的`HTTP Live Streaming, HLS`技术，通过将视频文件分割为小的片段，然后客户端根据自己的网络状况来选择下载哪一种码率的片段，从而达到流媒体传输的质量保证。  
 - `iPerf`用来进行网络评估的工具。  

@@ -1,7 +1,7 @@
 # 日志  
 
 **2016-09-14**  
-- 【下午】阅读论文`2016-09-14` Capture and Replay: Reproducible Network Experiments in Mininet`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【下午】阅读论文`Capture and Replay: Reproducible Network Experiments in Mininet`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
 **2016-09-13**  
 - 【晚上】两个小时的`实验课`。  
