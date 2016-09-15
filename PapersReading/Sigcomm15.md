@@ -1,29 +1,6 @@
 # SigComm15论文阅读手记   
 假期阅读了几十篇SigComm15的论文，选取其中比较有趣的几篇作为总结。
 
-----
-##目录
-
-[`G03P02` of Game Bot’s Behavioral Characteristics in Social Interaction Networks of MMORPG](#g03p02-analysis-of-game-bot’s-behavioral-characteristics-in-social-interaction-networks-of-mmorpg)  
-[`G03P03` Bits Mining in Internet Traffic Classification](#g03p03-bitminer-bits-mining-in-internet-traffic-classification)  
-[`G03P06` Evaluating Consensus at the Internet Edge](#g03p06-coracle-evaluating-consensus-at-the-internet-edge)  
-[`G03P07` End System Caching and Cooperation Replace In-Network Caching in CCN?](#g03p07-could-end-system-caching-and-cooperation-replace-in-network-caching-in-ccn?)  
-[`G03P08` Web Caching for Faster Web Browsing](#g03p08-extreme-web-caching-for-faster-web-browsing)  
-[`G03P09` Free-Space Optics](#g03p09-flycast-free-space-optics)  
-[`G03P10` A fully automated Cyber Defense Competition for Students](#g03p10-i-tee-a-fully-automated-cyber-defense-competition-for-students)  
-[`G03P14` Internet of Names: A DNS Big Dataset](#g03p14-the-internet-of-names-a-dns-big-dataset)  
-[`G03P17` Attack - Vulnerability in auto-scaling mechanism](#g03p17-yo-yo-attack---vulnerability-in-auto-scaling-mechanism)  
-[`G03PZZ` Time of Flight on Commercial Wi-Fi Cards](#g03pzz-sub-nanosecond-time-of-flight-on-commercial-wi-fi-cards)  
-[`G09P03` Mininet-based Virtual Testbed for Distributed SDN Development](#g09p03-a-mininet-based-virtual-testbed-for-distributed-sdn-development)  
-[`G09P05` Towards Fast Packet Classification for Order- Independent Rules](#g09p05-bitcuts-towards-fast-packet-classification-for-order--independent-rules)  
-[`G09P08` A Modular Prototype for SDN Troubleshooting](#g09p08-epoxide-a-modular-prototype-for-sdn-troubleshooting)  
-[`G09P10` Application-Centric Wireless Access with SDN](#g09p10-freesurf-application-centric-wireless-access-with-sdn)  
-[`G09P12` - Rapid Prototyping of Networking Devices in Open Source](#g09p12-netfpga---rapid-prototyping-of-networking-devices-in-open-source)  
-[`G09P14` A File System Abstraction for NFV Orchestration](#g09p14-nf.io-a-file-system-abstraction-for-nfv-orchestration)  
-
-----
-## 论文手记
-
 #### `G03P02` Analysis of Game Bot’s Behavioral Characteristics in Social Interaction Networks of MMORPG  
 - 这篇文章主要讨论如何鉴别`永恒之塔`游戏中的机器人玩家。
 - 这篇文章的最主要的特点是：将整个游戏的社交活动分为六个独立的网络，分别为`1好友`、`2私信`、`3帮派`、`4交易`、`5邮件`和`6商店`。另外将玩家活动分为五种情况：`Bot-All`、`Bot-Bot`、`Human-All`、`Human-Human`、`All-All`。通过研究这五种关系在六个网络中的行为模式来进行分类。
