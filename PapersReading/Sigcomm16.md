@@ -1,5 +1,47 @@
 # SigComm16论文阅读手记   
 
+## 目录
+[`G13P09` Fibbing in action: On-demand load-balancing for better video delivery](#G13P09)  
+[`G13P08` Enabling Backscatter Communication among Commodity WiFi Radios](#G13P08)  
+[`G13P07` EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi](#G13P07)  
+[`G13P06` Cases for Including a Reference Monitor to SDN](#G13P06)  
+[`G13P05` Capture and Replay: Reproducible Network Experiments in Mininet](#G13P05)  
+[`G13P04` ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking](#G13P04)  
+[`G13P03` Application Driven Network: providing On-Demand Services for Applications](#G13P03)  
+[`G13P02` A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch](#G13P02)  
+[`G13P01` A 60Gbps DPI Prototype based on Memory-Centric FPGA](#G13P01)  
+[`G12P21` Taming the Flow Table Overflow in OpenFlow Switch](#G12P21)  
+[`G12P20` \* TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost](#G12P20)  
+[`G12P19` SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization](#G12P19)  
+[`G12P18` Rethinking the Design of OpenFlow Switch Counters](#G12P18)  
+[`G12P17` Privacy-Aware Infrastructure for Managing Personal Data](#G12P17)  
+[`G12P16` PieBridge: A Cross-DR scale Large Data Transmission Scheduling System](#G12P16)  
+[`G12P15` Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas](#G12P15)  
+[`G12P14` PathCache: A Path Prediction Toolkit](#G12P14)  
+[`G12P13` \* Named Data Networking Based Smart Home Lighting](#G12P13)  
+[`G12P12` Modular SDN Compiler Design with Intermediate Representation](#G12P12)  
+[`G12P11` Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies](#G12P11)  
+[`G12P10` Horse: towards an SDN traffic dynamics simulator for large scale networks](#G12P10)  
+[`G12P09` FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming](#G12P09)  
+[`G12P08` Efficient Remapping of Internet Routing Events](#G12P08)  
+[`G12P07` Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users](#G12P07)  
+[`G12P06` Building Application-Aware Network Environments Using SDN for Optimizing Hadoop Applications](#G12P06)  
+[`G12P05` Best Effort Task Scheduling for Data Parallel Jobs](#G12P05)  
+[`G12P04` Application-specific Acceleration Framework for Mobile Applications](#G12P04)  
+[`G12P03` Achieving Consistent SDN Control With Declarative Applications](#G12P03)  
+[`G12P02` A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure](#G12P02)  
+[`G12P01` A First Look into Transnational Routing Detours](#G12P01)  
+----
+
+## 阅读手记
+
+----
+<span id='G13P09'></span>
+#### `G13P09` `2016-09-**` Fibbing in action: On-demand load-balancing for better video delivery  
+- **==小结==**  
+
+----
+<span id='G13P08'></span>
 #### `G13P08` `2016-09-15` Enabling Backscatter Communication among Commodity WiFi Radios  
 - `Backscatter`是指当通过漫反射形成的`反向散射`，类似于摄影中使用闪光灯在镜头上产生光斑。之前有新闻称一个研究团队正在利用Backscatter制作无需能量的传感器。  
 - `CodeWord`是标准编码与协议的一个组成部分，每一个codeword都代表一个唯一的含义。  
@@ -19,6 +61,7 @@ e ^ (pi j) = cos(pi) + j * sin(pi) = -1
 - 在802.11b的1Mbps的codebook中，只有两种codeword。这两种codeword之间存在180度的相位差，所以Backscatter标签就可以通过检测原有信号来决定是否需要相移。  
 
 ----
+<span id='G13P07'></span>
 #### `G13P07` `2016-09-14` EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi  
 - `Open Service Gateway initiative, OSGi`是一个针对Java的模块系统和服务平台，可以完全动态的部署那些在一个独立的Java虚拟机环境中不存在的组件模块。应用程序或者组件以bundles的形式被远程安装、启动、停止、更新和卸载，而不需要重新启动Java虚拟机。  
 - `Phonegap`一种为JavaScript提供原生API接口的框架。  
@@ -31,6 +74,7 @@ e ^ (pi j) = cos(pi) + j * sin(pi) = -1
 - 因此本文提出的平台旨在解决上面提到的三个缺陷。  
 
 ----
+<span id='G13P06'></span>
 #### `G13P06` `2016-09-14` Cases for Including a Reference Monitor to SDN  
 - `north-bound interfaces, NBIs`是在SDN中，逻辑控制中枢所提供的诸如拓扑发现、端点连通性等服务的接口。可以通过NBIs由网络管理员或运行在SDN控制器顶层的网络应用程序来进行访问，并自动化的执行网络操作任务。  
 - `ONOS`一种SDN控制器，是基于Java并利用了Java OSGi框架，这个框架允许允许在运行时动态的加载模块。  
@@ -50,9 +94,8 @@ e ^ (pi j) = cos(pi) + j * sin(pi) = -1
   1. 在发送一个OpenFlow消息之前，首先调用Reference Monitor，被Reference Monitor拒绝的消息将不会发送并产生一个Exception。  
   2. 扩展了SBI函数的调用，要求调用方将自己的Application ID作为参数信息的一部分。  
 
-
-
 ----
+<span id='G13P05'></span>
 #### `G13P05` `2016-09-14` Capture and Replay: Reproducible Network Experiments in Mininet  
 - `Mininet`是在网络社区中非常流行的网络仿真器，与以往的仿真器相比，它能够在顶层允许执行Linux应用程序。可以为网络拓扑指定静态的带宽、延迟、丢包率等参数。  
 - `Dynamic Adaptive Streaming over HTTP, DASH`也被称为`MPEG-DASH`是一种类似于苹果的`HTTP Live Streaming, HLS`技术，通过将视频文件分割为小的片段，然后客户端根据自己的网络状况来选择下载哪一种码率的片段，从而达到流媒体传输的质量保证。  
@@ -74,6 +117,7 @@ tc.startShaping(host, link)
 ```
 
 ----
+<span id='G13P04'></span>
 #### `G13P04` `2016-09-13` ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking  
 - `BGP`边界网关协议，用于自治系统之间的传输协议。  
 - `IP Hijacking`是指自治系统错误的宣告了自己内部的地址前缀，从而导致分组进入到错误的路径的情况。通常也被称为：`BGP Hijacking`、`Prefix Hijacking`、`Route Hijacking`。  
@@ -87,6 +131,7 @@ tc.startShaping(host, link)
 - 本文提出了一种近乎实时（1分钟）检测并自动解决劫持（几秒钟）的系统，总共的时间控制在5分钟左右。  
 
 ----
+<span id='G13P03'></span>
 #### `G13P03` `2016-09-13` Application Driven Network: providing On-Demand Services for Applications  
 - `Application Driven Network, ADN`是一种为应用提供按需服务的泛型。在ADN中，物理网络被分为若干个逻辑上分离的子网，每个子网可以拥有自己独立的网络架构和协议，并为一个特定的应用服务。  
 - **==小结==**  
@@ -104,6 +149,7 @@ tc.startShaping(host, link)
   3. `D-Plane`是网络设备的抽象，通过网络功能虚拟化可以为应用提供逻辑上独立的网络分片。  
 
 ----
+<span id='G13P02'></span>
 #### `G13P02` `2016-09-13` A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch  
 - `Open vSwitch`即开放虚拟交换标准，为网络管理员提供虚拟VM之间或内部的流量可见性和控制。本质上就是用软件来实现的虚拟交换机，再将虚拟机与虚拟交换机进行连接。  
 - `Data Plane Development Kit, DPDK`是用于快速包处理的一组数据平面库和网络接口控制驱动，[DPDK](http://dpdk.org)。  
@@ -114,6 +160,7 @@ tc.startShaping(host, link)
 - **动态性**指的是根据对OpenFlow规则的分析，可以为VMs返回`VM-VM`或者`VM-vSwitch-VM`的链路。  
 
 ----
+<span id='G13P01'></span>
 #### `G13P01` `2016-09-13` A 60Gbps DPI Prototype based on Memory-Centric FPGA  
 - `Deep Packet Inspection, DPI`也被称为`Complete Packet Inspection, CPI`、`Information eXtraction, IX`。通过对数据包的数据部分进行检测（有时也对头部进行检测），来发现不符合协议的分组、病毒、垃圾邮件、入侵，或者定义标准来决定如何处理该分组（放行或发送到其他目的地），或者是出于收集统计信息的目的。  
 - `Aho-Corasick algorithm`是用于`String Pattern Matching, SPM`中的字符串搜索算法。  
@@ -124,6 +171,7 @@ tc.startShaping(host, link)
 - 两层内存结构中的片内RAM用来存储一小部分的`State Transition Table, STT`，而外部的大容量DRAM则用来存储完整的STT。文章发现经过优化在片内部分只存储256个State就可以达到非常低的`Cache Miss Rate`。  
 
 ----
+<span id='G12P21'></span>
 #### `G12P21` `2016-09-12` Taming the Flow Table Overflow in OpenFlow Switch  
 - `OpenFlow Switch, OFS`是支持OpenFlow的交换机。  
 - `Content-Addressable Memory, CAM`与传统的存储器的差别在于，传统的存储器通过给出地址，然后返回数据。而`CAM`则是给出数据返回地址或者地址列表。  
@@ -153,6 +201,7 @@ return outport;
 - 该算法的测试与评价在`MiniNet`平台上完成。  
 
 ----
+<span id='G12P20'></span>
 #### `G12P20` `2016-09-09` \* TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost  
 - `device-free localization, DfL`不需要额外设备的定位，例如利用无处不在的WiFi信号的`Received Signal Strength, RSS`信息来进行定位。  
 - **==小结==**  
@@ -161,6 +210,7 @@ return outport;
 - 指纹库可以表达为具有如下性质的一个二维矩阵，通过提取Reference矩阵和Largely Distorted矩阵，来减少更新的时间。  
 
 ----
+<span id='G12P19'></span>
 #### `G12P19` `2016-09-09` SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization  
 - `Service-level agreement, SLA`是指提供服务的企业与客户之间就服务的品质、水准、性能等方面所达成的双方共同认可的协议或契约。  
 - **==小结==**  
@@ -172,6 +222,7 @@ return outport;
 - `3.` 通过结合`programmable SDPA`硬件和`NFV`软件来实现高性能和灵活性。为了实现这一目标，本文为SDPA扩展了状态相关的接口以便迁移各种类型、各种流的状态。  
 
 ----
+<span id='G12P18'></span>
 #### `G12P18` `2016-09-09` Rethinking the Design of OpenFlow Switch Counters  
 - `OpenFlow`是一种通过网络访问交换机或路由器转发层的通讯协议。  
 - `ONetSwitch`是叠锶公司作为全球首款基于Zynq器件实现的OpenFlow Switch产品，作为理想的SDN教育科研平台，具备“软件可编程，逻辑可重构，硬件可扩展”能力，是面向SDN/OpenFlow的可编程交换机。  
@@ -189,12 +240,14 @@ return outport;
 - 本文的核心内容为OFS的Counter设计。  
 
 ----
+<span id='G12P17'></span>
 #### `G12P17` `2016-09-08` Privacy-Aware Infrastructure for Managing Personal Data  
 - `Service-level agreement, SLA`设备级许可。  
 - **==小结==**  
 - 本文提出了一种位于家庭中的隐私数据许可设备。本文提出的内容是计算机与社会学科的解决方案，起因是欧盟希望能够通过法律来保护用户的个人隐私。  
 
 ----
+<span id='G12P16'></span>
 #### `G12P16` `2016-09-08` PieBridge: A Cross-DR scale Large Data Transmission Scheduling System  
 - `DR`：Datacenter Region  
 - `IDC`：Internet Datacenter  
@@ -210,6 +263,7 @@ return outport;
 - `3.` 对拥有相同的源与目的的子任务进行合并，以减少下一次调度的运算量。  
 
 ----
+<span id='G12P15'></span>
 #### `G12P15` `2016-09-08` Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas  
 - `Locator/Identifier Separation Protocol, LISP`（RFC6830）。在目前的IP协议架构中，`IP地址`被用作命名空间，并用于两种不同的目的：  
 - `1.` 做为`End-Point`的`Identifier`提供在当前本地网络寻址环境中的唯一的标识。
@@ -227,6 +281,7 @@ return outport;
 - 文章中利用几个不同的探针节点，利用ping测量了LISP网络与现有网络之间的差别。  
 
 ----
+<span id='G12P14'></span>
 #### `G12P14` `2016-09-08` PathCache: A Path Prediction Toolkit  
 - `RIPE Atlas`和`CAIDA’s Ark`都是网络测量平台。  
 - `PathCache`允许用户重新使用traceroute对网络路径的测量结果。  
@@ -238,6 +293,7 @@ return outport;
 - 常用的路径预测方法中，当需要计算大量路径或无法直接测量路径的时候，通常会使用算法仿真。但是这种方法的精度无法满足那些对安全敏感的应用，例如`Tor`的客户端（因为这种协议的目的就是尽量的避免被窃听）。`PathCache`不需要客户端发送它自己的探测结果，而且它带有的元数据和数据源能够对预测的路径进行有效性的验证和评估。  
 
 ----
+<span id='G12P13'></span>
 #### `G12P13` `2016-09-07` \* Named Data Networking Based Smart Home Lighting  
 - `Named Data Networking, NDN`是一个研究物联网的架构平台，替代原有通讯中关注于`where`，改为关注于`what`。[`项目地址`](https://named-data.net)，包括架构与实验平台等。  
 - `Information Centric Networks, ICNs`以信息为中心的网络，NDN就是一种ICN。  
@@ -258,6 +314,7 @@ return outport;
 - 该系统通过使用`Interest Filtering`对FIB进行了优化。  
 
 ----
+<span id='G12P12'></span>
 #### `G12P12` `2016-09-07` Modular SDN Compiler Design with Intermediate Representation  
 - `SDN`的功能就是把控制平面和数据平面去耦，控制平面使用高级语言进行控制，数据平面使用低级规则来进行控制。  
 - `Frenetic`，`Maple`，`Merlin`，`P4`是现在使用的控制平面高级语言。  
@@ -290,6 +347,7 @@ D f, FORWARD 2
 ```
 
 ----
+<span id='G12P11'></span>
 #### `G12P11` `2016-09-07` Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies  
 - `Datapath-Oblivious`是一种无感知的数据通路。  
 - `OpenDaylight`和`Floodlight`都是目前主流的`SDN`控制器。相关的技术资料在[`SDNLAB`](http://www.sdnlab.com)上很多。  
@@ -325,6 +383,7 @@ L4: egress = [2 * y]
 - 最终生成数据流图。  
 
 ----
+<span id='G12P10'></span>
 #### `G12P10` `2016-09-01` Horse: towards an SDN traffic dynamics simulator for large scale networks  
 - `Source Routing`可以为分组选择需要经过的部分或全部路由器，相关阅读：`DSR协议`。  
 - [`MiniNet`](http://mininet.org)是网络实验的虚拟平台。但是这个平台缺乏弹性，对巨型网络拓扑结构或巨大的负载的分析缺乏足够的支持。  
@@ -342,6 +401,7 @@ L4: egress = [2 * y]
 ```
 
 ----
+<span id='G12P09'></span>
 #### `G12P09` `2016-09-01` FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming  
 - 很多的网络控制平面的计算依赖于`网络的状态`，例如路由算法中的`最短路径`依赖于`网络的拓扑`，`QoS`依赖于`拓扑`和`资源分配`，`安全功能`依赖于配置的`安全策略`。  
 - `OpenDaylight`是由Linux基金会主持的开源协作平台。其目标是为了推动SDN、NFV的创新实施。  
@@ -353,6 +413,7 @@ L4: egress = [2 * y]
 - 所以本文提出的方式就是把`State Changes`对开发者`透明`，由`FAST`来自动完成`状态依赖的跟踪`和`调度的重新执行`。  
 
 ----
+<span id='G12P08'></span>
 #### `G12P08` `2016-09-01` Efficient Remapping of Internet Routing Events  
 - `Routing Events`包含：路由器重新配置、链路失败、软件错误以及调度维护等。  
 - `DTRACK`是一种用来预测与跟踪互联网路径变化的工具，详细描述可以参看文章：`DTRACK: A System to Predict and Track Internet Path Changes`。  
@@ -362,6 +423,7 @@ L4: egress = [2 * y]
 - 本文提出当检测到路由事件后，计算路由事件变化的范围，然后对此范围可能影响的路径进行更新。  
 
 ----
+<span id='G12P07'></span>
 #### `G12P07` `2016-08-31` Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users  
 - `QoE`（`Quality of Experience`）是用户对某种服务体验的度量，`QoE`尤其关注用户体验（`User Experience`）。`QoE`与`QoS`不同，后者试图从提供者（`Vendor`）的角度对服务质量进行客观的测量，而前者则是从使用者（`Custom`）的角度进行主观的测量。  
 - 以网络服务为例`QoS`通常关注于`BandWidth`，而`QoE`则关注应用端的`Response Time`。  
@@ -379,6 +441,7 @@ L4: egress = [2 * y]
 - 本文从**`QoE`**的角度提出了改善用户体验的网络调度方案，是一种新奇的视角。  
 
 ----
+<span id='G12P06'></span>
 #### `G12P06` `2016-08-31` Building Application-Aware Network Environments Using SDN for Optimizing Hadoop Applications  
 - `AAN`（`Application-Aware Aetworking`）是本文提出的一种用来管理地理分布的`Hadoop Cluster`网络传输的方法。  
 - `SDN`把之前由硬件处理的`Control Plane`替换为用软件来进行处理。`SDN`有三个最大的优点：动态的管理、配置和分配资源；在独立的服务器中运行网络控制功能；可以方便对新的网络协议进行部署和测试。  
@@ -391,6 +454,7 @@ L4: egress = [2 * y]
 - 本文通过利用`SDN`为`MapReduce`过程添加了对网络资源的考虑，从而提高了运算的性能。  
 
 ----
+<span id='G12P05'></span>
 #### `G12P05` `2016-08-31` Best Effort Task Scheduling for Data Parallel Jobs  
 - `DAG`（`directed acyclic graph`），有向无环图。用来描述数据分析工作的各个阶段，尤其是在工作在`Hadoop`和`Spark`这种大规模分布式集群上的数据分析工作。  
 - `BETS`（`a Best Effort Task Scheduling scheme`）是本文提出的一种调度（`Scheduling`）方案。  
@@ -408,6 +472,7 @@ L4: egress = [2 * y]
 - 本文外来的工作着眼于：`分布式的任务调度器（目前是中央的）`和`考虑其他资源需求（例如BandWidth）`。  
 
 ----
+<span id='G12P04'></span>
 #### `G12P04` `2016-08-31` Application-specific Acceleration Framework for Mobile Applications  
 - `TCP Acceleration`、`SPDY`和`Compression`是用来降低移动应用响应（`Response`）时间，提升用户体验的方法。其中`SPDY`是`Google`的一种开放式协议，主要利用了`Compression`、`Multiplexing`、`Prioritization`技术，来降低网页传输的时延。  
 - `Extractocol`是一种用来自动化提取Android应用程序`应用层协议行为`的技术。这篇文章位于：[`ACM`](http://dl.acm.org/citation.cfm?id=2790003)。本文利用了这个技术来分析Android应用，`Extractocol`的输入是Android应用的二进制包`.pkg`，输出`Request`和`Response`的特征，特征是利用正则表达式（`Regex`）来表示的。另外`Extractocol`还会产生`Request`和`Response`之间的依赖关系。  
@@ -420,6 +485,7 @@ L4: egress = [2 * y]
 - 相信这个类型的研究方向能给**开发组**的同学以启迪。  
 
 ----
+<span id='G12P03'></span>
 #### `G12P03` `2016-08-29` Achieving Consistent SDN Control With Declarative Applications  
 - `Prolog`：一种用于人工智能和计算机语言学的逻辑编程语言。下面是该语言实现的`Qsort`：  
 ``` Prolog
@@ -442,6 +508,7 @@ quicksort([X|Xs]) -->
 - 本文提出了使用投票机制来使得方案能够满足更多的`SDN App`的需求，文章最后和`Static Priority`以及`Athensk`进行了比较。  
 
 ----
+<span id='G12P02'></span>
 #### `G12P02` `2016-08-29` A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure  
 - **I<sup>2</sup>P（**`Invisible Internet Project`）是匿名的网络层，有点类似于`Tor`。
 - `EepSites`是依托`I2P`提供匿名服务的站点。  
@@ -458,6 +525,7 @@ quicksort([X|Xs]) -->
 - `I2P`网络的使用者国家排名：`Russia`、`Unite States`、`China`。  
 
 ----
+<span id='G12P01'></span>
 #### `G12P01` `2016-08-29` A First Look into Transnational Routing Detours  
 - `IXP`（`Internet exchange point`）是用于连接不同ISP网络的基础设施。  
 - `RIPE`是欧洲地区的互联网注册机构，它是全球五个地区级级互联网注册机构。互联网的`IP`地址分配是分级的，`ICANN`为全球IP地址进行编号分配，它会将部分`IP`地址分配给五个地区级的`RIP`（`APNIC`负责亚太地区）。其下为国家级注册机构，例如我国的`CNNIC`就是从`APNIC`获得`IP`地址的。  
