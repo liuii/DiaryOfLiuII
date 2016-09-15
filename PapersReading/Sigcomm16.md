@@ -1,5 +1,24 @@
 # SigComm16论文阅读手记   
 
+#### `G13P08` `2016-09-15` Enabling Backscatter Communication among Commodity WiFi Radios  
+- `Backscatter`是指当通过漫反射形成的`反向散射`，类似于摄影中使用闪光灯在镜头上产生光斑。之前有新闻称一个研究团队正在利用Backscatter制作无需能量的传感器。  
+- `CodeWord`是标准编码与协议的一个组成部分，每一个codeword都代表一个唯一的含义。  
+- `CodeBook`是Code Word的清单。  
+- `e^(pi j) = -1`的解释可以参见：[`Goto`](http://www.math.toronto.edu/mathnet/questionCorner/epii.html)。  
+```
+e ^ (x j)  = cos(x) + j * sin(x)
+e ^ (pi j) = cos(pi) + j * sin(pi) = -1
+```
+- **==小结==**  
+- 目前Backscatter受到了诸如植入式传感器、可穿戴设备以及智能家庭传感器应用的关注，因为Backscatter提供了几乎无需能量的连接。  
+- 目前大部分的Backscatter利用了专用的RF信号激发器发送可以被反射的无线信号。最近诸如被动式WiFi减少了对特定设备的需求，但是它依然需要一个专用的连续WiFi信号发生器作为RF信号源。BackFi需要一个全双工的硬件添加到WiFi发射器中，才能使用Backscatter通讯。因此能够使用Backscatter通讯的常用设备（例如AP、智能手机、手表或平板）并不存在。  
+- 本文提出了首个仅使用日常803.11b WiFi设备就可以同时生成RF激励信号，同时可以解码Backscatter信号的系统。  
+- 本文提出的方案是利用智能手机发出WiFi信号，例如通过`信道1`将信号发送到AP<sub>1</sub>。Backscatter标签接收`信道1`的分组，然后将其频移到`信道6`,然后调制自己的信息到分组中并进行反射。监听`信道6`的AP<sub>2</sub>则接收并像对待标准WiFi分组一样解码Backscatter分组。  
+- 本文最核心的挑战是：一个Backscatter标签如何通过反向散射另外一个Wifi分组来产生包含自己数据的WiFi分组。本文采用的核心概念就是`codeword translation`。  
+- 由于每一个802.11b的WiFi分组都是一系列从codebook中挑选出来，用来表示不同bit的codewords。而Backscatter标签就从中对分组内的codeword进行翻译，从而将自己想要发送的数据植入到分组中，这样普通的AP就可以直接对其进行解码。  
+- 在802.11b的1Mbps的codebook中，只有两种codeword。这两种codeword之间存在180度的相位差，所以Backscatter标签就可以通过检测原有信号来决定是否需要相移。  
+
+----
 #### `G13P07` `2016-09-14` EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi  
 - `Open Service Gateway initiative, OSGi`是一个针对Java的模块系统和服务平台，可以完全动态的部署那些在一个独立的Java虚拟机环境中不存在的组件模块。应用程序或者组件以bundles的形式被远程安装、启动、停止、更新和卸载，而不需要重新启动Java虚拟机。  
 - `Phonegap`一种为JavaScript提供原生API接口的框架。  

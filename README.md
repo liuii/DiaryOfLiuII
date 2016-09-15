@@ -1,5 +1,8 @@
 # 日志  
 
+**2016-09-15**  
+- 【上午】阅读论文`Enabling Backscatter Communication among Commodity WiFi Radios`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+
 **2016-09-14**  
 - 【下午】听课《`计算思维与算法`》  
 - 【下午】《`计算思维`》上课。  
