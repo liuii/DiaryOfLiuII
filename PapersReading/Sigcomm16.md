@@ -1,43 +1,7 @@
 # SigComm16论文阅读手记   
 
-## 目录
-[`G13P09` Fibbing in action: On-demand load-balancing for better video delivery](#G13P09)  
-[`G13P08` Enabling Backscatter Communication among Commodity WiFi Radios](#G13P08)  
-[`G13P07` EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi](#G13P07)  
-[`G13P06` Cases for Including a Reference Monitor to SDN](#G13P06)  
-[`G13P05` Capture and Replay: Reproducible Network Experiments in Mininet](#G13P05)  
-[`G13P04` ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking](#G13P04)  
-[`G13P03` Application Driven Network: providing On-Demand Services for Applications](#G13P03)  
-[`G13P02` A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch](#G13P02)  
-[`G13P01` A 60Gbps DPI Prototype based on Memory-Centric FPGA](#G13P01)  
-[`G12P21` Taming the Flow Table Overflow in OpenFlow Switch](#G12P21)  
-[`G12P20` \* TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost](#G12P20)  
-[`G12P19` SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization](#G12P19)  
-[`G12P18` Rethinking the Design of OpenFlow Switch Counters](#G12P18)  
-[`G12P17` Privacy-Aware Infrastructure for Managing Personal Data](#G12P17)  
-[`G12P16` PieBridge: A Cross-DR scale Large Data Transmission Scheduling System](#G12P16)  
-[`G12P15` Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas](#G12P15)  
-[`G12P14` PathCache: A Path Prediction Toolkit](#G12P14)  
-[`G12P13` \* Named Data Networking Based Smart Home Lighting](#G12P13)  
-[`G12P12` Modular SDN Compiler Design with Intermediate Representation](#G12P12)  
-[`G12P11` Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies](#G12P11)  
-[`G12P10` Horse: towards an SDN traffic dynamics simulator for large scale networks](#G12P10)  
-[`G12P09` FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming](#G12P09)  
-[`G12P08` Efficient Remapping of Internet Routing Events](#G12P08)  
-[`G12P07` Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users](#G12P07)  
-[`G12P06` Building Application-Aware Network Environments Using SDN for Optimizing Hadoop Applications](#G12P06)  
-[`G12P05` Best Effort Task Scheduling for Data Parallel Jobs](#G12P05)  
-[`G12P04` Application-specific Acceleration Framework for Mobile Applications](#G12P04)  
-[`G12P03` Achieving Consistent SDN Control With Declarative Applications](#G12P03)  
-[`G12P02` A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure](#G12P02)  
-[`G12P01` A First Look into Transnational Routing Detours](#G12P01)  
-
 ----
-
-## 阅读手记
-
-----
-#### <span id='G13P09'>a</span> `2016-09-**` Fibbing in action: On-demand load-balancing for better video delivery  
+#### 'G13P09' `2016-09-**` Fibbing in action: On-demand load-balancing for better video delivery  
 - **==小结==**  
 
 ----
