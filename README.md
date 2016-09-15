@@ -1,6 +1,25 @@
 # 日志  
 
 **2016-09-15**  
+- 【下午】解决了链接的问题，利用了另外的方法实现并测试可行，等手记完结了统一加上目录结构。代码如下：  
+``` Python
+with open('test.md') as f:
+    lines = f.readlines()
+    for line in lines:
+        if line.startswith('####'):
+            # generate id and title
+            segments = line.split(None,3)
+            tag = segments[1][1:-1]
+            title = segments[3].rstrip()
+            # generate address tag
+            charToDelete = ['`', ':', '\\', '*']
+            for char in charToDelete:
+                line = line.replace(char, '')
+            segments = [item.lower() for item in line.split()[1:]]
+            address = '-'.join(segments)
+            link = '[`%s` %s](#%s)  ' % (tag, title, address)
+            print link
+```
 - 【下午】事实证明Github不支持`<span>`标签，所以本地预览的链接没有问题，但是上传之后无效，很费解。  
 - 【上午】为[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")添加了文章内跳转，写了一小段代码来根据文章标题自动生成链接，后面想做个自动生成器，为每篇文章的手记添加内部跳转用的`<span id='idOfPaper'></span>`标记。  
 ``` Python
