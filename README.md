@@ -1,6 +1,18 @@
 # 日志  
 
 **2016-09-15**  
+- 【上午】为[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")添加了文章内跳转，写了一小段代码来根据文章标题自动生成链接，后面想做个自动生成器，为每篇文章的手记添加内部跳转用的`<span id='idOfPaper'></span>`标记。  
+``` Python
+with open('test.md') as f:
+    lines = f.readlines()
+    for line in lines:
+        if line.startswith('####'):
+            segment = line.split(None,3)
+            tag = segment[1][1:-1]
+            title = segment[3].rstrip()
+            link = '[`%s` %s](#%s)  ' % (tag, title, tag)
+            print link
+```
 - 【上午】阅读论文`Enabling Backscatter Communication among Commodity WiFi Radios`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
 **2016-09-14**  
