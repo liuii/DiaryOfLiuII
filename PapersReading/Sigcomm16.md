@@ -4,8 +4,7 @@
 - **==小结==**  
 
 ----
-#### `G13P10` `2016-09-18` High speed packet forwarding compiled
-from protocol independent data plane specifications  
+#### `G13P10` `2016-09-18` High speed packet forwarding compiled from protocol independent data plane specifications  
 - `Programming protocol-independent packet processors, P4`是用于SDN控制的一种高级语言，通过将特定硬件的硬件无关功能与硬件相关功能进行分离，来创建跨平台的编译器。其处理过程可以参考[`P4`](http://p4.org)。  
 - **==小结==**  
 - 与OpenFlow相比，`P4`为可编程网络提供了一个高级别的抽象。在`P4`的抽象模型中交换机利用可编程的语法分析器对进入的分组进行分析，接下来在多个阶段中应用匹配行为规则，这多个状态按照序列、并行或两者兼有的方式进行安排。这些行为由与协议无关的基元构成。  
