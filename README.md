@@ -1,7 +1,7 @@
 # 日志  
 
 **2016-09-18** 
-
+- 【上午】阅读论文`Fibbing in action: On-demand load-balancing for better video delivery`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
 **2016-09-17**  
 - 【全天】阅读。  
