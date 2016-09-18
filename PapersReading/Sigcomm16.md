@@ -1,7 +1,22 @@
 # SigComm16论文阅读手记   
 
 #### `G13P11` `2016-09-18` MACSAD: Multi-Architecture Compiler System for Abstract Dataplanes (aka Partnering P4 with ODP)  
+- `Domain Specific Languages, DSL`指专用于某个领域的语言，例如P4就是这样一种提供了自顶向下的高级抽象语言，定义了针对网络平台不可知并且独立于任何网络协议的的数据平面。  
+- `OpenDataPlane, ODP`项目创建了用于为SDN的数据平面服务的开源、交叉平台的可编程应用程序接口（APIs）。项目地址位于：[`ODP`](http://opendataplace.org)。  
+- `Protocol Independent Switch Architectures, PISA`与协议无关的交换架构。  
+- `Transpiler`是一种`Source-to-Source`的编译器，用于将一种编程语言的源码装换为另外一种编程语言的源码。  
+- `High Level Intermediate Representation, HLIR`。  
+- `Network Function Performance Analyzer, NFPA`是一个用来测量网络功能性能的分析器，其项目地址位于：[`nfpa`](http://ios.tmit.bme.hu/nfpa/)。  
 - **==小结==**  
+- 本文展示了使用P4语言和ODP APIs相结合的编译系统。  
+- `Multi-Architecture Compiler System for Abstract Dataplanes, MACSAD`是本文提出的编译器架构。该架构用于提供将DSL编写的数据平面应用高效地无缝移植到不同的平台。其设计目标为一下三个方面：  
+  1. 使用P4提供简单快速的数据平面应用开发环境。  
+  2. 利用ODP APIs实现数据平面应用对不同网络平台的可移植性。  
+  3. 在可编程目标（ODP）上通过支持协议无关的DSL（P4）来实现动态灵活的`pipeline`。  
+- `MACSAD`包含三个主要的组件：  
+  1. `Auxiliary Frontend`：是一个用来包含或导入不同前端DSLs的插件框架，本文聚焦于P4语言。  
+  2. `Auxiliary Backend`：用于绑定不同特定目标的SDKs，以支持不同的平台。本文聚焦于ODP。  
+  3. `Core Compiler`：是一个source-to-source的`Transpiler`，用于将前端插件（标准P4编译器和`HLIR`)编译为数据路径逻辑（本文的中间表示层用简单的C语言实现）。并定义了基于GCC的编译器如何使用ODP APIs来生成数据平面目标的二进制代码。  
 
 ----
 #### `G13P10` `2016-09-18` High speed packet forwarding compiled from protocol independent data plane specifications  
