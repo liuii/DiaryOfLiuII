@@ -1,5 +1,22 @@
 # SigComm16论文阅读手记   
 
+#### `G13P12` `2016-09-18` Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research  
+- `Software-Defined Wireless Networking, SDWN`软件定义无线网络。  
+- **==小结==**  
+- 本文展示的Demo包含以下三个方面：  
+  1. 在Mininet-Wifi中整合了物理与虚拟环境的无线网络仿真器的能力。  
+  2. 利用OpenFlow 1.3来实现路由、IP头部重写和通过计量规则的QoS控制。  
+  3. 带有路由功能的无线mesh网络的仿真器。  
+- Demo的workflow：  
+  1. **Step 0**：OpenFlow控制器发现网络拓扑并安装需要的`L2 flow entries`，以允许APs之间的联通。  
+  2. **Step 1**：用户连接到AP<sub>1</sub>的SSID，tongguoHTTP访问互联网的Web页面。  
+  3. **Step 2a**：OpenFlow控制器安装一个重写IP目的地址的规则。  
+  4. **Step 2b**：需要用户进行身份验证以获得互联网访问的权限，并解锁带宽限制。  
+  5. **Step 3**：将所有用户的HTTP传输重新定向到验证网站。  
+  6. **Step 4**：用户与虚拟mesh网络中的移动节点进行通讯。  
+- 项目用户手册与视频位于：[`Mininet-WiFi`](https://github.com/intrig-unicamp/mininet-wifi/)。  
+
+----
 #### `G13P11` `2016-09-18` MACSAD: Multi-Architecture Compiler System for Abstract Dataplanes (aka Partnering P4 with ODP)  
 - `Domain Specific Languages, DSL`指专用于某个领域的语言，例如P4就是这样一种提供了自顶向下的高级抽象语言，定义了针对网络平台不可知并且独立于任何网络协议的的数据平面。  
 - `OpenDataPlane, ODP`项目创建了用于为SDN的数据平面服务的开源、交叉平台的可编程应用程序接口（APIs）。项目地址位于：[`ODP`](http://opendataplace.org)。  
