@@ -4,10 +4,10 @@
 - 【上午】阅读论文`Fibbing in action: On-demand load-balancing for better video delivery`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
 **2016-09-17**  
-- 【全天】阅读。  
+- 【全天】休息。  
 
 **2016-09-16**  
-- 【全天】阅读。  
+- 【全天】休息。  
 
 **2016-09-15**  
 - 【下午】解决了链接的问题，利用了另外的方法实现并测试可行，等手记完结了统一加上目录结构。代码如下：  
