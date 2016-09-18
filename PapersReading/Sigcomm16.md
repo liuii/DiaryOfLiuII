@@ -1,5 +1,22 @@
 # SigComm16论文阅读手记   
 
+#### `G13P11` `2016-09-18` MACSAD: Multi-Architecture Compiler System for Abstract Dataplanes (aka Partnering P4 with ODP)  
+- **==小结==**  
+
+----
+#### `G13P10` `2016-09-18` High speed packet forwarding compiled
+from protocol independent data plane specifications  
+- `Programming protocol-independent packet processors, P4`是用于SDN控制的一种高级语言，通过将特定硬件的硬件无关功能与硬件相关功能进行分离，来创建跨平台的编译器。其处理过程可以参考[`P4`](http://p4.org)。  
+- **==小结==**  
+- 与OpenFlow相比，`P4`为可编程网络提供了一个高级别的抽象。在`P4`的抽象模型中交换机利用可编程的语法分析器对进入的分组进行分析，接下来在多个阶段中应用匹配行为规则，这多个状态按照序列、并行或两者兼有的方式进行安排。这些行为由与协议无关的基元构成。  
+- 简单地说，就是讲各种协议的头部与针对不同头部处理的方式用P4程序进行执行。  
+- 本文展示了利用Intel DPDK（数据平面开发套件）将P4程序编译为高效的C语言代码。  
+- 本文展示的编译器，将核心组件分为两种：  
+  1. `hw-dependent`与硬件相关的组件，与硬件相关的功能由`Hardware Abstraction Libary, HAL`定义，HAL必须为每一种目标单独实现。  
+  2. `hw-independent`与硬件无关的组件，这部分组件将会被保留在编译器核心。  
+- 代码的生成重用了`High Level Intermediate Representation, HLIR`的语法分析器。而`HLA`部分仅实现了针对因特尔平台的部分，所以代码会被编译为与Intel DPDK兼容的C语言代码。  
+- Demo位于：[`Goto`](http://p4.elte.hu)。  
+
 ----
 #### `G13P09` `2016-09-18` Fibbing in action: On-demand load-balancing for better video delivery  
 - `Teletraffic engineering`是`Traffic Engineering, TE`在远程通信领域的应用。远程传输的工程师利用包含`queuing theory`的统计学、传输的性质、实践模型、测量与仿真等工具对网络进行预测和规划。  
