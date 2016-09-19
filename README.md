@@ -1,6 +1,8 @@
 # 日志  
 
 **2016-09-19**  
+- 【晚上】阅读《`计算机网络`》：`MultiCast`和`链路层协议`。  
+- 【下午】**`数豆子`**  
 - 【下午】听课《`Computational Thinking and Algorithms`》。  
 - 【上午】替`M`代实验课。  
 - 【上午】阅读论文`Modeling Native Software Components as Virtual Network Functions`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
