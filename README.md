@@ -1,5 +1,11 @@
 # 日志  
 
+**2016-09-19**  
+- 【下午】听课《`Computational Thinking and Algorithms`》。  
+- 【上午】替`M`代实验课。  
+- 【上午】阅读论文`Modeling Native Software Components as Virtual Network Functions`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【上午】**`数豆子`**  
+
 **2016-09-18**  
 - 【晚上】阅读论文`Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【下午】阅读《`计算机网络`》网络层路由协议：`RIP`、`OSPF`、`BGP`以及`BroadCast`。  

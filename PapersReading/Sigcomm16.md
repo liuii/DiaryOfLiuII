@@ -1,5 +1,23 @@
 # SigComm16论文阅读手记   
 
+#### `G13P13` `2016-09-19` Modeling Native Software Components as Virtual Network Functions  
+- `Network Service Providers, NSP`网络服务供应商。  
+- `Customer Premise Equipment, CPE`通常指家庭网关等设备，通常使用廉价的硬件来实现。这些设备的操作系统通常是基于嵌入式Linux的，并且自带很多基于软件的网络功能，例如`Firewall`、`NAT`（*iptables*）、`Virtual Switch`（*linuxbridge*）  
+- `Native Network Functions, NNF`本文提出的工作于CPE的网络功能。  
+- `Network Functions Forwarding Graph, NF-FG`网络功能转发图。  
+- `Logical Switch Instance, LSI`逻辑交换机实例。  
+- **==小结==**  
+- `VFNs`通常使用虚拟机来实现，因为提供了孤立环境的虚拟机兼容经典的云计算技术。但是虚拟机通常需要一定的资源（CPU与内存），因此并不适用于类似于居民区网关这样的廉价设备。这些廉价设备通常运行着一个基于Linux的操作系统，默认情况下包含一系列的网络功能，其中有些功能可以由简单的VNFs提供。  
+- 本文提出将资源需求高的`VNFs`运行于`NSP`数据中心，而将简单的`FVs`运行于`CPE`，也就是`NNF`。本文提出的解决方案一方面可以便于想终端用户提供需要接近他们的服务（例如*IPsec terminator*）。同时使用`VNFs`与`NNFs`可以同时获得灵活性与低开销。  
+- 为了实现这一方案，NFV服务器的计算控制器需要扩展一个额外的插件用来管理所有的NNFs的可用节点。
+- 本文的架构追随了NFVs的架构，首先Orchestrator接收NF-FG，Orchestrator为每一个NF创建一个新的软件交换机LSI用于管理改NF-FG中的数据转发，同时还有一个顶层的LSI负责接收该节点所有的数据，并将其分类发送到不同的LSI。NFVs由Compute Manager通过不同技术的ad-hoc驱动（VM/Docker/DPDK）来创建。
+- 与VNFs不同，有些NNFs功能不能通过多个实例同时运行来加速。这种NNFs必须是`sharable`的，只要满足以下两个条件。  
+  1. 可以使用标记机制来分辨不同服务图中的传输，因此就模拟了多个NF实例的执行。  
+  2. NNFs需要能够创建多条内部（`internal`）路径,以便孤立的处理多个数据流。  
+  3. 需要一个额外的适配层来处理NNFs可能被设计为只能使用一个网络接口。  
+  
+
+----
 #### `G13P12` `2016-09-18` Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research  
 - `Software-Defined Wireless Networking, SDWN`软件定义无线网络。  
 - **==小结==**  
