@@ -8,12 +8,12 @@
   2. 利用OpenFlow 1.3来实现路由、IP头部重写和通过计量规则的QoS控制。  
   3. 带有路由功能的无线mesh网络的仿真器。  
 - Demo的workflow：  
-  1. **Step 0**：OpenFlow控制器发现网络拓扑并安装需要的`L2 flow entries`，以允许APs之间的联通。  
-  2. **Step 1**：用户连接到AP<sub>1</sub>的SSID，tongguoHTTP访问互联网的Web页面。  
+  1. **Step  0**：OpenFlow控制器发现网络拓扑并安装需要的`L2 flow entries`，以允许APs之间的联通。  
+  2. **Step  1**：用户连接到AP<sub>1</sub>的SSID，tongguoHTTP访问互联网的Web页面。  
   3. **Step 2a**：OpenFlow控制器安装一个重写IP目的地址的规则。  
   4. **Step 2b**：需要用户进行身份验证以获得互联网访问的权限，并解锁带宽限制。  
-  5. **Step 3**：将所有用户的HTTP传输重新定向到验证网站。  
-  6. **Step 4**：用户与虚拟mesh网络中的移动节点进行通讯。  
+  5. **Step  3**：将所有用户的HTTP传输重新定向到验证网站。  
+  6. **Step  4**：用户与虚拟mesh网络中的移动节点进行通讯。  
 - 项目用户手册与视频位于：[`Mininet-WiFi`](https://github.com/intrig-unicamp/mininet-wifi/)。  
 
 ----
