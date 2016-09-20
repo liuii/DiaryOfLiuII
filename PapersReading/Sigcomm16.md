@@ -1,5 +1,16 @@
 # SigComm16论文阅读手记   
 
+#### `G13P14` `2016-09-20` Multi-Domain Orchestration across RAN and Transport for 5G  
+- `Next Generation Mobile Network, NGMN`是5G网络的定义。  
+- `Radio Access Network, RAN`无线电存取网络。  
+- **==小结==**  
+- SDN主要用于有线网络，目前也有一些研究聚焦于无线领域，但是几乎没有聚焦于RAN网络，因此文本希望将SDN的可编程性概念应用于下一代通信网络（5G）。  
+- 本文提出了一种层级架构来整合无线电、传输和云资源，在中间层提供一个`Orchestration`来对所有资源进行统一的管理，然后为各种应用提供虚拟化的服务。  
+- 本文为了验证这一架构，实现了一个测试环境（`Testbed`），包含以下几个组件：  
+  1. `Radio Domain`为移动用户提供宽带服务。  
+  2. `Optical Transport Domain`是一个动态波长路由网络，并为移动领域提供可编程的前传服务。  
+
+----
 #### `G13P13` `2016-09-19` Modeling Native Software Components as Virtual Network Functions  
 - `Network Service Providers, NSP`网络服务供应商。  
 - `Customer Premise Equipment, CPE`通常指家庭网关等设备，通常使用廉价的硬件来实现。这些设备的操作系统通常是基于嵌入式Linux的，并且自带很多基于软件的网络功能，例如`Firewall`、`NAT`（*iptables*）、`Virtual Switch`（*linuxbridge*）  

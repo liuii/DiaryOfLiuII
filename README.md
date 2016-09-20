@@ -1,6 +1,7 @@
 # 日志  
 
 **2016-09-20**  
+- 【上午】阅读论文`Multi-Domain Orchestration across RAN and Transport for 5G`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】**`数豆子`**  
 
 **2016-09-19**  
