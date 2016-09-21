@@ -1,6 +1,7 @@
 # 日志  
 
 **2016-09-21**  
+- 【上午】阅读论文`Off-the-Shelf Software-defined Wi-Fi Networks`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
 **2016-09-20**  
 - 【晚上】《`Computational Thinking and Algorithms`》的`tutorial`。  

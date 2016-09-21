@@ -1,5 +1,22 @@
 # SigComm16论文阅读手记   
 
+#### `G13P15` `2016-09-21` Off-the-Shelf Software-defined Wi-Fi Networks  
+- `Access Points, APs`包含了那些使用`OpenWrt`和`hostapd`的开源解决方案，他们可以在Wifi客户端点之间扮演`Bridge`和`hub`的角色。  
+- `hostapd`能够使得无线网卡切换为master模式，模拟AP功能。`Hostapd`的功能就是作为AP的认证服务器，负责控制管理stations(通常可以认为带无线网卡的PC)的接入和认证。
+- 通过`Hostapd`可以将无线网卡切换为`AP/Master`模式，通过修改配置文件，可以建立一个开放式的(不加密)的，WEP，WPA或WPA2的无线网络。并且通过修改配置文件可以设置无线网卡的各种参数，包括频率，信号，beacon包时间间隔，是否发送beacon包，如何响应探针请求等等。还可以设置mac地址过滤条件等。具体可以参考它的[配置文件](http://hostap.epitest.fi/gitweb/gitweb.cgi?p=hostap.git;a=blob_plain;f=hostapd/hostapd.conf)。  
+- `Wireless Isolation`无线隔离指的是禁止接入Wifi的各个客户端之间进行相互访问，只能访问互联网。  
+- **==小结==**  
+- 目前基于`OpenWrt`和`hostapd`的开源无线接入点不具备针对复杂匹配行为规则处理的可编程能力，因此无法支持类似`Open vSwitch， OVS`这样的SDN交换。  
+- 因此本文提出两种新的技术——`Intelligent Edge`和`Thin Edge`，通过这两种技术将SDN功能带入到无线网络。这些技术利用了`Wireless Isolation`和`SDN switches`以简化整合无线网络和SDN的困难。  
+  1. `Intelligent Edge`使运行OpenWrt的设备可以运行OVS。  
+  2. `Thin Edge`则允许支持`Wireless Isolation`的AP将流管理的任务转交给SDN交换机，从而被整合到SDN当中。  
+- 本文的关键贡献如下：  
+  1. 这两项技术使得SDN控制器可以管理WiFi网络中流的传输，并由现存的组件进行构建。通过使用这些现成的组件，降低了部署和实验SDN网络的门槛。  
+  2. `Intelligent Edge`技术允许SDN控制器利用AP的处理能力去管理WiFi边际网络。而且通过绑定OVS和OpenWrt，打开了使用现有的那些运行OpenWrt的无线测试设备进行SDN研究的大门。  
+  3. `Thin Edge`将流管理的任务迁移到SDN交换机或运行OVS的主机，使得那些既不支持SDN，有没有足够算力去运行OVS的AP或路由器拥有了SDN的能力。  
+  - 文本的实施详细文档位于：[`Goto`](https://wiki.helsinki.fi/display/WiFiSDN/)。  
+
+----
 #### `G13P14` `2016-09-20` Multi-Domain Orchestration across RAN and Transport for 5G  
 - `Next Generation Mobile Network, NGMN`是5G网络的定义。  
 - `Radio Access Network, RAN`无线电存取网络。  
