@@ -1,5 +1,25 @@
 # SigComm16论文阅读手记   
 
+#### `G13P16` `2016-09-21` Roaming Edge vNFs using Glasgow Network Functions  
+- `OpenEdge`与`ClickOS`是VNF框架。  
+- `Linux Container`是一种基于虚拟化的框架，它类似于`chgroot`，通过为不同的进程提供不同的`root`目录，来实现进程的运行隔离。因此被认为是一种轻量级的虚拟机。  
+- `footprint`是在网络功能迁移的时候常用的概念。当用户迁移到另外的一个接入点时，当前负责连接的节点，需要把用户的状态迁移到其他节点。这个状态就是`footprint`。  
+- **==小结==**  
+- 预期到2020年，接入设备将达到500亿并进行ZB（2<sup>70</sup>字节）级的传输。但是可以预期70%的移动数据消费将发生在局部，例如家庭、办公场所、购物中心以及其他的公共场所。5G移动网络架构就是用来支持这种需求的。  
+- 由于大部分的网络传输发生在边际网络，因此本文的核心思想就是将虚拟网络功能迁移到边际网络，利用边际网络节点的能力将一些VNFs移动到边际网络节点，以提高服务质量并降低成本。  
+- 但是目前的边际网络设备与VNF框架或者依赖于特殊的管理程序，或者需要利用常用的x86服务器来运行对资源饥渴的虚拟机。从而阻止将它们用于网络功能高度密集与移动至上的未来广域和5G网络。  
+- 本文展示了一种名为`Glasgow Network Functions, GNF`的虚拟化框架，该框架为下一代移动网络服务。下一代移动网络将轻量级的VNFs和NFs部署在边际网络。`GNF`的主要特点如下：  
+  1. `最少footprint`：GNF被设计为运行于日常的低档设备，因此运行开销很低。  
+  2. `基于Container`网络功能被封装在轻量级的`Linux Container`中，具有实例化时间短、平台无关、高吞吐率和低资源占用的特点。  
+  3. `功能漫游`：因为GNF的小footprint和封装的特性，因此当用户在cells之间进行漫游的时候，GNF可以无缝的移动NFs到其他节点。从而提供始终如一和位置透明的服务。  
+  4. `传输处理透明`：供应商可以透明的附加或移除客户端的NFs，而不会反过来影响到传输的流。  
+- GNF包含三个定义明确的组件：  
+  1. `Manager`：用于GFN所有的容器，并将一个或一串NFs与客户端传输的自己进行关联。运行于独立的服务器上。  
+  2. `Agent`：运行于每个station上，用来进行NF容器的管理，并与`Manager`进行通信。  
+  3. `User Interface`：提供了一个全局的管理接口。  
+- 演示视频位于：[`Youtu.be`](https://youtu.be/R7PimtddIXo)，源码位于：[Github](https://github.com/glanf/)。  
+
+----
 #### `G13P15` `2016-09-21` Off-the-Shelf Software-defined Wi-Fi Networks  
 - `Access Points, APs`包含了那些使用`OpenWrt`和`hostapd`的开源解决方案，他们可以在Wifi客户端点之间扮演`Bridge`和`hub`的角色。  
 - `hostapd`能够使得无线网卡切换为master模式，模拟AP功能。`Hostapd`的功能就是作为AP的认证服务器，负责控制管理stations(通常可以认为带无线网卡的PC)的接入和认证。
