@@ -1,7 +1,24 @@
 # SigComm16论文阅读手记   
 
-#### `G13P18` `2016-09-**` Source Address Validation in Software Defined Networks  
+#### `G13P18` `2016-09-22` Towards Transiently Secure Updates in Asynchronous SDNs  
+- `Wayup`和`Peacock`是两种本文之前提出的智能调度算法。  
 - **==小结==**  
+- SDN网络中，逻辑中心控制平台与数据平面交换机之间进行异步通信，诸如`OpenFlow`的`FlowMode Message`之类的网络更新命令采用异步通信，会因为环路或因为防火墙而被跳过的路径点导致短暂的不一致。  
+- 本文为了在异步环境中确保瞬时一致性，而部署智能调度算法。算法对每个通信回合所包含交换机子集进行更新，每个子集保证其自己的一致性。  
+- 本文的方法是：将由SDN控制器发往OpenFlow软件交换机的的策略更新分为多个`round`，在SDN控制器中每个`Round`的顶点发送`barrier requests`到每一个需要接收更新的OpenFlow交换机，然后SDN控制器等待`barrier replies`的响应。一旦收到了所有的`barrier replies`，SDN控制器开始下一轮的策略更新。因此就可以保证策略更新的同步。  
+- 本文对消息进行了RESTful化，例如：  
+```
+{
+  “oldpath”:[<dp-num>,<dp-num>,<dp-num>], 
+  “newpath”:[<dp-num>,<dp-num>,<dp-num>], 
+  “wp”:<dp-num>,
+  “interval”:<time in ms>, 
+  <type>:[<OpenFlow message information>], 
+  <type>:[<OpenFlow message information>], 
+  <type>:[<OpenFlow message information>], 
+  <type>:[<OpenFlow message information>], 
+}
+```
 
 ----
 #### `G13P17` `2016-09-22` Source Address Validation in Software Defined Networks  
