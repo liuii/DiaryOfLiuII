@@ -1,5 +1,33 @@
 # SigComm16论文阅读手记   
 
+#### `G13P18` `2016-09-**` Source Address Validation in Software Defined Networks  
+- **==小结==**  
+
+----
+#### `G13P17` `2016-09-22` Source Address Validation in Software Defined Networks  
+- `Address Assignment Mechanisms, AAM`是RFCs提供的针对不同情况的地址指派机制。  
+- IETF的`source address validation improvement, SAVI`工作组的目的是开发防止通过欺骗而导致同一IP被指定到不同的机器上。  
+- `duplicated address detection, DAD`地址重复检测。  
+- `neighbor solicit, NS`邻居请求。  
+- `neighbor advertise`邻居通告。  
+- `DHCPv6 Client, DC`与`DHCPv6 Server, DS`使用UDP的546和547端口。  
+- **==小结==**  
+- 本文提出的`SDN-SAVI`是把`SAVI`模块或应用安装到SDN的控制器上，然后由控制器将IP绑定表发送到SDN交换机。这种方式不需要购买新的支持`SAVI`交换机并替换之前的设备。  
+- 本文的设计克服三个主要的挑战：  
+  1. 通过将交换机端口划分为三个分类并定义了不同分类的行为，从而使侦听和绑定工作高效快速，从而避免了冗余的AAM探测和在所有交换机上处理绑定。  
+  2. 为了避免控制器和交换机遭受资源耗尽攻击，作者对AAM分组在数据平面进行限速，并将控制器的验证工作交付给交换机来完成。  
+  3. 为了解决由于大量应用产生的共存规则带来的流表爆发，作者利用OpenFlow的`Multiple Tables`特性来精简流表。  
+- 为了进行`AAM Snooping`，控制器要提前在交换机中安装一些规则。对于`SAVI-FCFS`，控制器侦听DAD分组，用规则去匹配NS与NA域。对于`DHCPv6`，控制器侦听UDP的546和547端口，用规则去匹配DC和DS消息。  
+- 本文将交换机的端口分为三类：`Switch Ports`、`Host Ports`、`Trust Ports`。对`Host Ports`和`Trust Ports`进行侦听工作，对`Host Ports`进行验证。  
+- 在控制器中为每一种AAM维护这一个状态机，每个IP地址都处于一个状态，并由相应的AAM分组来改变状态。当状态变为BIND时则将该IP加入绑定表，当状态变为NO_BIND时，则从表中删除该IP地址。  
+- 绑定表的每一项是一个三元组：`<Address, Switch, Port>`，通过这个表项来验证分组中的地址是否正确。  
+- 为了防止攻击者利用AAM分组进行DoS攻击，本文使用了OpenFlow的`meter`成员来对AAM分组进行限速。  
+- 最简单的地址验证方法是在控制器上进行验证，控制器对流的第一个分组进行验证，可以有两种处理方法：  
+  1. 忽略该流。缺点是攻击者可以反复的发送同样的分组来吞没控制器的运算资源。  
+  2. 被动的安装丢弃规则到交换机上。然而如果攻击者使用随机的源地址进行泛洪攻击，控制器和交换机的计算资源都会被耗尽。
+- 因此，`SDN-SAVI`显式的安装规则到交换机，以阻塞未绑定的IP源地址。因此，欺骗分组在数据平面被验证并丢弃，不会消耗流表资源或控制器的计算资源。  
+
+----
 #### `G13P16` `2016-09-21` Roaming Edge vNFs using Glasgow Network Functions  
 - `OpenEdge`与`ClickOS`是VNF框架。  
 - `Linux Container`是一种基于虚拟化的框架，它类似于`chgroot`，通过为不同的进程提供不同的`root`目录，来实现进程的运行隔离。因此被认为是一种轻量级的虚拟机。  
