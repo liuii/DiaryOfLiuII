@@ -1,5 +1,8 @@
 # 日志  
 
+**2016-09-23**  
+- 【上午】整理`SigComm16`论文集中的`Posters`和`Demonstrations`部分的手记，参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+
 **2016-09-22**  
 - 【晚上】国际学院中新2016级新生专业介绍会。  
 - 【下午】《计算思维》上课。  
