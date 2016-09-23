@@ -13,7 +13,7 @@
 
 **2016-09-21**  
 - 【下午】听课《`Computational Thinking and Algorithms`》。  
-- 【下午】《计算思维》实验课，无语。  
+- 【下午】《计算思维》实验课，`默默无语两行泪，耳边传来驼铃声`。  
 - 【上午】更新[`教学日志网站`](http://liuii.github.io)。  
 - 【上午】阅读论文`Roaming Edge vNFs using Glasgow Network Functions`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`Off-the-Shelf Software-defined Wi-Fi Networks`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
