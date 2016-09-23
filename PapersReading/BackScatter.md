@@ -17,4 +17,37 @@
   3. 本文通过使用一个基于`ring-oscillator`（将奇数个非门链接起来，最后一个非门的输出作为第一个非门的输入）的时钟，使得FS-Backscatter标签的操作能耗到达了45*u*W。并且对由于环境变化产生的频率变动具有鲁棒性。  
 
 **`2. CASE FOR FS-BACKSCATTER`**  
-- **`2.1 Infrastructure-assisted Backscatter`**
+- **`2.1 Infrastructure-assisted Backscatter`**  
+- 几种现存的技术都依赖于载波生成器、Backscatter信号编码器等基础设施，当然所有的RFID reader都采用这种方式。它们产生一个窄带载波然后执行`self-interference cancelation`来将Backscatter信号从载波中分离出来。但是由于RFID reader基础设施并不常见，所以最近的一些方法设计了一些将reader功能嵌入到现有设备的革新方法。  
+  1. `BackFi`改造了一个WiFi AP，增强了AP取消OFDM（Orthogonal frequency-division multiplexing，正交频分多路复用技术指将信息编码至不同的频段以提高传输性能）载波信号。这一方法带来的好处就是简化了标签。一个简单的`ASK发送器`标签可以简单的Backscatter由AP生成的WiFi信号，而不用担忧OFDM信号结构的复杂度。  
+  2. `BLE-Backscatter`提出了一种基础设施使backscatter标签能够直接和现有的BLE接收器进行通信。这个基础设施组件是一个简单的CW（Continuous Wave，振幅与频率恒定的波）发射器，Backscatter标签调制CW的Tone来仿真一个BLE发射器，因此可以使用通用的BLE接收器来接收调制后的信号。因此BLE-Backscatter标签因为不再需要生成载波而节省了能耗，但是因为它仿真了BLE栈，因此比`ASK-Modulating`Backscatter标签更为复杂、功耗更高。  
+  3. `Passive WiFi`使用了和`BLE-Backscatter`类似的基础设施使标签与常用802.11b WiFi设备之间进行backscatter通讯。`Passive WiFi`包含一个载波发射器，用来发射一个单音信号。`Passive WiFi`标签在反射这个信号的时候生成并调制出802.11b的基带信号。尽管这种技术不需要改动现有的设备，但是其标签需要生成完整的802.11b基带信号，因此比`ASK-Modulating标签`更为复杂、能耗也更高。  
+- 上述方法因为需要使用辅助基础设施并且需要额外的硬件，因此无法用于移动场景。  
+- **`2.2 Infrastructure-less Backscatter`**  
+- 第二类的方法利用了现有的一些载波（例如TV或WiFi载波），backscatter这个信号并被一个通用的接收器接收。由于TV载波存在衰减、质量不一的特点，所以这种载波不适用于需要连续监控的移动场景。  
+- 但是`WiFi Backscatter`可以利用一个通用的WiFi来作为发送器和接收器，可以使用手机作为发射器、利用智能手表作为接收器。标签端使用基于ASK的backscatter。  
+- 在信号处理方面，关键挑战就是在没有自干扰抵消技术的支撑下将backscatter信息从载波中分离出来。因此如果被接收的信号在一个足够长的窗口上进行平均，就可以将backscatter调制的信号分离出来。在模拟领域可以利用`Envelope Detector`，或者在数字领域使用低通滤波，来
+测量一个backscatter信号是如何改变入射信号的传输特征。  
+- 将静态物联网设置环境中的WiFi Backscatter用于可穿戴场景还有若干挑战：：  
+  1. 由于主激励器比backscatter的强大很多，只在非常小的范围内才能达到均值、降低信噪比的要求。  
+  2. 由于人的移动造成的短暂变化，以及频道对移动环境的相应，需要动态跟踪信噪阈值，反过来需要编码对被选中的阈值敏感。  
+- 本文的实验使用`a standard 3dBi omni-directional antenna`没能发现RSSI的变化。而使用`9dBi directional antenna`在0.2米的距离时可以达到19bps。WiFi Backscatter的低性能的原因可能包括：  
+  1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
