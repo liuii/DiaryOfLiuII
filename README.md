@@ -7,7 +7,7 @@
 - 【晚上】国际学院中新2016级新生专业介绍会。  
 - 【下午】《计算思维》上课。  
 - 【下午】《计算思维》上课。  
-- 【上午】阅读论文`Towards Transiently Secure Updates in Asynchronous SDNs`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
+- 【中午】阅读论文`Towards Transiently Secure Updates in Asynchronous SDNs`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】《计算思维》上课。  
 - 【上午】阅读论文`Source Address Validation in Software Defined Networks`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 
