@@ -1,5 +1,48 @@
 # SigComm16论文阅读手记   
 
+### 目录
+[`G13P18` Towards Transiently Secure Updates in Asynchronous SDNs](#g13p18-2016-09-22-towards-transiently-secure-updates-in-asynchronous-sdns)  
+[`G13P17` Source Address Validation in Software Defined Networks](#g13p17-2016-09-22-source-address-validation-in-software-defined-networks)  
+[`G13P16` Roaming Edge vNFs using Glasgow Network Functions](#g13p16-2016-09-21-roaming-edge-vnfs-using-glasgow-network-functions)  
+[`G13P15` Off-the-Shelf Software-defined Wi-Fi Networks](#g13p15-2016-09-21-off-the-shelf-software-defined-wi-fi-networks)  
+[`G13P14` Multi-Domain Orchestration across RAN and Transport for 5G](#g13p14-2016-09-20-multi-domain-orchestration-across-ran-and-transport-for-5g)  
+[`G13P13` Modeling Native Software Components as Virtual Network Functions](#g13p13-2016-09-19-modeling-native-software-components-as-virtual-network-functions)  
+[`G13P12` Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research](#g13p12-2016-09-18-mininet-wifi-a-platform-for-hybrid-physical-virtual-software-defined-wireless-networking-research)  
+[`G13P11` MACSAD: Multi-Architecture Compiler System for Abstract Dataplanes (aka Partnering P4 with ODP)](#g13p11-2016-09-18-macsad-multi-architecture-compiler-system-for-abstract-dataplanes-(aka-partnering-p4-with-odp))  
+[`G13P10` High speed packet forwarding compiled from protocol independent data plane specifications](#g13p10-2016-09-18-high-speed-packet-forwarding-compiled-from-protocol-independent-data-plane-specifications)  
+[`G13P09` Fibbing in action: On-demand load-balancing for better video delivery](#g13p09-2016-09-18-fibbing-in-action-on-demand-load-balancing-for-better-video-delivery)  
+[`G13P08` Enabling Backscatter Communication among Commodity WiFi Radios](#g13p08-2016-09-15-enabling-backscatter-communication-among-commodity-wifi-radios)  
+[`G13P07` EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi](#g13p07-2016-09-14-easyapp-a-cross-platform-mobile-applications-development-environment-based-on-osgi)  
+[`G13P06` Cases for Including a Reference Monitor to SDN](#g13p06-2016-09-14-cases-for-including-a-reference-monitor-to-sdn)  
+[`G13P05` Capture and Replay: Reproducible Network Experiments in Mininet](#g13p05-2016-09-14-capture-and-replay-reproducible-network-experiments-in-mininet)  
+[`G13P04` ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking](#g13p04-2016-09-13-artemis-real-time-detection-and-automatic-mitigation-for-bgp-prefix-hijacking)  
+[`G13P03` Application Driven Network: providing On-Demand Services for Applications](#g13p03-2016-09-13-application-driven-network-providing-on-demand-services-for-applications)  
+[`G13P02` A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch](#g13p02-2016-09-13-a-transparent-highway-for-inter-virtual-network-function-communication-with-open-vswitch)  
+[`G13P01` A 60Gbps DPI Prototype based on Memory-Centric FPGA](#g13p01-2016-09-13-a-60gbps-dpi-prototype-based-on-memory-centric-fpga)  
+[`G12P21` Taming the Flow Table Overflow in OpenFlow Switch](#g12p21-2016-09-12-taming-the-flow-table-overflow-in-openflow-switch)  
+[`G12P20` TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost](#g12p20-2016-09-09-tafloc-time-adaptive-and-fine-grained-device-free-localization-with-little-cost)  
+[`G12P19` SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization](#g12p19-2016-09-09-sla-nfv-an-sla-aware-high-performance-framework-for-network-function-virtualization)  
+[`G12P18` Rethinking the Design of OpenFlow Switch Counters](#g12p18-2016-09-09-rethinking-the-design-of-openflow-switch-counters)  
+[`G12P17` Privacy-Aware Infrastructure for Managing Personal Data](#g12p17-2016-09-08-privacy-aware-infrastructure-for-managing-personal-data)  
+[`G12P16` PieBridge: A Cross-DR scale Large Data Transmission Scheduling System](#g12p16-2016-09-08-piebridge-a-cross-dr-scale-large-data-transmission-scheduling-system)  
+[`G12P15` Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas](#g12p15-2016-09-08-performance-evaluation-of-locator/identifier-separation-protocol-through-ripe-atlas)  
+[`G12P14` PathCache: A Path Prediction Toolkit](#g12p14-2016-09-08-pathcache-a-path-prediction-toolkit)  
+[`G12P13` Named Data Networking Based Smart Home Lighting](#g12p13-2016-09-07-named-data-networking-based-smart-home-lighting)  
+[`G12P12` Modular SDN Compiler Design with Intermediate Representation](#g12p12-2016-09-07-modular-sdn-compiler-design-with-intermediate-representation)  
+[`G12P11` Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies](#g12p11-2016-09-07-magellan-generating-multi-table-datapath-from-datapath-oblivious-algorithmic-sdn-policies)  
+[`G12P10` Horse: towards an SDN traffic dynamics simulator for large scale networks](#g12p10-2016-09-01-horse-towards-an-sdn-traffic-dynamics-simulator-for-large-scale-networks)  
+[`G12P09` FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming](#g12p09-2016-09-01-fast-a-simple-programming-abstraction-for-complex-state-dependent-sdn-programming)  
+[`G12P08` Efficient Remapping of Internet Routing Events](#g12p08-2016-09-01-efficient-remapping-of-internet-routing-events)  
+[`G12P07` Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users](#g12p07-2016-08-31-conan-content-aware-access-network-flow-scheduling-to-improve-qoe-of-home-users)  
+[`G12P06` Building Application-Aware Network Environments Using SDN for Optimizing Hadoop Applications](#g12p06-2016-08-31-building-application-aware-network-environments-using-sdn-for-optimizing-hadoop-applications)  
+[`G12P05` Best Effort Task Scheduling for Data Parallel Jobs](#g12p05-2016-08-31-best-effort-task-scheduling-for-data-parallel-jobs)  
+[`G12P04` Application-specific Acceleration Framework for Mobile Applications](#g12p04-2016-08-31-application-specific-acceleration-framework-for-mobile-applications)  
+[`G12P03` Achieving Consistent SDN Control With Declarative Applications](#g12p03-2016-08-29-achieving-consistent-sdn-control-with-declarative-applications)  
+[`G12P02` A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure](#g12p02-2016-08-29-a-longitudinal-analysis-of-i2p-leakage-in-the-public-dns-infrastructure)  
+[`G12P01` A First Look into Transnational Routing Detours](#g12p01-2016-08-29-a-first-look-into-transnational-routing-detours)  
+
+
+----
 #### `G13P18` `2016-09-22` Towards Transiently Secure Updates in Asynchronous SDNs  
 - `Wayup`和`Peacock`是两种本文之前提出的智能调度算法。  
 - **==小结==**  
