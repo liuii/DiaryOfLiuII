@@ -32,8 +32,9 @@
   1. 由于主激励器比backscatter的强大很多，只在非常小的范围内才能达到均值、降低信噪比的要求。  
   2. 由于人的移动造成的短暂变化，以及频道对移动环境的相应，需要动态跟踪信噪阈值，反过来需要编码对被选中的阈值敏感。  
 - 本文的实验使用`a standard 3dBi omni-directional antenna`没能发现RSSI的变化。而使用`9dBi directional antenna`在0.2米的距离时可以达到19bps。WiFi Backscatter的低性能的原因可能包括：  
-  1. 
-
+  1. `低信噪比`：第一个关键因素就是因为无处不在的载波的强大干扰，限制了这种方案的有效范围和数据速率。在0.1m的距离时SINR（`Signal to Interference and Noise Ratio`）是-47dB，而距离达到2m时SINR仅有-71dB，考虑到dB是10log<sub>10</sub>Ratio，因此要达到可用的数据速率则有效范围只有几厘米，如果距离到达1m则数据速率就减到几个bps。  
+  2. `移动引入的变化`：第二个问题就是移动会改变入射信号的传播特征，这就使得编码对选择的阈值高度敏感。本文采用1m的距离，固定情况下其信号强度是-35dBm（x *dBm* = 10log<sub>10</sub>`P/1mW`，P是信号能量）。然而如果接收器进行移动，信号会在-80dBm到-20dBm之间进行变化。  
+- **`2.3 FS-Backscatter: Key Ideas and Challenges`**  
 
 
 
