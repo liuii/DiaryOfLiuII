@@ -1,7 +1,8 @@
 # 日志  
 
 **2016-09-24**  
-- 【上午】继续阅读论文`Enabling Practical Backscatter Communication for On-body Sensors`，手记参见：[`BackScatter论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/BackScatter.md "BackScatter")  
+- 【下午】更新教学网站：[Goto](http://liuii.github.io)。  
+- 【下午】继续阅读论文`Enabling Practical Backscatter Communication for On-body Sensors`，手记参见：[`BackScatter论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/BackScatter.md "BackScatter")  
 - 【上午】《计算思维》上课。  
 - 【上午】《计算思维》上课。  
 
