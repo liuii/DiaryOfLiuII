@@ -1,8 +1,10 @@
 # 日志  
 
 **2016-09-25**  
+- 【下午】《计算思维》备课。  
+![](https://github.com/liuii/DiaryOfLiuII/blob/master/images/2016092502.jpg?raw=true)  
 - 【上午】《计算思维》备课。  
-
+![](https://github.com/liuii/DiaryOfLiuII/blob/master/images/2016092501.jpg?raw=true)  
 
 **2016-09-24**  
 - 【下午】更新教学网站：[Goto](http://liuii.github.io)。  
