@@ -1,6 +1,6 @@
 # BackScatter相关论文阅读手记  
 
-#### `SigComm16G08P01` `2016-09-23` Enabling Practical Backscatter Communication for On-body Sensors  
+#### `SigComm16G08P01` `2016-09-23 to 2016-09-26` Enabling Practical Backscatter Communication for On-body Sensors  
 **`0. ABSTRACT`**  
 - `Frequency-shifted backscatter, FS-Backscatter`基于这样一种新奇的思想，backscatter标签将载波信号移动到一个相邻无重叠的频率波段上。同时将Backscatter信号从主要信号的频谱中独立出来，以拥有更好的编码鲁棒性。  
 - 本文展示了利用商业WiFi和Bluetooth作为载波发生器和接收器，使得Backscatter的通讯的距离达到了4.8米。并且可以支持分组级别和比特级别编码方法的一系列码率。  
@@ -65,11 +65,30 @@
 - 另外一个优化的方向就是降低电压，ADG902需要的最低电压是1.65V，但实际上可以将其控制在1.0725到0.35V之间。环路振荡器和数据调制器也可以降低电压来降低功耗。  
 
 **`4. IMPLEMENTATION`**  
+- FS-Backscatter的架构分为三个部分：  
+  1. `FS-Backscatter Tags`：使用了一个ADG902晶体管用于调制天线，天线通过SMA连接器连接到晶体管上，通过使用SMA接头可以连接不同的天线。本文使用了一个`VERT2450`和一个`TL-ANT2409A 2.4GHz`天线来反射2.4GHz无线信号。除了以上的原型，还有一个FS-Backscatter在HSPICE中全仿真。  
+  2. `Active transmitter and FS-Backscatter decoder`：发射器就是简单的Bluetooth/BLE或者WiFi发射器，用于在特定的频道持续不断的广播数据。基于分组的解码器使用了商业`TI CC3200 WiFi`接收器和`TI CC2650 BLE`接收器。基于比特的接收器使用了`TI CC2541 BLE`芯片组，因为其除了支持正常的BLE工作模式，还支持绕过蓝牙协议栈的专有模式，这样可以直接访问频道的RSSI，这一组APIs并不是广泛有效的。所以，如果下一代使用了这种芯片组的健康腕带或智能手表可以让Backscatter以更快的速率进行传输。  
+  3. `WiFi Backscatter setup`：标签上使用了9dBi直向天线用于对比，本文的其他实验使用的都是3dBi的`omni-directional`天线。而发送器和接收器全都是用的标准芯片或PCB天线。  
 
+**`5. EVALUATION`**  
+- **`5.1 FS-Backscatter: Throughput and BER`**  
+- 从吞吐量来说，由于`FS-Backscatter`拥有一个干净的波段，因此各项指标均优于`WiFi Backscatter`。因为基于分组的方式的信号具有结构，所以其工作距离更长、错误率上升更为缓和。而基于比特的方式则速度更快。  
+- **`5.2 Multiple Carriers and Receivers`**  
+- 利用多个发射器增强信号的强度，可以使数据速率提高1.47倍。  
+- 而利用多个接收器进行协同解码，可以提高数据速率1.24倍，这是因为一个接收器的信号较弱，但另外一个可能会比较强。  
+- **`5.3 Power consumption`**  
+- 在没有改变电压，使用ADG902最低电压1.65V的情况下，环路振荡器、数据调制器和RF晶体管分别消耗 78μW、11.5μW和57.1μW，在50kbps的传输下总功耗为146.6μW。  
+- 在改变电压，使用低电压0.8V的情况下，环路振荡器、数据调制器和RF晶体管分别消耗 20.8μW、0.1μW和24.1μW，在50kbps的传输下总功耗为45μW。主要节省的电能来自于环路振荡器。  
+- **`5.4 FS-Backscatter vs BLE/Zigbee`**  
+- 低功耗通信的衡量主要通过两个参数：比特/焦耳和峰值功率。因为峰值功率会影响到电池的续航。  
+- **`5.5 Mobile and static deployment`**  
+- 在移动情况下数据速率要低于静止的状态，但仍然比大部分传感器的需求要高。  
+- **`5.6 Mutual Interference`**  
+- 通过实验，10米以内的WiFi信号将导致Backscatter的传输速率降到0。相反标签与接收器之间的距离在1米时，标签对WiFi信号基本没有影响。其原因就是FS-Backscatter的信号强度很低。  
 
-
-
-
-
-
-
+**`6. DISCUSSION`**  
+- `MAC protocol`：由于CSMA（载波侦听多路访问）需要消耗的能量是毫瓦级，因此无法再标签上实现这个功能。但是可以将该功能迁移到通讯的发起者上，其流程为：  
+  1. 发起者侦听有效的无线频谱，至少需要侦听两个相邻的频道，一个用于发射原始载波，一个用于FS-Backscatter标签。  
+  2. 如果有可用频道，则发送RTS-CTS之类的消息保留这两个频道，然后通知标签开始进行通讯。由于只能保留频道一段时间，必须将这个时间窗口可发的数据量通知FS-Backscatter标签。  
+- `Interscatter`与`FS-Backscatter`的比较：前者只支持蓝牙发射端和WiFi接收端；而且需要生成WiFi或Bluetooth的基带信号；但是前者的单边波段调制技术可以被用于FS-Backscatter；此外前者使用PLL（`Phase Lock Loop`）耗能更高。  
+- `Reducing tag power consumption`：如果仅面向蓝牙技术，则仅需要频移2-4MHz，因此振荡器可以节省大量的能耗。  
