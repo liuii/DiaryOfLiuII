@@ -1,6 +1,7 @@
 # 日志  
 
 **2016-09-27**  
+- 【晚上】《`Computational Thinking and Algorithms`》实验。  
 - 【上午/下午】完成阅读论文`Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices`，手记参见：[`BackScatter论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/BackScatter.md "BackScatter")  
 
 **2016-09-26**  
