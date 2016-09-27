@@ -1,5 +1,10 @@
 # 日志  
 
+**2016-09-28**  
+- 【下午】听课《`Computational Thinking and Algorithms`》。  
+- 【下午】《计算思维》上课。  
+- 【上午】新教师培训，做《以正确的方式制作幻灯片》培训。  
+
 **2016-09-27**  
 - 【晚上】《`Computational Thinking and Algorithms`》实验。  
 - 【上午/下午】完成阅读论文`Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices`，手记参见：[`BackScatter论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/BackScatter.md "BackScatter")  
