@@ -1,6 +1,6 @@
 # BackScatter相关论文阅读手记  
 
-#### `SigComm16G08P02` `2016-09-27 to 2016-09-**` Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices  
+#### `SigComm16G08P02` `2016-09-27 to 2016-09-27` Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices  
 **`0. ABSTRACT`**  
 - 本文提出的方法是利用Bluetooth发射器生成使用backscatter，与WiFi与ZigBee兼容的信号。本文的实验使用了FPGA搭建的backscatter硬件，以及第一个接触式隐形眼镜天线原型（将天线放置于隐形眼镜上）。  
 
@@ -33,9 +33,19 @@
     1. 通过一个位于backscatter设备上的低功耗电路来检测蓝牙分组的序文、访问地址和头部（56us）。  
     2. 当数据负载开始的时候，开始backscatter并生成WiFi分组。  
     3. 在蓝牙CRC来到之前，完成WiFi分组的传输。  
-- **`2.3 `**  
-- **`2.4 `**  
-- **`2.5 `**  
+- 由于没有做分组解码，所以无法利用同步技术来精确的定位数据负载的到来，所以设置了一个针对数据开始时间的4um的守护时延来处理这个问题。  
+- **`2.3 Generating WiFi using Backscatter`**  
+- 由于现存的边带调制技术都会产生一个镜像拷贝，对于蓝牙频道37和39来说，由于它们位于ISM波段的边界，所以可能会在ISM波段之外产生一个镜像。对于频道38来说，会覆盖WiFi频道6并接近WiFi频道1，因此会强烈的干扰微弱的backscatter的WiFi信号。  
+- 由于Bluetooth没有对载波进行监听，所以可能出现碰撞的情况。这会造成backscatter设备重传数据导致能量损耗。文章提出了三种减少碰撞的优化：  
+  1. 因为大部分设备同时拥有WiFi和Bluetooth设备，可以在发送蓝牙分组之前发送`CTS_to_self`分组，以此来保留频道防止其他WiFi设备同时占用频道。要调度发送`CTS_to_self`分组，需要通过驱动和固件来访问常用设备。  
+  2. 通过在每个通告频道轮流发送分组，然后backscatter到WiFi频道一个RTS分组，WiFi设备反馈一个CTS分组来占用频道。需要backscatter设备拥有一个峰值检测器来检测CTS分组。  
+  3. 为了减少发送RTS分组的能耗，可以发送一个数据分组，如果WiFi接收器能够解码这个分组，就可以将有用的数据发送给接收器。如果WiFi设备就可以发送`CTS_to_self`来占用频道，然后backscatter就可以用剩下的两次广播分组直接backscatter数据。  
+- **`2.4 Communication to Backscatter Device`**  
+- 要完成与backscatter设备的通信存在的挑战就是无法对WiFi和Bluetooth传输进行编码，蓝牙使用的是频率调制，而802.11b通过DBPSK/DQPSK进行相位调制，二者都有着相对固定的振幅。传统的调相或调频信号需要高频载波进行合成，而其功耗远远超过backscatter传输。实际上目前低功耗的backscatter接收器使用调幅，不需要相位与频率的分离，不幸的是WiFi和Bluetooth都不支持AM。  
+- 本文的方法是将802.11g的分组负载转换为AM调制信号。在802.11g中，每个OFDM符号由QAM调制比特进行快速傅里叶变换来生成64个时域样本。  
+
+**`3. FPGA AND IC DESIGN`**  
+- 首先利用FPGA平台来描绘系统特性并搭建概念验证模型，然后将设计转换为集成电路以量化功耗。  
 
 ----
 #### `SigComm16G08P01` `2016-09-23 to 2016-09-26` Enabling Practical Backscatter Communication for On-body Sensors  
