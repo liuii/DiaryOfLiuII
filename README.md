@@ -1,5 +1,8 @@
 # 日志  
 
+**2016-09-27**  
+
+
 **2016-09-26**  
 - 【晚上】**`数豆子`**  
 - 【上午/下午】完成阅读论文`Enabling Practical Backscatter Communication for On-body Sensors`，手记参见：[`BackScatter论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/BackScatter.md "BackScatter")  

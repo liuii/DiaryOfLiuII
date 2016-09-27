@@ -1,5 +1,43 @@
 # BackScatter相关论文阅读手记  
 
+#### `SigComm16G08P02` `2016-09-27 to 2016-09-**` Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices  
+**`0. ABSTRACT`**  
+- 本文提出的方法是利用Bluetooth发射器生成使用backscatter，与WiFi与ZigBee兼容的信号。本文的实验使用了FPGA搭建的backscatter硬件，以及第一个接触式隐形眼镜天线原型（将天线放置于隐形眼镜上）。  
+
+**`1. INTRODUCTION`**  
+- 近年来医学领域的兴趣集中于智能的隐形眼镜，用于测量多种身体指标，例如对于糖尿病患者的葡萄糖、胆固醇和钠的管理。同时植入式神经设备对癫痫、帕金森症的治疗、假肢控制以及脑机接口都有帮助。这些植入式设备拥有新奇的交互潜力。  
+- 本文旨在回答这样一个问题：**这些植入式设备可以直接和智能手表、手机或平板电脑之类的移动设备进行直接通讯吗？**  
+- 最核心的挑战就是这些植入式设备都是能耗严格受限的设备，因此无法利用常规的设备来产生WiFi、Bluetooth或Zigbee信号。尽管`passive WiFi`能够利用backscatter降低功耗，但是它需要专用的设备来产生backscatter所需要的持续不断的RF信号，因此无法快速进入到应用领域中。  
+- `interscatter`是本文提出的一种新奇的技术，可以将一种技术的发射信号转到另外一种技术。由于越来越多的用户随身携带连接到手机的手表、健康追踪器和蓝牙耳机，`interscatter`重用这些设备作为backscatter的RF源与接收器。  
+- 本文的核心思想是：将Bluetooth发射信号通过backscatter生成WiFi信号，通过对蓝牙设备的广播分组进行backscatter，来合成802.11b的WiFi信号。例如，`interscatter`设备将频道38的蓝牙分组backscatter到位于频道11的802.11b分组。这一方法的挑战性在于：  
+  1. WiFi和Bluetooth的物理层特性不同，WiFi需要一个22MHz的带宽并且使用扩频编码（`spread spectrum coding`）。而蓝牙占用1-2MHz的带宽并且使用高斯频移键控（`Gaussian Frequency Shift Keying, GFSK`）。  
+  2. 蓝牙操作载波的频率与Wifi不同，sideband-backscatter调制器可以将载波移动几十MHz，但是同时会在载波的对称位置，创建一个冗余的信号拷贝（因为delta*f*会导致一正一反的结果）。这不仅浪费了带宽，而且可能会把冗余拷贝放到非ISM波段上。  
+  3. 为了实现双向通信，就需要在`interscatter`设备上提供一个接收器，而WiFi和Bluetooth接收器的功耗量级高于backscatter，因此就抵消了backscatter所节省的能耗。而市场上常见的低功耗接收器通常都是调幅的，不能支持WiFi或Bluetooth。  
+- 总的来说，本文将一个蓝牙发射器转换成一个单调信号，然后使用backscatter来创建一个与标准WiFi分组兼容的`单边`单调蓝牙信号。主要包含三个重要的关键技术贡献：  
+  1. 首次展示蓝牙信号可以用来创建单调发射器，蓝牙使用的GFSK可以讲比特编码到两个频率调，因此可以利用这一特点，发送连续的一串0或1，这样就可以创建一个单调发射。  
+  2. 首次展示单边带backscatter设计，只将backscatter频移到载波的一边。可以产生几十MHz的频移，速率达到2-11Mbps的WiFi信号。本文实现这一目标在backscatter的开关上使用了复杂的阻抗，而没有使用高耗能的2.4GHz振荡器。  
+  3. 本文将OFDM的WiFi设备转换成了调幅调制器，通过调制OFDM标志的振幅轮廓来创建调幅（AM）信号。
+- 本文的Backscatter硬件使用FPGA平台，并且与Bluetooth和WiFi设备进行实验。利用Cadenec和Synopsis来设计backscatter蓝牙信号到WiFi信号的集成电路。此外还展示了接触式镜片天线（体外）、神经记录接口天线（体内肌肉组织）和信用卡形式的三种原型。  
+
+**`2. SYSTEM DESIGN`**  
+- **`2.1 Bluetooth Versus WiFi`**  
+- `Bluetooth`：BLE设备使用通告频道来广播信息（包括他们的存在和初始化连接），一旦建立连接就跳转到分布在2.4GHz的ISM波段中的36个数据频道中。因为在数据频道中传输数据需要连接到相应的设备，因此本文只考虑37、38和39三个通告波段，使用通告波段来发送分组。BLE使用GFSK来调制2MHz带宽的信号，当发送比特`1`时，就表现为一个正向250kHz的频移，产生的FSK通过高斯滤波器来产生想要的频谱形状。  
+- `WiFi`：在802.11b中，要创建1-2Mbps的传输，首先将每个要发送的数据比特与Barker码进行异或，并产生11位比特编码，然后利用DBPSK和DQPSK进行调制。如果要创建5.5-11Mbps的传输则首先使用CCK将每四个输入数据编码为8位的代码字，然后利用DBPSK和DQPSK进行传输。  
+- **`2.2 Bluetooth as an RF source`**  
+- 从高抽象层来说，需要将一个Bluetooth芯片转换为一个单调发射器（不变的振幅和频率），可以利用蓝牙使用的GFSK调制的特性：  
+  1. 蓝牙使用两种频率来编码数据比特0和1，因此可以通过发送固定的0或1数据流来产生单一的频调。  
+  2. 单调频率通过高斯滤波器不会改变它的频谱特性，因为滤波器仅仅是平滑频率的突变。  
+- 因此通过连续的发送0或1就可以产生一个单调频率，要应用到实际场景这需要解决两个关键挑战：  
+  1. `Data whitening`：出于蓝牙接收器对时间校准恢复的需要，为了防止连续的传输0或1，蓝牙使用了线性反馈移位寄存器电路来对数据进行白化，因此需要产生白化后的恒定数据流。为了生成这个数据流需要传送移位寄存器的初值，蓝牙中移位寄存器的第0位是1，其余位是蓝牙频道的二进制编码。  
+  2. `Link-layer packet struture`：由于蓝牙分组具有分组结构，而分组中只有payload部分可以自由的写入数据，因此采用三个步骤来利用蓝牙的分组结构：  
+    1. 通过一个位于backscatter设备上的低功耗电路来检测蓝牙分组的序文、访问地址和头部（56us）。  
+    2. 当数据负载开始的时候，开始backscatter并生成WiFi分组。  
+    3. 在蓝牙CRC来到之前，完成WiFi分组的传输。  
+- **`2.3 `**  
+- **`2.4 `**  
+- **`2.5 `**  
+
+----
 #### `SigComm16G08P01` `2016-09-23 to 2016-09-26` Enabling Practical Backscatter Communication for On-body Sensors  
 **`0. ABSTRACT`**  
 - `Frequency-shifted backscatter, FS-Backscatter`基于这样一种新奇的思想，backscatter标签将载波信号移动到一个相邻无重叠的频率波段上。同时将Backscatter信号从主要信号的频谱中独立出来，以拥有更好的编码鲁棒性。  
