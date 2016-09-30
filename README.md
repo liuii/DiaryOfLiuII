@@ -1,7 +1,7 @@
 # 日志  
 
 **2016-09-30**  
-- 【下午】阅读论文`SDIoT: a software defined based internet of things framework`，手记参见：[`BackScatter论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
+- 【下午】阅读论文`SDIoT: a software defined based internet of things framework`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 - 【上午】调整情绪，帮同事解决一些问题。  
 - 【上午】发现昨天的新idea已经被别人提出来了，情绪低落。  
 
