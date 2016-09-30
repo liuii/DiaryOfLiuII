@@ -2,13 +2,14 @@
 
 **2016-10-01**  
 
-
+----
 **2016-09-30**  
 - 【晚上】阅读《计算机网络》的`无线通信`与`移动网络`内容。  
 - 【下午】阅读论文`SDIoT: a software defined based internet of things framework`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 - 【上午】调整情绪，帮同事解决一些问题。  
 - 【上午】发现昨天的新idea已经被别人提出来了，情绪低落。  
 
+----
 **2016-09-29**  
 - 【下午】《计算思维》实验。  
 - 【下午】《计算思维》实验。  
