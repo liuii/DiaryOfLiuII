@@ -1,6 +1,15 @@
 # 日志  
 
+**2016-10-03**  
+- 【上午】阅读论文`A System Architecture for Software-Defined Industrial Internet of Things`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
+
+----
+**2016-10-02**  
+- 【全天】休息。  
+
+----
 **2016-10-01**  
+- 【上午】阅读论文`SDIoT: a software defined based internet of things framework`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 
 ----
 **2016-09-30**  
