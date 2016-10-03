@@ -1,6 +1,13 @@
 # SDIoT相关论文阅读手记  
 
 #### `P02` `2016-10-03` A System Architecture for Software-Defined Industrial Internet of Things  
+- `mobile ad hoc network, MANET`移动自组织网络。  
+- `Multinetwork INformation Architecture, MINA`  
+- `Network Calculus`网络微分学。  
+
+
+----
+#### `P02` `2016-10-03` A System Architecture for Software-Defined Industrial Internet of Things  
 - `Industrial Internet of Things, IIoT`工业物联网。  
 - `WirelessHART`是一种基于`Highway Addressable Remote Transducer, HART`协议的无线传感网络。  
 - `WebSocket`是一种计算机通信协议，通过一个单独的TCP连接提供一个全双工的通信信道。参见RFC 6455。此外`WebSocket`在`Web Interface Description Language, IDL`中的API已经由`W3C`进行了标准化。  
