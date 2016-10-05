@@ -1,10 +1,40 @@
 # SDIoT相关论文阅读手记  
 
-#### `P02` `2016-10-03` A System Architecture for Software-Defined Industrial Internet of Things  
+#### `P03` `2016-10-05` A System Architecture for Software-Defined Industrial Internet of Things  
 - `mobile ad hoc network, MANET`移动自组织网络。  
 - `Multinetwork INformation Architecture, MINA`  
 - `Network Calculus`网络微分学。  
-
+- 与数据中心网络中的SDN不同，应用于物联网中的SDN有以下的区别：  
+  1. 数据中心的SDN利用快速的互联通道收集诸如带宽消耗等统计信息，而物联网通常要收集异构且松散的网络数据，其地理分布通常也比数据中心要大。  
+  2. 物联网不仅关注数据中心SDN所关注的链路利用率和吞吐量，它更关心异构网络和时间相关特性，例如延迟、抖动、分组丢失和吞吐量。  
+  3. 由于物联网具有异构性，因此单一目标的优化算法将不起作用，数据中心网络调度中常用的`装箱方法`、`模拟退火`等优化算法无法直接用于物联网环境。  
+  4. 当前SDN的一些实现（例如OpenFlow），聚焦于控制器与底层设备之间的交互（称为`南桥`）。而对于应用服务层与控制器之间的`北桥`则没有足够的标准，目前的一些服务描述仍依赖于底层设备的参数。  
+- 本文使用了本体和规则等语义技术进行资源匹配，利用本体来描述以下信息：  
+  1. 网络、设备资源以及服务的特点和能力。  
+  2. 使用层级式方法来描述IoT任务，一个高层级任务可以由一系列低层级任务来替代。  
+``` pascal
+LocateAndTrack(Vehicle,Location)= FindLocationResources(
+	in:Location,
+	neededCap:LocationCapability,
+	out:res:SetOf(LocationResources));
+Match(
+	in:Vehicle, 
+	SetOf(LocationResources),
+	neededCap:Tracking,
+	out:SetOf(LocationAndMatchingResources))
+For all Res in SetOf(LocationAndTrackingResources) Do
+  If Res = Camera then
+     TrackUsingVisualMeans(
+     	in:Res,
+     	neededCap:CameraTracking,
+     	out:TrackingData)
+  ElseIf Res = MeshRouter then
+     TrackUsingDigitalMeans(
+     	in:Res,
+     	neededCap:DigitalTracking,
+     	out:TrackingData)
+```
+- **本文使用了遗传算法来优化QoS**  
 
 ----
 #### `P02` `2016-10-03` A System Architecture for Software-Defined Industrial Internet of Things  
