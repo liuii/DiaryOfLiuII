@@ -1,6 +1,11 @@
 # 日志  
 
+**2016-10-06**  
+
+
+----
 **2016-10-05**  
+- 【下午】阅读《计算机网络》的`多媒体网络`内容。  
 - 【上午】阅读论文`A System Architecture for Software-Defined Industrial Internet of Things`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 
 ----
