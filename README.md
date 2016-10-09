@@ -1,7 +1,7 @@
 # 日志  
 
 **2016-10-09**  
-- 【上午】  
+- 【上午】开始阅读论文`SOFTWARE-DEFINED INTERNET OF THINGS FOR SMART URBAN SENSING`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 
 ----
 **2016-10-08**  

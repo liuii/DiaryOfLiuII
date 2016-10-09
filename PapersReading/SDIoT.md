@@ -1,5 +1,25 @@
 # SDIoT相关论文阅读手记  
 
+#### `P04` `2016-10-09` SOFTWARE-DEFINED INTERNET OF THINGS FOR SMART URBAN SENSING  
+- 文中提出了现有的物联网开发方式的几种缺陷：  
+  1. 高昂的成本和维护成本。  
+  2. 对于应用改变的灵活性差。  
+  3. 无法高效率的利用资源。  
+  4. 开发和部署的周期过长。  
+- 文中提出了物联网开发的几个趋势：  
+  1. 共享物理基础设施。  
+  2. 新兴的软件定义架构。  
+  3. 应用程序接口的流行。  
+- 本文提出了一种SDIoT架构：  
+  1. 物理层：包括无线传感网络设备、网络传输设备和云计算设备。  
+  2. 控制层：针对前面提出的三种类型设备的控制器。  
+  3. 应用层：提供APIs。  
+- 本文详细的从以下几个方面讨论了该架构：  
+  1. 传感器平台与数据获取服务。  
+  2. 网络与数据传输服务。  
+  3. 云数据中心与数据处理服务。  
+
+----
 #### `P03` `2016-10-05` A System Architecture for Software-Defined Industrial Internet of Things  
 - `mobile ad hoc network, MANET`移动自组织网络。  
 - `Multinetwork INformation Architecture, MINA`  
