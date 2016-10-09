@@ -1,5 +1,9 @@
 # 日志  
 
+**2016-10-09**  
+- 【上午】  
+
+----
 **2016-10-08**  
 - 【上午】《计算思维》备课。  
 ![](https://github.com/liuii/DiaryOfLiuII/blob/master/images/2016100801.jpg?raw=true)  
