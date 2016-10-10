@@ -11,7 +11,13 @@
   1. OpenFlow和ONF。  
   2. 详细介绍实验平台和调试工具：MiniNet、W3、FatTire和fs-sdn。  
 - IoT中的SDN机会：  
-  1. 
+  1. 无线网络中的SDN。  
+  2. 支持SDN的混合架构。  
+- 现存的研究挑战：  
+  1. SDN与IoT网络的安全性。  
+  2. SDN与IoT的可扩展性。  
+  3. 深度包检测。  
+  4. 边际AP的丢包。  
 
 ----
 #### `P04` `2016-10-09` SOFTWARE-DEFINED INTERNET OF THINGS FOR SMART URBAN SENSING  
