@@ -2,6 +2,7 @@
 
 **2016-10-10**  
 - 【晚上】阅读论文`Software-Defined Wireless NetworkingOpportunities and Challenges for Internet-of-Things: A Review`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
+- 【下午】听课《`Computational Thinking and Algorithms`》。  
 - 【上午】阅读论文`SOFTWARE-DEFINED INTERNET OF THINGS FOR SMART URBAN SENSING`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 
 ----
