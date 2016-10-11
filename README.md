@@ -1,5 +1,10 @@
 # 日志  
 
+**2016-10-11**  
+- 【晚上】《`Computational Thinking and Algorithms`》实验。  
+- 【下午】阅读《计算机网络》中`网络管理`的部分。  
+
+----
 **2016-10-10**  
 - 【晚上】阅读论文`Software-Defined Wireless NetworkingOpportunities and Challenges for Internet-of-Things: A Review`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 - 【下午】听课《`Computational Thinking and Algorithms`》。  
