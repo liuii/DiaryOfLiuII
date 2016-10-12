@@ -9,8 +9,44 @@
 - 常见的SDN控制器包括：`POX`、`NOX`、`Beacon`、`Floodlight`、`Ryu`。  
 - `NFV` <-- Northbound Interface --> `SDN Controller` <-- Southbound Interface (OpenFlow) --> `Switch Devices`  
 - OpenDayLight提供了两种北桥接口：OSGi和REST，前者用于本地应用的执行，后者用于远程web调用。  
-
-
+- SDN交换机可由三种方式获得：  
+  1. 传统的交换机可以通过升级固件来支持OpenFlow。  
+  2. 裸机可以选择安装PicOS（支持OpenFlow）和Cumulus Linux。  
+  3. 利用虚拟交换机，例如：OpenVSwitch和OFSoftSwitch。  
+- 本文的算法分为三个步骤：  
+  - 记录流的时间记录：  
+``` pascal
+On packet in;
+flow = SourceIPAddress:SourcePortNumber:SwitchID;
+if flow is new then
+  create flow record;
+  record packet arrival time;
+else
+  flow record exists;
+  append packet arrival time to flow record;
+end
+```
+  - 统计每个流的标准差，以决定是否是一个周期性信号：  
+``` pascal
+for each record in flow records do
+  if number of times observed > minimum number of samples then
+    Calculate mean of times;
+    Calculate standard deviation of times;
+    if standard deviation < threshold then
+      Store flow installation timing requirements;
+    end
+  end
+end
+```
+  - 提前将规则安装到交换机：  
+``` pascal
+On timer expiration;
+for each record in flow records do
+  if (current time + pre-empt value) - previous flow installation time >= flow mean then
+    Send flow installation message to switch;
+  end
+end
+```
 ----
 #### `P05` `2016-10-10` Software-Defined Wireless NetworkingOpportunities and Challenges for Internet-of-Things: A Review  
 - 整合SDN与IoT有以下好处：
