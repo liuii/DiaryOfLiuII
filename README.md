@@ -1,5 +1,9 @@
 # 日志  
 
+**2016-10-12**  
+- 【上午】阅读论文`Pre-emptive Flow Installation for Internet of Things Devices within Software Defined Networks`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")
+
+----
 **2016-10-11**  
 - 【晚上】《`Computational Thinking and Algorithms`》实验。  
 - 【下午】阅读《计算机网络》中`网络管理`的部分。  

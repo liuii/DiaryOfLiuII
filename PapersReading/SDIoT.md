@@ -1,5 +1,17 @@
 # SDIoT相关论文阅读手记  
 
+#### `P06` `2016-10-12` Pre-emptive Flow Installation for Internet of Things Devices within Software Defined Networks  
+- 在软件定义网络中，当一个交换机收到一个分组之后，如果在流表中没有相应的规则，则会向中央控制器请求相应的规则。但是交换机通常是内存受限的，所以一个稀有的分组规则很快就会过时被释放。  
+- 而物联网设备的数据具有周期性的特点，很有可能会被任务繁重的交换机反复的释放它对应的处理规则。  
+- 因此就需要动态的学习周期性间隔传输的网络流，并在分组到达之前将规则安装到交换机中。  
+- 自物联网产生的数据有两种可能：一种是周期性的小流量数据，另外一种是因为突发情况导致的激增流量。这两种情况都需要网络来进行处理。  
+- 本文分别介绍了IoT的数据特点和SDN的`标准`、`控制器`和`交换设备`。  
+- 常见的SDN控制器包括：`POX`、`NOX`、`Beacon`、`Floodlight`、`Ryu`。  
+- `NFV` <-- Northbound Interface --> `SDN Controller` <-- Southbound Interface (OpenFlow) --> `Switch Devices`  
+- OpenDayLight提供了两种北桥接口：OSGi和REST，前者用于本地应用的执行，后者用于远程web调用。  
+
+
+----
 #### `P05` `2016-10-10` Software-Defined Wireless NetworkingOpportunities and Challenges for Internet-of-Things: A Review  
 - 整合SDN与IoT有以下好处：
   1. SDN拥有潜在的智能路由传输，并使用未能充分使用的网络资源。  
