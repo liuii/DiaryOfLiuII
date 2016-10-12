@@ -14,7 +14,7 @@
   2. 裸机可以选择安装PicOS（支持OpenFlow）和Cumulus Linux。  
   3. 利用虚拟交换机，例如：OpenVSwitch和OFSoftSwitch。  
 - 本文的算法分为三个步骤：  
-  - 记录流的时间记录：  
+（1）记录流的时间记录：  
 ``` pascal
 On packet in;
 flow = SourceIPAddress:SourcePortNumber:SwitchID;
@@ -26,7 +26,7 @@ else
   append packet arrival time to flow record;
 end
 ```
-  - 统计每个流的标准差，以决定是否是一个周期性信号：  
+（2）统计每个流的标准差，以决定是否是一个周期性信号：  
 ``` pascal
 for each record in flow records do
   if number of times observed > minimum number of samples then
@@ -38,7 +38,7 @@ for each record in flow records do
   end
 end
 ```
-  - 提前将规则安装到交换机：  
+（3）提前将规则安装到交换机：  
 ``` pascal
 On timer expiration;
 for each record in flow records do
