@@ -1,5 +1,19 @@
 # SDIoT相关论文阅读手记  
 
+#### `P07` `2016-10-13` Software-Defined Wireless Network Architectures for the Internet-of-Things  
+- 物联网系统通常分为四个层次：  
+  1. 传感器、无线传感网络、独立传感器、RFID等等。  
+  2. 信息聚合层，用来收集传感器数据的层次，包括网关和用来收集数据的智能手机等等。  
+  3. 数据处理节点层，用来处理收集上来的节点数据。  
+  4. 因特网连接层，用于为更多的用户提供服务。  
+- 除了在异构性和网络管理方面的考虑之外，在目前物联网中还存在着如何利用IoT产生的大数据的问题，以及如何在这样一个复杂精致的系统中保持细颗粒度的服务质量保证也是一个复杂的任务。  
+- 本文的主要进行了三个方面的研究：  
+  1. 管理传感层的SDN解决方案。  
+  2. 通过移动网络和无线局域网的端到端资源管理的SDN架构。  
+  3. 支持ICN（Information-Centric Networking）核心组件的SDN架构，以构建SaaS（Sensing-as-a-Service）。  
+- 
+
+----
 #### `P06` `2016-10-12` Pre-emptive Flow Installation for Internet of Things Devices within Software Defined Networks  
 - 在软件定义网络中，当一个交换机收到一个分组之后，如果在流表中没有相应的规则，则会向中央控制器请求相应的规则。但是交换机通常是内存受限的，所以一个稀有的分组规则很快就会过时被释放。  
 - 而物联网设备的数据具有周期性的特点，很有可能会被任务繁重的交换机反复的释放它对应的处理规则。  

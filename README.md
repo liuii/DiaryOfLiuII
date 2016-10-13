@@ -1,5 +1,12 @@
 # 日志  
 
+**2016-10-13**  
+- 【下午】《计算思维》上课。  
+- 【下午】《计算思维》上课。  
+- 【上午】《计算思维》实验。  
+- 【上午】阅读论文`Software-Defined Wireless Network Architectures for the Internet-of-Things`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")
+
+----
 **2016-10-12**  
 - 【下午】听课《`Computational Thinking and Algorithms`》。  
 - 【下午】《计算思维》实验。  
