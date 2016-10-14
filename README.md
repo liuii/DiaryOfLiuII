@@ -1,5 +1,12 @@
 # 日志  
 
+**2016-10-14**  
+- 【下午】**`数豆子`**  
+- 【中午】阅读论文`Software-Defined Wireless Sensor Networks and Internet of Things Standardization Synergism`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
+- 【上午】**`数豆子`**  
+- 【上午】阅读论文`Software-Defined Wireless Network Architectures for the Internet-of-Things`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
+
+----
 **2016-10-13**  
 - 【下午】《计算思维》上课。  
 - 【下午】《计算思维》上课。  

@@ -1,5 +1,20 @@
 # SDIoT相关论文阅读手记  
 
+#### `P08` `2016-10-14` Software-Defined Wireless Sensor Networks and Internet of Things Standardization Synergism  
+- 有些工作提出将传感器网络的路由协议分为不同的类别：`data-centric`、`hierarchical`、`location-based`、`QoS`、`network-flow`、`data aggregation`。  
+- 软件定义无线传感网络方法包括：`Flow-Sensor`、`Sensor OpenFlow`、`SDWN`、`TinySDN`。  
+- 本文重点讨论`RFC 6550 - RPL: IPv6 Routing Protocol for Low-Power and Lossy Networks`和`TinySDN`。  
+- TinySDN包括两个部分：`SDN-enabled sensor node`和`SDN controller node`。  
+  - `SDN-enabled sensor node`包含三个主要的组件：  
+    1. TinyOS应用程序：等价于终端设备，并依赖于运行于WSN节点上的应用。它用来生成将要传输的数据。  
+    2. TinySdnP：接收分组并尝试与流表入口进行匹配，如果无法匹配则向`SDN controller node`发出请求。  
+    3. ActiveMessageC：用来执行通信任务的TinyOS的组件，执行例如数据或控制分组的转发、拓扑信息的收集。  
+  - `SDN controller node`包含两个模块：  
+    1. Sensor mote module：运行于WSN设备，它的两个主要任务包括：使用`ActiveMessageC`与`SDN-enabled sensor nodes`建立通信；利用`SerialActiveMessageC`向`Controller server module`转发分组。
+    2. Controller server module：包含控制层逻辑，例如：主机控制应用、网络流管理和拓扑信息。  
+- `Routing Protocol for Low Power and Lossy Networks (RPL)`是IoT标准化的另外一个成果。  
+
+----
 #### `P07` `2016-10-13` Software-Defined Wireless Network Architectures for the Internet-of-Things  
 - 物联网系统通常分为四个层次：  
   1. 传感器、无线传感网络、独立传感器、RFID等等。  
@@ -11,7 +26,25 @@
   1. 管理传感层的SDN解决方案。  
   2. 通过移动网络和无线局域网的端到端资源管理的SDN架构。  
   3. 支持ICN（Information-Centric Networking）核心组件的SDN架构，以构建SaaS（Sensing-as-a-Service）。  
-- 
+- SDN的概念与背景：  
+  1. SDN控制器目前已经提出了：NOX，POX，Floodlight，Beacon和OpenDayLight。  
+  2. SDN控制器将策略转换成详细的规则，然后通过SDN的协议发送给路由器和交换机。已经提出的协议包括：`Forward and Control Element Specification, ForCES`、`Interface to the Routing System, I2RS`和`OpenFlow`。  
+- 部署SDN有以下的好处：  
+  1. 提供了能够简单的最优化的中心网络管理器，它可以执行来自高速连接站点的命令。  
+  2. 可以根据网络条件而简单的采用相应的网络协议，例如在拥有中心控制器后可以方便的管理负载均衡。也可以根据网络的负载采用不同的媒介访问方法，例如在负载增加的时候，可以把媒介访问控制方法由载波侦听改为分时的策略。  
+  3. 由于通过简单的重新配置就可以改变交换设备的操作，因此SDN提供了与供应商无关的控制。这就意味着交换设备不在需要装备那些胜任所有可能情况的所有的协议，同时还允许管理异构的实体。  
+  4. SDNs提供了强大的虚拟化工具，允许管理者最大程度的利用他们的设备。  
+- 将SDN控制器部署在Sink Node或Aggregator Point的位置，位于中心的位置使得控制器更适合去优化拓扑控制。可以更好的控制传感器的`睡眠/激活`循环。对于拥有多个传感器的节点，可以控制每个传感器节点的工作循环。从而支持基于查询的通信方式，并节省能源。  
+- 然而由于传感器节点不能支持SDN，因此需要对其进行改造。`[5]`提出了利用FPGA和MCUs构成的SDN控制传感节点的例子。是其并未基于OpenFlow，因此另外一篇文章提出了如何改造OpenFlow去适应物联网设备的需求。  
+- 传感器及服务（SaaS）的概念对于IoT的商业化非常重要，但是传统的基于关键词的搜索引擎对物联网设备并不适用。此外对服务的订购也有很大的差别（包括频率、范围等等）。Semantic Sensor Network项目使用本体来设计一个串联的传感器数据库。  
+- 目前，由于`本体`所具有的推论能力和添加语义的能力，使得本体在IoT领域的关注度正在增长。例如`[1]`为SSN扩展了内容感知，以改进传感器搜索技术的精确度。 
+- 要实现SaaS存在着两个关键的挑战：  
+  1. 如何将应用需求翻译为传感服务。  
+  2. 如何正确的分发内容给用户。  
+- 而解决这两个问题的答案就是`information-centric networking, ICN`，因为用户更关注于感兴趣的数据，而不关心数据由何处产生。ICN分为两层，控制层用于匹配用户的兴趣与实际内容，另一层用来进行数据转发。而SDN很明显适合解决上面的两个问题：SDN控制器同时拥有南桥和北桥的接口，所以非常适合将用户的需求转为对网络资源的控制，然后通过产生的规则来完成第二个挑战。  
+- 在ICN中，需要将数据分组进行修改，将名字（标签）附加在IP地址的后面，例如：`Data Oriented Network Architecture (DONA)`、`Network of Information (NetInf)`和`Publish/Subscribe Internet Technologies (PURSUIT)`架构都提出了命名方案。命名方案的形式为：`P:L`，其中P为拥有者公钥的密码学哈希函数，L是内容提供者选择的一个全球唯一的标签。而`Named Data Networking, NDN`架构提出了一个层级的命名方案，用对人更为友好的语言来表述。  
+- 但是这些命名方案没有任何可以使用链接数据的语义，`[16]`提出了一种基于空间索引的命名方案，用于基于SDN的订阅/发布系统。它使用了固定长度比特串，来表示细颗粒度的数据请求（例如：针对特定区间以及特定地区的温度）。
+- 此外，对于ICN，QoS和一致性也是两个重要的话题。  
 
 ----
 #### `P06` `2016-10-12` Pre-emptive Flow Installation for Internet of Things Devices within Software Defined Networks  
