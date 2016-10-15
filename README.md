@@ -1,6 +1,11 @@
 # 日志  
 
+**2016-10-15**  
+- 【上午】**`数豆子`**  
+
+----
 **2016-10-14**  
+- 【晚上】阅读《`Data Structure and Algorithms Using Python`》。  
 - 【下午】**`数豆子`**  
 - 【中午】阅读论文`Software-Defined Wireless Sensor Networks and Internet of Things Standardization Synergism`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 - 【上午】**`数豆子`**  
@@ -141,7 +146,7 @@
 ----
 **2016-09-20**  
 - 【晚上】《`Computational Thinking and Algorithms`》的`tutorial`。  
-- 【下午】阅读《`Data Structure and Algorithm in Python`》。  
+- 【下午】阅读《`Data Structure and Algorithms Using Python`》。  
 - 【上午】阅读论文`Multi-Domain Orchestration across RAN and Transport for 5G`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】**`数豆子`**  
 
@@ -231,13 +236,13 @@ with open('test.md') as f:
 ----
 **2016-09-11**  
 - 【上午】**`数豆子`**，不得不感叹学校行政部门下发的数据表格式简直令人发指，为了对数据进行快速定位只好写了十来个宏来处理不同的数据格式。  
-- 【下午】阅读《`Data Structure and Algorithm in Python`》。  
+- 【下午】阅读《`Data Structure and Algorithms Using Python`》。  
 - 【上午】建立教学日志网站：[`Goto`](http://liuii.github.io)。  
 - 【上午】备课，下礼拜的《计算思维》。  
 
 ----
 **2016-09-10**  
-- 【下午】阅读《`Data Structure and Algorithm in Python`》。  
+- 【下午】阅读《`Data Structure and Algorithms Using Python`》。  
 - 【上午】**`数豆子`**  
 
 ----
@@ -250,7 +255,7 @@ with open('test.md') as f:
 ----
 **2016-09-08**  
 - 【晚上】微信推送说大王出了新教程，购买学习。  
-- 【下午】阅读《`Data Structure and Algorithm in Python`》。  
+- 【下午】阅读《`Data Structure and Algorithms Using Python`》。  
 - 【下午】阅读网络流内容：[`文献1`](http://www.cnblogs.com/ZJUT-jiangnan/p/3632525.html)，[`文献2`](http://blog.csdn.net/y990041769/article/details/21026445)，[`文献3`](https://zh.wikipedia.org/wiki/网络流)，[`文献4`](https://en.wikipedia.org/wiki/Flow_network)。  
 - 【下午】阅读论文`Privacy-Aware Infrastructure for Managing Personal Data`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
 - 【上午】阅读论文`PieBridge: A Cross-DR scale Large Data Transmission Scheduling System`，手记参见：[`SigComm16论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/Sigcomm16.md "SigComm16")  
