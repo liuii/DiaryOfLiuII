@@ -1,6 +1,11 @@
 # 日志  
 
+**2016-10-16**  
+- 【上午】阅读论文`A Low Power Software-Defined-Radio Baseband Processor for the Internet of Things`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
+
+----
 **2016-10-15**  
+- 【下午】阅读《`Data Structure and Algorithms Using Python`》。  
 - 【上午】**`数豆子`**  
 
 ----

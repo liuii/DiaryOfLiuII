@@ -1,5 +1,13 @@
 # SDIoT相关论文阅读手记  
 
+#### `P10` `2016-10-16` Refactoring Internet of Things middleware through Software-Defined Network  
+
+
+----
+#### `P09` `2016-10-16` A Low Power Software-Defined-Radio Baseband Processor for the Internet of Things  
+- 该文提出了一种基于SDR的处理器设计，以可编程的平台来代替专用集成电路的实现。  
+
+----
 #### `P08` `2016-10-14` Software-Defined Wireless Sensor Networks and Internet of Things Standardization Synergism  
 - 有些工作提出将传感器网络的路由协议分为不同的类别：`data-centric`、`hierarchical`、`location-based`、`QoS`、`network-flow`、`data aggregation`。  
 - 软件定义无线传感网络方法包括：`Flow-Sensor`、`Sensor OpenFlow`、`SDWN`、`TinySDN`。  
