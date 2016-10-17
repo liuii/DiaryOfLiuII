@@ -14,6 +14,8 @@
   1. Transparent Proxy：它的任务由AP与提供服务的服务器来完成。AP基于流的规则转发分组，这些规则由ThingsFlow应用程序通过控制器发出。收集到数据通过IPSec隧道将数据发送到服务，然后进行parse和process。  
   2. Things management：由基于SNMP改为基于OpenFlow计数器，由ThingsFlow提取的计数器包含提取的时间戳，服务通过提出ThingsFlow中存储的时间戳来实现它的管理机制。  
   3. Gateway：由AP实现的分组转发功能。目前的趋势是使用基于IP的方法，例如6LowPAN。  
+- `Derailleur`是本文的控制器，该控制器继承自`libfluid`的`libfluid_base OFSever`类，并为扩展了四个抽象方法，用来处理不同情况的发生。  
+- AP上的路由器采用的`Open vSwitch`，工作于OpenWRT上。  
 
 ----
 #### `P09` `2016-10-16` A Low Power Software-Defined-Radio Baseband Processor for the Internet of Things  
