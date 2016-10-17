@@ -1,5 +1,10 @@
 # 日志  
 
+**2016-10-17**  
+- 【上午】阅读论文`Refactoring Internet of Things middleware through Software-Defined Network`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
+- 【上午】**`数豆子`**  
+
+----
 **2016-10-16**  
 - 【上午】阅读论文`A Low Power Software-Defined-Radio Baseband Processor for the Internet of Things`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
 

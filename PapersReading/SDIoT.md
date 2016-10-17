@@ -1,7 +1,19 @@
 # SDIoT相关论文阅读手记  
 
-#### `P10` `2016-10-16` Refactoring Internet of Things middleware through Software-Defined Network  
-
+#### `P10` `2016-10-17` Refactoring Internet of Things middleware through Software-Defined Network  
+- 现有的物联网设备存在着以下的挑战：  
+  1. 互联性：大部分能够访问互联网的设备，使用一种专有的通信方式与制造商的服务器或其他节点进行通信。即使提供了APIs，数据也首先被送到专有服务器上。  
+  2. 安全与隐私：通常设备收集的数据在发送的时候使用明文，同时没有和服务器之间的验证。  
+  3. 管理：IoT设备通常采用睡眠调度机制来减少能量的消耗，因此要避免部署传统的网络管理解决工具（例如SNMP、NETCONF、ICMP-based等）。  
+  4. 数据结构：`[12]`这篇文献指出，80%的健康数据是无结构的，因此需要在大容量的数据中进行挖掘，以找到相关信息，以便对未来的后果进行预测。  
+- `REMOA`的主要组件包括：  
+  1. Transparent Proxy：该组件用于分析所有输出到互联网的传输。它接收健康数据，送到相应的应用，并记录用于管理目的的MIB（Management Information Base）信息（关于things的操作）。必要时应用过滤和重定向规则到网络传输中。  
+  2. SNMP Agent和Proxy Agent：负责为不支持SNMP的节点处理SNMP请求，他们利用透明代理模块存储在MIB中的数据来相应请求。  
+  3. Gateway：负责在应用于节点之间进行透明的通讯，只有当节点允许被访问操作的时候。在必要的时候Gateway还要负责在不同的技术之间翻译信息。  
+- 重构之后功能：  
+  1. Transparent Proxy：它的任务由AP与提供服务的服务器来完成。AP基于流的规则转发分组，这些规则由ThingsFlow应用程序通过控制器发出。收集到数据通过IPSec隧道将数据发送到服务，然后进行parse和process。  
+  2. Things management：由基于SNMP改为基于OpenFlow计数器，由ThingsFlow提取的计数器包含提取的时间戳，服务通过提出ThingsFlow中存储的时间戳来实现它的管理机制。  
+  3. Gateway：由AP实现的分组转发功能。目前的趋势是使用基于IP的方法，例如6LowPAN。  
 
 ----
 #### `P09` `2016-10-16` A Low Power Software-Defined-Radio Baseband Processor for the Internet of Things  
