@@ -1,5 +1,10 @@
 # 日志  
 
+**2016-10-18**  
+- 【晚上】《`Computational Thinking and Algorithms`》实验。  
+- 【上午】写项目申请书。  
+
+----
 **2016-10-17**  
 - 【下午】听课《`Computational Thinking and Algorithms`》。  
 - 【上午】阅读论文`Refactoring Internet of Things middleware through Software-Defined Network`，手记参见：[`SDIoT论文阅读手记`](https://github.com/liuii/DiaryOfLiuII/blob/master/PapersReading/SDIoT.md "SDIoT")  
