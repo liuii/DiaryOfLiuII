@@ -1,7 +1,15 @@
 # 日志  
 
+**2016-10-19**  
+- 【晚上】写项目申请书。  
+- 【下午】听课《`Computational Thinking and Algorithms`》。  
+- 【下午】《计算思维》上课。  
+- 【上午】写项目申请书。  
+
+====
 **2016-10-18**  
 - 【晚上】《`Computational Thinking and Algorithms`》实验。  
+- 【下午】阅读《统计思维》。  
 - 【上午】写项目申请书。  
 
 ----
