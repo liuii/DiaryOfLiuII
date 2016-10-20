@@ -1,5 +1,13 @@
 # 日志  
 
+**2016-10-20**  
+- 【下午】《计算思维》实验。  
+- 【下午】《计算思维》实验。  
+- 【上午】《计算思维》上课。  
+- 【上午】解决了`sublime`在win10下的输入法无法跟随的问题，最终的方案是<kbd>QQ拼音</kbd>+<kbd>Sublime Plugin:IMESupport</kbd>。  
+- 【上午】写项目申请书。
+
+====
 **2016-10-19**  
 - 【晚上】写项目申请书。  
 - 【下午】听课《`Computational Thinking and Algorithms`》。  
