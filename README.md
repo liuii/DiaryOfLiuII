@@ -1,5 +1,9 @@
 # 日志  
 
+**2016-10-24**  
+- 【下午】听课《`Computational Thinking and Algorithms`》  
+- 【上午】开始学习`Mininet`，新增[`Mininet资料汇总`](https://github.com/liuii/DiaryOfLiuII/blob/master/SDN/Mininet.md)入口。  
+----
 **2016-10-23**  
 - 【晚上】写项目申请书。  
 - 【下午】写项目申请书。  
