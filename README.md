@@ -1,5 +1,15 @@
 # 日志  
 
+**2016-10-26**  
+- 【下午】听课《`Computational Thinking and Algorithms`》  
+- 【下午】《计算思维》实验。  
+- 【上午】听王老师的讲座。  
+
+----
+**2016-10-25**  
+- 【上午】参加一个学习如何花钱的会议。  
+
+----
 **2016-10-24**  
 - 【下午】听课《`Computational Thinking and Algorithms`》  
 - 【上午】开始学习`Mininet`，新增[`Mininet资料汇总`](https://github.com/liuii/DiaryOfLiuII/blob/master/SDN/Mininet.md)入口。  
