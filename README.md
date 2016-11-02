@@ -1,7 +1,10 @@
 # 日志  
 
 **2016-11-02**  
-- test  
+- 【下午】《`Computational Thinking and Algorithms`》答疑。  
+- 【下午】《计算思维》上课。  
+- 【上午】备课，下礼拜的《计算思维》。  
+- 【上午】**`数豆子`**  
 ----
 **2016-11-01**  
 - 【晚上】继续阅读《`Deep Learning Tutorial`》。  
