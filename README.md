@@ -1,5 +1,8 @@
 # 日志  
 
+**2016-11-02**  
+- test  
+----
 **2016-11-01**  
 - 【晚上】继续阅读《`Deep Learning Tutorial`》。  
 - 【下午】阅读《`Deep Learning Tutorial`》。  
