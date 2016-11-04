@@ -1,5 +1,9 @@
 # 日志  
 
+**2016-11-04**  
+- 【下午】参加2017级培养计划座谈会。囧  
+
+----
 **2016-11-03**  
 - 【晚上】更新两份教学文档：[`垃圾邮件处理-贝叶斯理论的简单应用`](https://github.com/liuii/guestBook/blob/master/assignments2016/spam.md)和[`2016秋季学期《计算思维》大作业`](https://github.com/liuii/guestBook/blob/master/assignments2016/finalAssignment.md)  
 - 【下午】《计算思维》实验。  
