@@ -28,3 +28,12 @@
 ## 3. 设计与实现
 
 我现在有一些研究选题，但是还是要各位同学先完成前两项工作，才能进入后续的研究中。  
+
+## 4. 第一波推荐阅读论文
+
+1. Named Data Networking Based Smart Home Lighting  
+2. Analysis of Game Bot’s Behavioral Characteristics in Social Interaction Networks of MMORPG  
+3. Extreme Web Caching for Faster Web Browsing  
+4. Yo-Yo Attack - Vulnerability in auto-scaling mechanism  
+5. A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure  
+6. Pre-emptive Flow Installation for Internet of Things Devices within Software Defined Networks  
