@@ -36,4 +36,5 @@
 3. Extreme Web Caching for Faster Web Browsing  
 4. Yo-Yo Attack - Vulnerability in auto-scaling mechanism  
 5. A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure  
-6. Pre-emptive Flow Installation for Internet of Things Devices within Software Defined Networks  
+6. BitMiner: Bits Mining in Internet Traffic Classification
+7. TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost
