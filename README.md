@@ -1,6 +1,7 @@
 # 日志  
 
 **2016-11-21**  
+- 【晚上】添加新入口[`SLAM`]()。
 - 【中午】`机器人兴趣小组`开会。  
 - 【上午】《计算思维》备课。  
 ![](https://github.com/liuii/DiaryOfLiuII/blob/master/images/2016112101.jpg?raw=true)  
