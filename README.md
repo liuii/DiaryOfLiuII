@@ -1,5 +1,9 @@
 # 日志  
 
+**2016-11-22**  
+- 【上午】阅读[`SLAM漫谈`](http://www.cnblogs.com/gaoxiang12/p/3695962.html)。  
+
+----
 **2016-11-21**  
 - 【晚上】添加新入口[`SLAM`](https://github.com/liuii/DiaryOfLiuII/tree/master/SLAM)。
 - 【中午】`机器人兴趣小组`开会。  

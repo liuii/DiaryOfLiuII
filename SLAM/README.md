@@ -8,3 +8,4 @@
 - 最常用的机器人框架是[`ROS`](http://www.ros.org/)  
 - 另一个开源工具集是[`OpenSLAM`](https://www.openslam.org/)，其中的g2o是目前最流行的graph optimization的实现工具。  
 - [`SLAM blog`](http://www.cnblogs.com/gaoxiang12/p/3695962.html)  
+- 入门教程：《SLAM for dummies》。
