@@ -1,6 +1,11 @@
 # 日志  
 
+**2016-11-23**  
+- 【上午】继续阅读[`SLAM漫谈`](http://www.cnblogs.com/gaoxiang12/p/3695962.html)。  
+
+----
 **2016-11-22**  
+- 【晚上】阅读《线性代数》。  
 - 【上午】阅读[`SLAM漫谈`](http://www.cnblogs.com/gaoxiang12/p/3695962.html)。  
 
 ----
