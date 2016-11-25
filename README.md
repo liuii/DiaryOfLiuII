@@ -1,6 +1,9 @@
 # 日志  
 
 **2016-11-25**  
+- 【下午】阅读[`MSE(Mean Squared Error)`](https://en.wikipedia.org/wiki/Mean_squared_error)。  
+- 【下午】阅读[`Generalization Error 2`](https://en.wikipedia.org/wiki/Generalization_error)。  
+- 【中午】阅读[`Generalization Error 1`](http://www.gotoli.us/?p=4)。  
 - 【上午】阅读[`MSE(Mean Squared Error) in Linear Regression`](http://blog.csdn.net/Gavin__Zhou/article/details/52369424)。  
 - 【上午】阅读[`Iterative closest point, ICP`](https://en.wikipedia.org/wiki/Iterative_closest_point)。  
 
