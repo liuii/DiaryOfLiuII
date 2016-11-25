@@ -1,5 +1,16 @@
 # 日志  
 
+**2016-11-25**  
+- 【上午】阅读[`MSE(Mean Squared Error) in Linear Regression`](http://blog.csdn.net/Gavin__Zhou/article/details/52369424)。  
+- 【上午】阅读[`Iterative closest point, ICP`](https://en.wikipedia.org/wiki/Iterative_closest_point)。  
+
+----
+**2016-11-24**  
+- 【下午】《计算思维》实验。  
+- 【下午】《计算思维》实验。  
+- 【上午】《计算思维》上课。  
+
+----
 **2016-11-23**  
 - 【下午】撰写教改项目中期报告。  
 - 【下午】《计算思维》实验。  
