@@ -1,7 +1,15 @@
 # 日志  
 
+**2016-11-27**  
+- 【上午】阅读[`Camera resectioning`](https://en.wikipedia.org/wiki/Camera_resectioning)。  
+- 【上午】阅读[`Point cloud`](https://en.wikipedia.org/wiki/Point_cloud)。  
+- 【上午】阅读[`Point set registration`](https://en.wikipedia.org/wiki/Point_set_registration)。  
+- 【上午】阅读[`Pose (computer vision)`](https://en.wikipedia.org/wiki/Pose_(computer_vision))。  
+
+----
 **2016-11-26**  
-- 【下午】阅读[`RSS(Residual sum of squares)`](https://en.wikipedia.org/wiki/Residual_sum_of_squares)。  
+- 【下午】阅读《线性代数》。  
+- 【上午】阅读[`RSS(Residual sum of squares)`](https://en.wikipedia.org/wiki/Residual_sum_of_squares)。  
 - 【下午】阅读[`MSE(Mean Squared Error)`](https://en.wikipedia.org/wiki/Mean_squared_error)。  
 
 ----
