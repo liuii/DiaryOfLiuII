@@ -1,5 +1,10 @@
 # 日志  
 
+**2016-11-26**  
+- 【下午】阅读[`RSS(Residual sum of squares)`](https://en.wikipedia.org/wiki/Residual_sum_of_squares)。  
+- 【下午】阅读[`MSE(Mean Squared Error)`](https://en.wikipedia.org/wiki/Mean_squared_error)。  
+
+----
 **2016-11-25**  
 - 【下午】阅读[`MSE(Mean Squared Error)`](https://en.wikipedia.org/wiki/Mean_squared_error)。  
 - 【下午】阅读[`Generalization Error 2`](https://en.wikipedia.org/wiki/Generalization_error)。  
@@ -12,6 +17,8 @@
 - 【下午】《计算思维》实验。  
 - 【下午】《计算思维》实验。  
 - 【上午】《计算思维》上课。  
+- 【上午】更新教学网站。  
+- 【凌晨】评阅学生的竞赛申请书。  
 
 ----
 **2016-11-23**  
