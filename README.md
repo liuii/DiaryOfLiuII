@@ -1,5 +1,15 @@
 # 日志  
 
+**2016-11-28**  
+- 【下午】阅读[`Least squares`](https://en.wikipedia.org/wiki/Least_squares#Problem_statement)。  
+- 【下午】阅读[`Nearest neighbor search`](https://en.wikipedia.org/wiki/Nearest_neighbor_search)。  
+- 【下午】阅读[`Thin plate spline`](https://en.wikipedia.org/wiki/Thin_plate_spline)。  
+- 【上午】阅读[`Rigid transformation`](https://en.wikipedia.org/wiki/Rigid_transformation)。  
+- 【上午】阅读[`M-estimator`](https://en.wikipedia.org/wiki/M-estimator)。  
+- 【上午】阅读[`Improper rotation`](https://en.wikipedia.org/wiki/Improper_rotation)。  
+- 【上午】阅读[`Point set registration`](https://en.wikipedia.org/wiki/Point_set_registration)。  
+
+----
 **2016-11-27**  
 - 【上午】阅读[`Camera resectioning`](https://en.wikipedia.org/wiki/Camera_resectioning)。  
 - 【上午】阅读[`Point cloud`](https://en.wikipedia.org/wiki/Point_cloud)。  
