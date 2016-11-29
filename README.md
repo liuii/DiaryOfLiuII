@@ -1,5 +1,9 @@
 # 日志  
 
+**2016-11-29**  
+- 【全天】阅读《线性代数》。  
+
+----
 **2016-11-28**  
 - 【下午】阅读[`Least squares`](https://en.wikipedia.org/wiki/Least_squares#Problem_statement)。  
 - 【下午】阅读[`Nearest neighbor search`](https://en.wikipedia.org/wiki/Nearest_neighbor_search)。  
