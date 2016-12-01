@@ -1,6 +1,7 @@
 # 日志  
 
 **2016-12-01**
+- 【晚上】阅读[`超智能体`](https://www.gitbook.com/book/yjango/superorganism/details)。  
 - 【下午】《计算思维》实验。  
 - 【下午】《计算思维》实验。  
 - 【上午】《计算思维》上课。  
