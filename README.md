@@ -1,6 +1,20 @@
 # 日志  
 
+**2016-12-05**  
+
+
+----
+**2016-12-04**  
+- 【全天】阅读《线性代数》。  
+
+----
+**2016-12-03**  
+- 【全天】阅读《线性代数》。  
+
+----
 **2016-12-02**  
+- 【下午】与外教交流。  
+- 【上午】阅读[`Point set registration`](https://en.wikipedia.org/wiki/Point_set_registration)。  
 - 【上午】阅读[`Least squares`](https://en.wikipedia.org/wiki/Least_squares#Problem_statement)。  
 
 ----
