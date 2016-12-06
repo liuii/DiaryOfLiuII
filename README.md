@@ -1,5 +1,10 @@
 # 日志  
 
+**2016-12-06**
+- 【晚上】学习《`Numerical Optimization`》。  
+- 【上午】修改论文。  
+
+----
 **2016-12-05**  
 - 【上午】阅读[`Scale-invariant feature transform, SIFT`](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform)。  
 - 【上午】阅读[`SIFT详解`](http://blog.csdn.net/zddblog/article/details/7521424)。  
