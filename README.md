@@ -1,5 +1,10 @@
 # 日志  
 
+**2016-12-10**  
+- 【晚上】学习《`Numerical Optimization`》。  
+- 【下午】学习《线性代数》。  
+- 【上午】学习《`Numerical Optimization`》。  
+
 **2016-12-09**  
 - 【上午】阅读[`Difference of Gaussian`](http://blog.csdn.net/abcjennifer/article/details/7639488)。  
 - 【上午】阅读[`Scale-invariant feature transform, SIFT`](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform)。  
