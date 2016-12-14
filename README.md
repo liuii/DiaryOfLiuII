@@ -1,5 +1,14 @@
 # 日志  
 
+**2016-12-14**  
+- 【上午】阅读论文：`ORB-SLAM: Tracking and Mapping Recognizable Features`。  
+
+----
+**2016-12-13**  
+- 【下午】研究组会议。  
+- 【上午】准备《SLAM》报告幻灯片。  
+
+----
 **2016-12-12**  
 - 【晚上】学习《`Numerical Optimization`》。  
 - 【下午】准备《SLAM》报告幻灯片。  
