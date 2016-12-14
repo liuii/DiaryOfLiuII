@@ -1,6 +1,8 @@
 # 日志  
 
 **2016-12-14**  
+- 【晚上】学习《`Numerical Optimization`》。  
+- 【下午】《`计算思维`》上课。  
 - 【上午】阅读论文：`ORB-SLAM: Tracking and Mapping Recognizable Features`。  
 
 ----
