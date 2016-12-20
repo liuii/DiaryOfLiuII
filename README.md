@@ -1,7 +1,12 @@
 # 日志  
 
+**2016-12-20**  
+- 【晚上】学习《`Numerical Optimization`》。  
+- 【全天】雾霾严重，只能睡觉。  
+
 ----
 **2016-12-19**  
+- 【晚上】学习《`Numerical Optimization`》。  
 - 【上午】阅读[`Scale-invariant feature transform, SIFT`](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform)。  
 - 【上午】阅读[`SIFT详解`](http://blog.csdn.net/zddblog/article/details/7521424)。  
 
