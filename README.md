@@ -2,6 +2,7 @@
 
 **2016-12-23**  
 - 【晚上】学习《`Numerical Optimization`》。  
+- 【下午】阅读[`Deep Learning（深度学习）学习笔记整理`](http://blog.csdn.net/zouxy09/article/details/8775488)。  
 - 【上午】研究组内部研讨。  
 
 ----
