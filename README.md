@@ -1,7 +1,7 @@
 # 日志  
 
 **2016-12-26**  
-- 【下午】阅读[能否简单并且易懂地介绍一下多个基于滤波方法的SLAM算法原理？](https://www.zhihu.com/question/46916554)。  
+- 【下午】阅读[`能否简单并且易懂地介绍一下多个基于滤波方法的SLAM算法原理？`](https://www.zhihu.com/question/46916554)。  
 - 【下午】阅读[`机器学习入门：Linear Regression与Normal Equation`](http://blog.csdn.net/xiazdong/article/details/7950087)。  
 - 【上午】阅读[`算法优化之道：避开鞍点`](http://www.csdn.net/article/2016-04-07/2826616)。这篇资料的最后给出了用于处理复杂鞍点的新方法：[`Efficient approaches for escaping higher order saddle points in non-convex optimization`](https://arxiv.org/abs/1602.05908)  
 - 【上午】阅读[`Deep Learning（深度学习）学习笔记整理`](http://blog.csdn.net/zouxy09/article/details/8775488)。  
