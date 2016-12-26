@@ -1,5 +1,19 @@
 # 日志  
 
+**2016-12-26**  
+- 【上午】阅读[`Deep Learning（深度学习）学习笔记整理`](http://blog.csdn.net/zouxy09/article/details/8775488)。  
+
+----
+**2016-12-25**  
+- 【晚上】学习《`Numerical Optimization`》。  
+- 【下午】阅读《概率分布》。  
+
+----
+**2016-12-24**  
+- 【晚上】学习《`Numerical Optimization`》。  
+- 【下午】阅读《概率分布》。  
+
+----
 **2016-12-23**  
 - 【晚上】学习《`Numerical Optimization`》。  
 - 【下午】阅读[`Deep Learning（深度学习）学习笔记整理`](http://blog.csdn.net/zouxy09/article/details/8775488)。  
