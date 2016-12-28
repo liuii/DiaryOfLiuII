@@ -1,5 +1,16 @@
 # 日志  
 
+**2016-12-28**  
+- 【晚上】学习《`Robotic Vision Control`》。  
+- 【下午】《`计算思维`》上课。  
+- 【上午】学习《`Robotic Vision Control`》。  
+
+----
+**2016-12-27**  
+- 【晚上】学习《`Probabilistic Robotic`》。  
+- 【下午】阅读《概率分布》。  
+
+----
 **2016-12-26**  
 - 【晚上】阅读[`KL距离`](http://www.cnblogs.com/nlpowen/p/3620470.html)。  
 - 【晚上】学习《`Numerical Optimization`》。  
