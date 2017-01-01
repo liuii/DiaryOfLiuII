@@ -1,6 +1,17 @@
 # 日志  
 
+**2017-01-01**  
+- 【晚上】学习《`Robotic Vision Control`》。  
+- 【下午】学习《`Robotic Vision Control`》。  
+
+----
+**2016-12-31**  
+- 【全天】休息。  
+
+----
 **2016-12-30**  
+- 【晚上】学习《`Robotic Vision Control`》。  
+- 【下午】学习《`Robotic Vision Control`》。  
 - 【上午】学术研讨。  
 
 ----
