@@ -1,5 +1,13 @@
 # 日志  
 
+**2017-01-03**  
+- 【下午】编写《研究规划》。  
+- 【上午】研究探讨。
+----
+**2017-01-02**  
+- 【上午】学习《`Robotic Vision Control`》。  
+
+----
 **2017-01-01**  
 - 【晚上】学习《`Robotic Vision Control`》。  
 - 【下午】学习《`Robotic Vision Control`》。  
