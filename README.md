@@ -1,6 +1,12 @@
 # 日志  
 
+**2017-01-06**  
+- 【上午】**`数豆子`**  
+- 【上午】学习《`Robotic Vision Control`》。  
+
+----
 **2017-01-05**  
+- 【晚上】学习《`Robotic Vision Control`》。  
 - 【下午】学习《`Robotic Vision Control`》。  
 - 【上午】《计算思维》实验。  
 
