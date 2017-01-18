@@ -1,6 +1,10 @@
 # 日志  
 
 ----
+**2017-01-18**  
+- 【全天】学习《`Robotic Vision Control`》。  
+
+----
 **2017-01-17**  
 - 【全天】学习《`Robotic Vision Control`》。  
 
