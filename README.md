@@ -1,6 +1,10 @@
 # 日志  
 
 ----
+**2017-01-26**  
+- 【全天】学习《`最优化理论`》。  
+
+----
 **2017-01-25**  
 - 【全天】阅读《`Building a grid-point cloud-semantic map based on graph for the navigation of intelligent wheelchair`》。  
 
