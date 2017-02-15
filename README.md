@@ -1,7 +1,13 @@
 # 日志  
 
+**2017-02-15**  
+- 【全天】《Simultaneous Localization And Mapping:
+Present, Future, and the Robust-Perception Age》  
+
+----
 **2017-02-14**  
-- 【上午】《SLAM: 现在，未来和鲁棒年代》  
+- 【全天】《Simultaneous Localization And Mapping:
+Present, Future, and the Robust-Perception Age》  
 
 **2017-02-13**  
 - 【晚上】处理毕业设计问题。  
