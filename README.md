@@ -2,14 +2,12 @@
 
 **2017-02-21**  
 - 【晚上】学习《机器学习》。  
-- 【白天】《Simultaneous Localization And Mapping:
-Present, Future, and the Robust-Perception Age》  
+- 【白天】《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》  
 
 ----
 **2017-02-20**  
 - 【晚上】学习《机器学习》。  
-- 【白天】《Simultaneous Localization And Mapping:
-Present, Future, and the Robust-Perception Age》  
+- 【白天】《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》  
 
 ----
 **2017-02-19**  
@@ -17,29 +15,24 @@ Present, Future, and the Robust-Perception Age》
 
 ----
 **2017-02-18**  
-- 【下午】《Simultaneous Localization And Mapping:
-Present, Future, and the Robust-Perception Age》  
+- 【下午】《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》  
 
 ----
 **2017-02-17**  
-- 【全天】《Simultaneous Localization And Mapping:
-Present, Future, and the Robust-Perception Age》  
+- 【全天】《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》  
 
 ----
 **2017-02-16**  
-- 【全天】《Simultaneous Localization And Mapping:
-Present, Future, and the Robust-Perception Age》  
+- 【全天】《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》  
 
 ----
 **2017-02-15**  
 - 【下午】**`数豆子`**  
-- 【全天】《Simultaneous Localization And Mapping:
-Present, Future, and the Robust-Perception Age》  
+- 【全天】《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》  
 
 ----
 **2017-02-14**  
-- 【全天】《Simultaneous Localization And Mapping:
-Present, Future, and the Robust-Perception Age》  
+- 【全天】《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》  
 
 **2017-02-13**  
 - 【晚上】处理毕业设计问题。  
