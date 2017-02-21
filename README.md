@@ -2,7 +2,7 @@
 
 **2017-02-21**  
 - 【晚上】学习《机器学习》。  
-- 【白天】《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》  
+- 【白天】[《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》](https://github.com/liuii/DiaryOfLiuII/blob/master/SLAM/00.SurveyPapers.md)  
 
 ----
 **2017-02-20**  
