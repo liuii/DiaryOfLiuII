@@ -1,5 +1,17 @@
 # 日志  
 
+**2017-02-21**  
+- 【晚上】学习《机器学习》。  
+- 【白天】《Simultaneous Localization And Mapping:
+Present, Future, and the Robust-Perception Age》  
+
+----
+**2017-02-20**  
+- 【晚上】学习《机器学习》。  
+- 【白天】《Simultaneous Localization And Mapping:
+Present, Future, and the Robust-Perception Age》  
+
+----
 **2017-02-19**  
 - 【晚上】备课。  
 
