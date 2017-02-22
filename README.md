@@ -1,8 +1,15 @@
 # 日志  
 
+**2017-02-22**  
+- 【下午】《计算机程序设计》上课。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【上午】**`数豆子`**  
+
+----
 **2017-02-21**  
 - 【晚上】学习《机器学习》。  
-- 【白天】[《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》](https://github.com/liuii/DiaryOfLiuII/blob/master/SLAM/00.SurveyPapers.md)  
+- 【下午】[《Simultaneous Localization And Mapping: Present, Future, and the Robust-Perception Age》](https://github.com/liuii/DiaryOfLiuII/blob/master/SLAM/00.SurveyPapers.md)  
+- 【上午】**`数豆子`**  
 
 ----
 **2017-02-20**  
