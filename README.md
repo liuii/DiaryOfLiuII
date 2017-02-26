@@ -1,5 +1,21 @@
 # 日志  
 
+----
+**2017-02-26**  
+- 【晚上】学习《机器学习》。  
+- 【上午】总结SLAM综述。  
+
+----
+**2017-02-25**  
+- 【下午】阅读《Simultaneous localization and mapping (SLAM): Part II》。  
+- 【上午】阅读《Simultaneous localization and mapping: part I》。  
+
+----
+**2017-02-24**  
+- 【上午】《计算机程序设计》实验。  
+- 【上午】总结SLAM综述。  
+
+----
 **2017-02-23**  
 - 【上午】总结SLAM综述。  
 - 【上午】**`数豆子`**  
