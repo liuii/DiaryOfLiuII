@@ -1,6 +1,22 @@
 # 日志  
 
 ----
+**2017-03-05**  
+- 【晚上】阅读《Programming in Haskell》。  
+
+----
+**2017-03-04**  
+- 【下午】阅读《Programming in Haskell》。  
+- 【下午】阅读《Visual odometry Part II: Matching, robustness, optimization, and applications》。  
+- 【上午】阅读《Visual odometry Part I: the first 30 years and fundamentals》。  
+
+----
+**2017-03-03**  
+- 【晚上】学习《机器学习》。  
+- 【下午】阅读《Visual odometry Part I: the first 30 years and fundamentals》。  
+- 【上午】《Programming Paradigm》上课。  
+
+----
 **2017-03-02**  
 - 【上午】工作汇报。  
 
