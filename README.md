@@ -1,6 +1,10 @@
 # 日志  
 
 ----
+**2017-03-06**  
+- 【上午】阅读《Visual Place Recognition A Survey》。  
+
+----
 **2017-03-05**  
 - 【晚上】阅读《Programming in Haskell》。  
 
