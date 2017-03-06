@@ -2,6 +2,9 @@
 
 ----
 **2017-03-06**  
+- 【晚上】阅读《Programming in Haskell》。  
+- 【晚上】学习《机器学习》。  
+- 【下午】阅读《Visual Place Recognition A Survey》。  
 - 【上午】阅读《Visual Place Recognition A Survey》。  
 
 ----
