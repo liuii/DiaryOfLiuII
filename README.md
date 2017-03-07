@@ -1,6 +1,12 @@
 # 日志  
 
 ----
+**2017-03-07**  
+- 【晚上】学习《机器学习》。  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】阅读《Visual Place Recognition A Survey》。  
+
+----
 **2017-03-06**  
 - 【晚上】阅读《Programming in Haskell》。  
 - 【晚上】学习《机器学习》。  
