@@ -1,6 +1,11 @@
 # 日志  
 
 ----
+**2017-03-09**  
+- 【全天】撰写物联网工程系自评报告。  
+- 【上午】阅读《Visual Place Recognition A Survey》。  
+
+----
 **2017-03-08**  
 - 【晚上】阅读《Programming in Haskell》。  
 - 【晚上】学习《机器学习》。  
