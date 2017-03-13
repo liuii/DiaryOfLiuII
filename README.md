@@ -1,6 +1,29 @@
 # 日志  
 
 ----
+**2017-03-13**  
+- 【下午】阅读《Programming in Haskell》。  
+- 【下午】阅读《Appearance-only SLAM at large scale with FAB-MAP 2.0》。  
+- 【上午】组内学术研讨。  
+
+----
+**2017-03-12**  
+- 【下午】阅读《小波变换通俗解释》。  
+
+----
+**2017-03-11**  
+- 【下午】阅读《小波变换通俗解释》。  
+- 【下午】阅读《从梯度下降到拟牛顿法：详解训练神经网络的五大算法》。  
+- 【下午】阅读《A Bayesian Hierarchical Model for Learning Natural Scene Categories》。  
+
+----
+**2017-03-10**  
+- 【晚上】到实验室安装实验环境。  
+- 【下午】阅读《A Bayesian Hierarchical Model for Learning Natural Scene Categories》。  
+- 【上午】撰写物联网工程系自评报告。  
+- 【上午】阅读《Video Google: A Text Retrieval Approach to Object Matching in Videos》。  
+
+----
 **2017-03-09**  
 - 【全天】撰写物联网工程系自评报告。  
 - 【上午】阅读《Visual Place Recognition A Survey》。  
