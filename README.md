@@ -2,6 +2,8 @@
 
 ----
 **2017-03-13**  
+- 【晚上】阅读《Programming in Haskell》。  
+- 【晚上】学习《机器学习》。  
 - 【下午】阅读《Programming in Haskell》。  
 - 【下午】阅读《Appearance-only SLAM at large scale with FAB-MAP 2.0》。  
 - 【上午】组内学术研讨。  
