@@ -1,6 +1,22 @@
 # 日志  
 
 ----
+**2017-03-15**  
+- 【晚上】阅读《Programming in Haskell》。  
+- 【晚上】学习《机器学习》。  
+- 【下午】《计算机程序设计》上课。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【上午】《计算机程序设计》实验。  
+
+----
+**2017-03-14**  
+- 【晚上】《Programming Paradigm》实验。  
+- 【下午】阅读《City-Scale Location Recognition》。  
+- 【下午】阅读《Appearance-only SLAM at large scale with FAB-MAP 2.0》。  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】阅读《Appearance-only SLAM at large scale with FAB-MAP 2.0》。  
+
+----
 **2017-03-13**  
 - 【晚上】阅读《Programming in Haskell》。  
 - 【晚上】学习《机器学习》。  
