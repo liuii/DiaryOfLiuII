@@ -1,10 +1,23 @@
 # 日志  
 
 ----
+**2017-03-22**  
+- 【晚上】学习《机器学习》。  
+- 【下午】《计算机程序设计》上课。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【上午】《计算机程序设计》实验。  
+
+----
+**2017-03-21**  
+- 【晚上】《Programming Paradigm》实验。  
+- 【下午】阅读《Automatic Visual Bag-of-Words for Online Robot Navigation and Mapping》。  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】阅读《Programming in Haskell》。  
+
+----
 **2017-03-20**  
 - 【晚上】学习《机器学习》。  
-- 【下午】阅读《#7》  
-- 【上午】阅读《#7》  
+- 【全天】阅读《FrameSLAM: From Bundle Adjustment to Real-Time Visual Mapping》  
 
 ----
 **2017-03-19**  
@@ -12,8 +25,8 @@
 
 ----
 **2017-03-18**  
-- 【下午】阅读《#6》。  
-- 【上午】阅读《#5》  
+- 【下午】阅读《Environment Selection And Hierarchical Place Recognition》。  
+- 【上午】阅读《Scalable Recognition with a Vocabulary Tree》  
 
 ----
 **2017-03-17**  
