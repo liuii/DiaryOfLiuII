@@ -1,6 +1,13 @@
 # 日志  
 
 ----
+**2017-03-23**  
+- 【下午】阅读《Real-Time Loop Detection with Bags of Binary Words》。  
+- 【中午】阅卷。  
+- 【上午】阅读[《最大团问题》](http://www.cnblogs.com/zhj5chengfeng/archive/2013/07/29/3224092.html)。  
+- 【上午】阅读《Closing Loops Without Places》。  
+
+----
 **2017-03-22**  
 - 【晚上】学习《机器学习》。  
 - 【下午】《计算机程序设计》上课。  
