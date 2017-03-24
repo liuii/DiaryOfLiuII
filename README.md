@@ -1,6 +1,11 @@
 # 日志  
 
 ----
+**2017-03-24**  
+- 【下午】实验机器人学代码库。  
+- 【上午】《Programming Paradigm》上课。  
+
+----
 **2017-03-23**  
 - 【下午】阅读《Real-Time Loop Detection with Bags of Binary Words》。  
 - 【中午】阅卷。  
