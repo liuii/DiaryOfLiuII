@@ -1,6 +1,19 @@
 # 日志  
 
 ----
+**2017-03-27**  
+- 【上午】实验。  
+
+----
+**2017-03-26**  
+- 【晚上】学习《机器学习》。  
+
+----
+**2017-03-25**  
+- 【下午】阅读《Multiple map hypotheses for planning and navigating in non-stationary environments》。  
+- 【上午】阅读《SIFT, SURF & Seasons: Appearance-based Long-term Localization in Outdoor Environments》。  
+
+----
 **2017-03-24**  
 - 【下午】实验机器人学代码库。  
 - 【上午】《Programming Paradigm》上课。  
