@@ -2,6 +2,8 @@
 
 ----
 **2017-03-31**  
+- 【下午】阅读[《The Extended Kalman Filter: An Interactive Tutorial for Non-Experts》](https://home.wlu.edu/~levys/kalman_tutorial/)。  
+- 【下午】研究《机器视觉》。  
 - 【上午】阅读[《How a Kalman filter works, in pictures》](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/#mathybits)。  
 - 【上午】阅读[《Understanding the unseen》](https://plus.maths.org/content/understanding-unseen)。  
 
