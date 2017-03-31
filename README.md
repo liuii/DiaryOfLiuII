@@ -1,8 +1,12 @@
 # 日志  
 
 ----
+**2017-03-31**  
+- 【上午】阅读[《Understanding the unseen》](https://plus.maths.org/content/understanding-unseen)。  
+
+----
 **2017-03-30**  
-- 【晚上】学习《机器学习》。  
+- 【晚上】《Programming Paradigm》实验。  
 - 【上午】研究《机器视觉》。  
 
 ----
