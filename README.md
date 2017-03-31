@@ -2,6 +2,7 @@
 
 ----
 **2017-03-31**  
+- 【上午】阅读[《How a Kalman filter works, in pictures》](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/#mathybits)。  
 - 【上午】阅读[《Understanding the unseen》](https://plus.maths.org/content/understanding-unseen)。  
 
 ----
