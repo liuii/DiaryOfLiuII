@@ -1,6 +1,10 @@
 # 日志  
 
 ----
+**2017-04-04**  
+- 【上午】阅读[《The Extended Kalman Filter: An Interactive Tutorial for Non-Experts》](https://home.wlu.edu/~levys/kalman_tutorial/)。  
+
+----
 **2017-04-03**  
 - 【晚上】阅读[《The Extended Kalman Filter: An Interactive Tutorial for Non-Experts》](https://home.wlu.edu/~levys/kalman_tutorial/)。  
 - 【下午】阅读《贝叶斯思维》。  
