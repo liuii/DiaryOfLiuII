@@ -1,6 +1,14 @@
 # 日志  
 
 ----
+**2017-04-05**  
+- 【晚上】阅读[VC维的来龙去脉](http://www.flickering.cn/machine_learning/2015/04/vc%E7%BB%B4%E7%9A%84%E6%9D%A5%E9%BE%99%E5%8E%BB%E8%84%89/)。  
+- 【晚上】学习《机器学习》。  
+- 【下午】《计算机程序设计》上课。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【上午】《计算机程序设计》实验。  
+
+----
 **2017-04-04**  
 - 【上午】阅读[《The Extended Kalman Filter: An Interactive Tutorial for Non-Experts》](https://home.wlu.edu/~levys/kalman_tutorial/)。  
 
