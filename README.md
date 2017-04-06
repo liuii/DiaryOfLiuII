@@ -1,6 +1,12 @@
 # 日志  
 
 ----
+**2017-04-06**  
+- 【晚上】《programming Paradigm》实验。  
+- 【白天】阅读LaTeX入门。  
+
+
+----
 **2017-04-05**  
 - 【晚上】阅读[VC维的来龙去脉](http://www.flickering.cn/machine_learning/2015/04/vc%E7%BB%B4%E7%9A%84%E6%9D%A5%E9%BE%99%E5%8E%BB%E8%84%89/)。  
 - 【晚上】学习《机器学习》。  
