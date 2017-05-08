@@ -1,6 +1,7 @@
 # 日志  
 
 **2017-05-08**  
+- 【下午】组内研讨。  
 - 【上午】阅读[`优化问题中的对偶性理论`](http://xiaoyc.com/duality-theory-for-optimization/)和[`Lagrange Multiplier`](http://mathworld.wolfram.com/LagrangeMultiplier.html)。  
 - 【上午】学习《最优化方法》。  
 - 【清晨】准备《机器学习杂谈》系列讲座。  
