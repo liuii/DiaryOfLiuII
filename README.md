@@ -2,6 +2,7 @@
 
 ----
 **2017-07-05**  
+- 【下午】阅读`An efficient direct approach to visual SLAM`。  
 - 【上午】阅读`An Efficient Direct Method for Improving visual SLAM`。  
 
 ----
