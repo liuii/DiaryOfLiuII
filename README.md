@@ -1,6 +1,10 @@
 # 日志  
 
 ----
+**2017-07-05**  
+- 【上午】阅读`An Efficient Direct Method for Improving visual SLAM`。  
+
+----
 **2017-07-04**  
 - 【晚上】学习机器学习库。  
 - 【全天】阅读`Editors Choice Article: Visual SLAM: Why filter?`。  
