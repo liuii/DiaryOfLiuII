@@ -2,6 +2,9 @@
 
 ----
 **2017-07-07**  
+- 【抽空】阅读《面向机器智能的TensorFlow实践》。  
+- 【上午】阅读[`旋转矩阵与四元数`](http://insaneguy.me/2015/03/25/rotation_matrix_and_quaternions/)。  
+- 【上午】阅读[`四元数指数映射旋转参数化的实际应用`](http://www.cnblogs.com/santaizi/p/5327932.html)。  
 - 【上午】阅读[`李群与李代数`](https://yq.aliyun.com/articles/109535)。  
 - 【上午】阅读`Dense Visual SLAM for RGB-D Cameras`。  
 
