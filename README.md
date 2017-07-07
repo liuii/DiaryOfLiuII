@@ -1,7 +1,20 @@
 # 日志  
 
 ----
+**2017-07-07**  
+- 【上午】阅读[`李群与李代数`](https://yq.aliyun.com/articles/109535)。  
+- 【上午】阅读`Dense Visual SLAM for RGB-D Cameras`。  
+
+----
+**2017-07-06**  
+- 【晚上】学习机器学习库。  
+- 【下午】组会。  
+- 【抽空】阅读《面向机器智能的TensorFlow实践》。  
+- 【上午】国际学院开会。
+
+----
 **2017-07-05**  
+- 【晚上】学习机器学习库。  
 - 【下午】阅读`An efficient direct approach to visual SLAM`。  
 - 【上午】阅读`An Efficient Direct Method for Improving visual SLAM`。  
 
