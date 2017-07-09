@@ -1,6 +1,10 @@
 # 日志  
 
 ----
+**2017-07-09**  
+- 【上午】阅读论文：`SVO: Fast Semi-Direct Monocular Visual Odometry`。  
+
+----
 **2017-07-07**  
 - 【抽空】阅读《面向机器智能的TensorFlow实践》。  
 - 【上午】阅读[`旋转矩阵与四元数`](http://insaneguy.me/2015/03/25/rotation_matrix_and_quaternions/)。  
