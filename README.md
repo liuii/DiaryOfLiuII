@@ -2,6 +2,7 @@
 
 ----
 **2017-07-10**  
+- 【上午】阅读论文：`Modelling Uncertainty in Deep Learning for Camera Relocalization`。  
 - 【上午】阅读论文：`PoseNet: A Convolutional Network for Real-Time 6-DOF Camera Relocalization`。  
 - 【上午】阅读`Large-Scale Direct SLAM with Stereo Cameras`。  
 
