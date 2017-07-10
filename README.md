@@ -1,6 +1,10 @@
 # 日志  
 
 ----
+**2017-07-10**  
+- 【上午】阅读`Large-Scale Direct SLAM with Stereo Cameras`。  
+
+----
 **2017-07-09**  
 - 【晚上】学习机器学习库。  
 - 【上午】阅读论文：`SVO: Fast Semi-Direct Monocular Visual Odometry`。  
