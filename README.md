@@ -1,6 +1,14 @@
 # 日志  
 
 ----
+**2017-07-12**  
+- 【全天】学习《计算机视觉中的多视图几何》。  
+
+----
+**2017-07-11**  
+- 【抽空】阅读《面向机器智能的TensorFlow实践》。  
+
+----
 **2017-07-10**  
 - 【上午】阅读论文：`Modelling Uncertainty in Deep Learning for Camera Relocalization`。  
 - 【上午】阅读论文：`PoseNet: A Convolutional Network for Real-Time 6-DOF Camera Relocalization`。  
