@@ -1,10 +1,18 @@
 # 日志  
 
 ----
+**2017-09-19**  
+- 【上午】整理下载论文。  
+- 【上午】《C语言程序设计》上课。  
+- 【下午】《159251 Software Engineering Design and Construction》上课。  
+- 【下午】《159251 Software Engineering Design and Construction》实验。  
+
+----
 **2017-09-18**  
 - 【上午】学习《凸优化》。  
 - 【下午】《C语言程序设计》上课。  
 - 【下午】《159251 Software Engineering Design and Construction》实验。  
+- 【晚上】阅读《A Beginner's Guide To Understanding Convolutional Neural Networks》。  
 
 ----
 **2017-09-15**  
