@@ -8,6 +8,7 @@
 **2017-09-19**  
 - 【上午】整理下载论文。  
 - 【上午】《C语言程序设计》上课。  
+- 【中午】阅读《A Beginner's Guide To Understanding Convolutional Neural Networks Part 2》。  
 - 【下午】《159251 Software Engineering Design and Construction》上课。  
 - 【下午】《159251 Software Engineering Design and Construction》实验。  
 
