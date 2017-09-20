@@ -2,6 +2,7 @@
 
 ----
 **2017-09-20**  
+- 【上午】阅读《The 9 Deep Learning Papers You Need To Know About (Understanding CNNs Part 3)》。  
 - 【下午】《C语言程序设计》上课。  
 
 ----
