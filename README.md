@@ -1,6 +1,12 @@
 # 日志  
 
 ----
+**2017-09-22**  
+- 【清晨】准备报告。  
+- 【上午】阅读《`AlexNet` ImageNet Classification with Deep Convolutional Neural Networks》。  
+
+
+----
 **2017-09-21**  
 - 【上午】《C语言程序设计》上课。  
 - 【下午】《C语言程序设计》实验。  
