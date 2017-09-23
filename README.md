@@ -2,6 +2,7 @@
 
 ----
 **2017-09-23**  
+- 【上午】阅读《`ZF Net` Visualizing and Understanding Convolutional Networks》。  
 - 【下午】《159251 Software Engineering Design and Construction》上课。  
 
 ----
