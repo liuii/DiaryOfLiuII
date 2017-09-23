@@ -1,6 +1,10 @@
 # 日志  
 
 ----
+**2017-09-23**  
+- 【下午】《159251 Software Engineering Design and Construction》上课。  
+
+----
 **2017-09-22**  
 - 【清晨】准备报告。  
 - 【上午】阅读《`AlexNet` ImageNet Classification with Deep Convolutional Neural Networks》。  
