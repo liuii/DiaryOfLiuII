@@ -4,6 +4,7 @@
 **2017-09-23**  
 - 【上午】阅读《`ZF Net` Visualizing and Understanding Convolutional Networks》。  
 - 【下午】《159251 Software Engineering Design and Construction》上课。  
+- 【晚上】学习《计算机视觉——模型、学习和推理》。  
 
 ----
 **2017-09-22**  
