@@ -3,6 +3,7 @@
 ----
 **2017-09-24**  
 - 【上午】学生培训。  
+- 【上午】阅读《`VGG Net`: VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION》。  
 
 ----
 **2017-09-23**  
