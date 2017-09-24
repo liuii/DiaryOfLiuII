@@ -1,6 +1,11 @@
 # 日志  
 
 ----
+**2017-09-25**  
+- 【清晨】学习《`Deep Learning Specialization` - Neural Networks and Deep Learning》。  
+- 【下午】《C语言程序设计》上课。  
+
+----
 **2017-09-24**  
 - 【上午】学生培训。  
 - 【上午】阅读《`VGG Net`: VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION》。  
