@@ -1,9 +1,17 @@
 # 日志  
 
 ----
+**2017-09-27**  
+- 【上午】《C语言程序设计》上课。  
+
+----
 **2017-09-26**  
 - 【上午】《C语言程序设计》实验。  
 - 【上午】《C语言程序设计》上课。  
+- 【下午】阅读《`ResNet`: Deep Residual Learning for Image Recognition》。  
+- 【下午】阅读《`R-CNN`: Rich feature hierarchies for accurate object detection and semantic segmentation》。  
+- 【晚上】学习《计算机视觉——模型、学习和推理》。  
+- 【晚上】学习《`Deep Learning Specialization` - Neural Networks and Deep Learning》。  
 
 ----
 **2017-09-25**  
