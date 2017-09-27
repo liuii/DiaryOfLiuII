@@ -10,6 +10,7 @@
 **2017-09-27**  
 - 【上午】阅读《`Fast R-CNN`: Fast R-CNN》。  
 - 【上午】阅读《`Faster R-CNN`: Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks 》。  
+- 【中午】阅读《`GAN`: Generative Adversarial Nets》。  
 - 【上午】《C语言程序设计》上课。  
 - 【晚上】学习《`Deep Learning Specialization` - Neural Networks and Deep Learning》。  
 
