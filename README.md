@@ -1,6 +1,11 @@
 # 日志  
 
 ----
+**2017-09-29**  
+- 【上午】组内讲座。  
+- 【下午】《159251 Software Engineering Design and Construction》实验。  
+
+----
 **2017-09-28**  
 - 【上午】《C语言程序设计》上课。  
 - 【下午】《159251 Software Engineering Design and Construction》上课。  
