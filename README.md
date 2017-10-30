@@ -1,6 +1,15 @@
 # 日志  
 
 ----
+**2017-10-30**  
+- 【下午】《C语言程序设计》上课。 
+- 【下午】《159251 Software  Engineering Design and Construction》实验。  
+
+----
+**2017-10-29**  
+- 【全天】学习《概率机器人》。  
+
+----
 **2017-10-26**  
 - 【上午】《C语言程序设计》上课。  
 - 【下午】《159251 Software  Engineering Design and Construction》上课。  
