@@ -4,6 +4,7 @@
 **2017-12-12**  
 - 【上午】《C语言程序设计》实验。  
 - 【上午】《C语言程序设计》上课。  
+- 【下午】学习[四元数](https://www.zhihu.com/question/41485992/answer/93762542?from=profile_answer_card)。  
 - 【下午】学习《Deep Learning》。  
 - 【晚上】学习《视觉SLAM十四讲》。  
 
