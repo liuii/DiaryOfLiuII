@@ -1,13 +1,31 @@
 # 日志  
 
 ----
+**2017-12-17**  
+- 【全天】因为四六级监考被冻感冒，休息一天。(╯‵□′)╯︵┻━┻
+
+----
+**2017-12-16**  
+- 【全天】大学英语四六级监考。(っ °Д °;)っ  
+
+----
+**2017-12-15**  
+- 【清晨】继续阅读《CNN-SLAM: Real-time dense monocular SLAM with learned depth prediction》。  
+- 【全天】出差到北京参加《新一代人工智能的基础与前瞻》。  
+- 【晚上】阅读《UnDeepVO: Monocular Visual Odometry through Unsupervised Deep Learning》。  
+
+----
 **2017-12-14**  
 - 【上午】《C语言程序设计》实验。  
 - 【上午】《C语言程序设计》上课。  
+- 【下午】学习《视觉SLAM十四讲》。  
+- 【上午】《C语言程序设计》实验。  
+- 【晚上】《C语言程序设计》实验。  
 
 ----
 **2017-12-13**  
 - 【上午】研究生开题。  
+- 【中午】阅读《CNN-SLAM: Real-time dense monocular SLAM with learned depth prediction》。  
 - 【下午】《C语言程序设计》上课。  
 - 【下午】学习《Deep Learning》。  
 
