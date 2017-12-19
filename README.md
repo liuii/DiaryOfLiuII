@@ -1,6 +1,12 @@
 # 日志  
 
 ----
+**2017-12-19**  
+- 【白天】学习《视觉SLAM十四讲》。  
+- 【晚上】学习《Deep Learning》。  
+- 【晚上】阅读《Delbing Deeper into Convolutional Neural Networks for Camera Relocalization》。  
+
+----
 **2017-12-18**  
 - 【上午】阅读《Delbing Deeper into Convolutional Neural Networks for Camera Relocalization》。  
 - 【白天】学习《视觉SLAM十四讲》。  
