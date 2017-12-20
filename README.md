@@ -2,6 +2,11 @@
 
 ----
 **2017-12-19**  
+- 【上午】开会。  
+- 【下午】学习《视觉SLAM十四讲》。  
+
+----
+**2017-12-19**  
 - 【白天】学习《视觉SLAM十四讲》。  
 - 【晚上】学习《Deep Learning》。  
 - 【晚上】阅读《Delbing Deeper into Convolutional Neural Networks for Camera Relocalization》。  
