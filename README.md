@@ -5,6 +5,7 @@
 - 【上午】学习《视觉SLAM十四讲》。  
 - 【下午】学习《视觉SLAM十四讲》。  
 - 【下午】学习《Deep Learning》。  
+- 【晚上】阅读论文《VINet: Visual-Inertial Odometry as a Sequence-to-Sequence Learning Problem》。  
 - 【晚上】学习《视觉SLAM十四讲》。  
 
 ----
