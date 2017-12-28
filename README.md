@@ -1,9 +1,16 @@
 # 日志  
 
 ----
+**2017-12-28**  
+- 【上午】学习《视觉SLAM十四讲》。  
+- 【下午】学习《Deep Learning》。  
+- 【晚上】阅读论文《Unsupervised Learning of Depth and Ego-Motion form Video》。  
+- 【晚上】学习《视觉SLAM十四讲》。  
+
+----
 **2017-12-27**  
 - 【上午】组会。  
-- 【中午】阅读论文《》。  
+- 【中午】阅读论文《Toward Geometric Deep SLAM》。  
 - 【晚上】学习《视觉SLAM十四讲》。  
 
 ----
