@@ -5,6 +5,7 @@
 - 【上午】学习《视觉SLAM十四讲》。  
 - 【下午】学习《视觉SLAM十四讲》。  
 - 【下午】学习《Deep Learning》。  
+- 【晚上】阅读论文《PoseNet: A Convolutional Network for Real-Time 6-DOF Camera Relocalization》。  
 - 【晚上】学习《视觉SLAM十四讲》。  
 
 ----
