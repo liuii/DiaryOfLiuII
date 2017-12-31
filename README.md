@@ -2,7 +2,14 @@
 
 ----
 **2017-12-30**  
-- 【上午】阅读论文《》。  
+- 【上午】学习《视觉SLAM十四讲》。  
+- 【下午】学习《视觉SLAM十四讲》。  
+- 【下午】学习《Deep Learning》。  
+- 【晚上】学习《视觉SLAM十四讲》。  
+
+----
+**2017-12-30**  
+- 【上午】阅读论文《SfM-Net: Learning of Structure and Motion from Video》。  
 - 【下午】学习《Deep Learning》。  
 - 【晚上】学习《视觉SLAM十四讲》。  
 
