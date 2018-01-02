@@ -1,6 +1,17 @@
 # 日志  
 
 ----
+**2018-01-02**  
+- 【上午】学习《视觉SLAM十四讲》。  
+
+
+----
+**2018-01-01**  
+- 【上午】阅读论文《Semi-Dense 3D Semantic Mapping from Monocular SLAM》。  
+- 【上午】阅读论文《Sparse-to-Dense: Depth Prediction from Sparse Depth Samples and a Single Image》。  
+- 【下午】阅卷。  
+
+----
 **2017-12-30**  
 - 【上午】学习《视觉SLAM十四讲》。  
 - 【下午】学习《视觉SLAM十四讲》。  
