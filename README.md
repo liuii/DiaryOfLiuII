@@ -4,13 +4,15 @@
 **2018-01-04**  
 - 【上午】处理成绩。  
 - 【下午】学习《视觉SLAM十四讲》。  
+- 【下午】学习《Deep Learning》。  
+- 【晚上】学习《视觉SLAM十四讲》。  
 
 ----
 **2018-01-03**  
 - 【上午】组会。  
 - 【中午】学习《视觉SLAM十四讲》。  
 - 【下午】学习《Deep Learning》。  
-- 【晚上】阅读论文《LIFT: 》。  
+- 【晚上】阅读论文《LIFT: Learned Invariant Feature Tranform》。  
 - 【晚上】学习《视觉SLAM十四讲》。  
 
 ----
