@@ -3,6 +3,9 @@
 ----
 **2018-01-08**  
 - 【上午】处理杂务。  
+- 【下午】处理杂务。  
+- 【晚上】学习《Deep Learning》。  
+- 【晚上】阅读论文《DeMon: Depth and Motion Network for Learning Monocular Stereo》。  
 
 ----
 **2018-01-07**  
