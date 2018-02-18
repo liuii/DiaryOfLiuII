@@ -1,5 +1,8 @@
 # 日志  
 
+**2018-02-10 - 2018-02-18**  
+- 【全天】学习《Deep Learning with Python》。  
+
 **2018-02-02 - 2018-02-08**  
 - 【全天】开会。  
 - 【晚上】学习《Deep Learning with Python》。  
