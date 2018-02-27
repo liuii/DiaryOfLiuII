@@ -1,5 +1,15 @@
 # 日志  
 
+**2018-02-27**
+- 【全天】学习《State Estimation for Robtics》。  
+- 【下午】学习《Deep Learning》。  
+- 【晚上】学习《State Estimation for Robtics》。  
+
+**2018-02-26**
+- 【下午】学习《State Estimation for Robtics》。  
+- 【下午】学习《Deep Learning》。  
+- 【晚上】学习《State Estimation for Robtics》。  
+
 **2018-02-10 - 2018-02-19**  
 - 【全天】学习《Deep Learning with Python》。  
 
