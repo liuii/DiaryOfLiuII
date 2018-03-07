@@ -1,5 +1,18 @@
 # 日志  
 
+**2018-03-07**
+- 【上午】学习《State Estimation for Robtics》。  
+
+**2018-03-06**
+- 【上午】《Program Paradigm》上课。  
+- 【下午】专业开会。  
+- 【下午】《物联网系统综合应用》上课。  
+
+**2018-03-05**
+- 【上午】《物联网系统综合应用》上课。  
+- 【下午】学习《Deep Learning》。  
+- 【晚上】学习《State Estimation for Robtics》。  
+
 **2018-03-03**
 - 【全天】学习《State Estimation for Robtics》。  
 - 【下午】学习《Deep Learning》。  
