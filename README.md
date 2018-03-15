@@ -1,74 +1,80 @@
 # 日志  
 
-**2018-03-14**
+**2018-03-15**  
+- 【上午】学习《State Estimation for Robtics》。  
+
+**2018-03-14**  
 - 【上午】学习《State Estimation for Robtics》。  
 - 【上午】组会。  
+- 【下午】学习《State Estimation for Robtics》。  
+- 【下午】学习《Deep Learning》。  
+- 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-03-13**
+**2018-03-13**  
 - 【上午】《Program Paradigm》上课。  
 - 【上午】《Program Paradigm》实验。  
 - 【下午】学院开会。  
 - 【下午】《物联网系统综合应用》上课。  
 
-**2018-03-12**
+**2018-03-12**  
 - 【上午】学习《State Estimation for Robtics》。  
 - 【上午】《物联网系统综合应用》上课。  
 - 【下午】学习《State Estimation for Robtics》。  
 - 【晚上】《Program Paradigm》上课。  
 
-**2018-03-11**
+**2018-03-11**  
 - 【全天】学习《State Estimation for Robtics》。  
 
-**2018-03-10**
+**2018-03-10**  
 - 【全天】学习《State Estimation for Robtics》。  
 
-**2018-03-09**
+**2018-03-09**  
 - 【上午】《Program Paradigm》上课。  
 - 【下午】安装实验环境。  
 - 【下午】学习《State Estimation for Robtics》。  
 - 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-03-08**
+**2018-03-08**  
 - 【上午】学习《State Estimation for Robtics》。  
 - 【中午】学习《Deep Learning》。  
 - 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-03-07**
+**2018-03-07**  
 - 【上午】学习《State Estimation for Robtics》。  
 - 【中午】学习《Deep Learning》。  
 - 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-03-06**
+**2018-03-06**  
 - 【上午】《Program Paradigm》上课。  
 - 【下午】专业开会。  
 - 【下午】《物联网系统综合应用》上课。  
 
-**2018-03-05**
+**2018-03-05**  
 - 【上午】《物联网系统综合应用》上课。  
 - 【下午】学习《Deep Learning》。  
 - 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-03-03**
+**2018-03-03**  
 - 【全天】学习《State Estimation for Robtics》。  
 - 【下午】学习《Deep Learning》。  
 - 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-03-01**
+**2018-03-01**  
 - 【全天】学习《State Estimation for Robtics》。  
 - 【下午】学习《Deep Learning》。  
 - 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-02-28**
+**2018-02-28**  
 - 【全天】学习《State Estimation for Robtics》。  
 - 【下午】学习《Deep Learning》。  
 - 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-02-27**
+**2018-02-27**  
 - 【全天】学习《State Estimation for Robtics》。  
 - 【下午】学习《Deep Learning》。  
 - 【晚上】学习《State Estimation for Robtics》。  
 
-**2018-02-26**
+**2018-02-26**  
 - 【下午】学习《State Estimation for Robtics》。  
 - 【下午】学习《Deep Learning》。  
 - 【晚上】学习《State Estimation for Robtics》。  
