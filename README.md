@@ -2,6 +2,9 @@
 
 **2018-03-15**  
 - 【上午】学习《State Estimation for Robtics》。  
+- 【下午】学习《The Essential of Linear Algebra》。  
+- 【下午】学习《State Estimation for Robtics》。  
+- 【晚上】学习《State Estimation for Robtics》。  
 
 **2018-03-14**  
 - 【上午】学习《State Estimation for Robtics》。  
