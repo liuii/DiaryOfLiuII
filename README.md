@@ -1,5 +1,14 @@
 # 日志  
 
+**2018-03-17**  
+- 【全天】学习《State Estimation for Robtics》。  
+
+**2018-03-16**  
+- 【上午】学习《State Estimation for Robtics》。  
+- 【中午】学习《The Essential of Linear Algebra》。  
+- 【下午】开会。  
+- 【晚上】学习《State Estimation for Robitcs》。  
+
 **2018-03-15**  
 - 【上午】学习《State Estimation for Robtics》。  
 - 【下午】学习《The Essential of Linear Algebra》。  
