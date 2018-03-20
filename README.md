@@ -1,5 +1,17 @@
 # 日志  
 
+**2018-03-20**  
+- 【上午】《Program Paradigm》上课。  
+- 【上午】《Program Paradigm》实验。  
+- 【下午】毕设学生开会。  
+- 【下午】《物联网系统综合应用》上课。  
+
+**2018-03-19**  
+- 【上午】学习《State Estimation for Robtics》。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【下午】学习《State Estimation for Robtics》。  
+- 【晚上】《Program Paradigm》实验。  
+
 **2018-03-17**  
 - 【全天】学习《State Estimation for Robtics》。  
 
