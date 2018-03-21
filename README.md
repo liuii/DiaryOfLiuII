@@ -1,5 +1,13 @@
 # 日志  
 
+**2018-03-21**  
+- 【上午】学习《State Estimation for Robtics》。  
+- 【上午】研究生组会。  
+- 【上午】学习《The Essential of Linear Algebra》。  
+- 【下午】学习《State Estimation for Robtics》。  
+- 【晚上】学习《The Essential of Linear Algebra》。  
+- 【晚上】学习《State Estimation for Robtics》。  
+
 **2018-03-20**  
 - 【上午】《Program Paradigm》上课。  
 - 【上午】《Program Paradigm》实验。  
