@@ -1,5 +1,12 @@
 # 日志  
 
+**2018-03-26**  
+- 【上午】学习《State Estimation for Robtics》。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【下午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【下午】学习《State Estimation for Robtics》。  
+- 【晚上】《Program Paradigm》实验。  
+
 **2018-03-21**  
 - 【上午】学习《State Estimation for Robtics》。  
 - 【上午】研究生组会。  
