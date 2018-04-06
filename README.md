@@ -1,5 +1,16 @@
 # 日志  
 
+**2018-04-06**  
+- 【上午】学习PyTorch。  
+- 【下午】复习数学分析。  
+
+**2018-04-05**  
+- 【全天】翻译教程《01_Deep_Learning_With_PyTorch_A_60_Minute_Blitz》。  
+
+**2018-04-04**  
+- 【上午】研究组组会。  
+- 【下午】与合作伙伴洽谈。  
+
 **2018-04-03**  
 - 【上午】学习《State Estimation for Robtics》。  
 - 【下午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
