@@ -4,6 +4,7 @@
 - 【上午】阅读《State Estimation for Robotics》。  
 - 【上午】《物联网系统综合应用》上课。
 - 【下午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【晚上】翻译PyTorch教程。  
 
 **2018-04-08**  
 - 【全天】翻译《PyTorch迁移学习教程》。  
