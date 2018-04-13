@@ -1,12 +1,15 @@
 # 日志  
 
-**2018-04-12**
+**2018-04-13**  
+- 【全天】学习《OpenCV3 with Python》。  
+
+**2018-04-12**  
 - 【上午】阅读《State Estimation for Robotics》。  
 - 【下午】学习《OpenCV3 with Python》。  
 - 【下午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
 - 【晚上】翻译PyTorch教程。  
 
-**2018-04-11**
+**2018-04-11**  
 - 【晚上】翻译PyTorch教程。  
 
 **2018-04-10**  
