@@ -1,5 +1,11 @@
 # 日志  
 
+**2018-04-16**  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【下午】阅读PyTorch文档。  
+- 【晚上】《Programming Paradigm》实验。  
+
 **2018-04-15**  
 - 【下午】翻译PyTorch教程。  
 - 【晚上】翻译PyTorch教程。  
