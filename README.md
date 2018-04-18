@@ -1,5 +1,16 @@
 # 日志  
 
+**2018-04-18**  
+- 【白天】学习深度学习可视化工具visdom。  
+- 【晚上】阅读PyTorch文档。
+
+**2018-04-17**  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】《Programming Paradigm》实验。  
+- 【下午】学习《OpenCV3 with Python》。  
+- 【下午】《物联网系统综合应用》上课。  
+- 【晚上】阅读PyTorch文档。  
+
 **2018-04-16**  
 - 【上午】《Programming Paradigm》上课。  
 - 【上午】《物联网系统综合应用》上课。  
