@@ -1,8 +1,13 @@
 # 日志  
 
+**2018-04-19**  
+- 【上午】翻译《OpenCV in Python》教程。  
+- 【下午】阅读PyTorch文档。  
+- 【晚上】阅读PyTorch文档。  
+
 **2018-04-18**  
 - 【白天】学习深度学习可视化工具visdom。  
-- 【晚上】阅读PyTorch文档。
+- 【晚上】阅读PyTorch文档。  
 
 **2018-04-17**  
 - 【上午】《Programming Paradigm》上课。  
