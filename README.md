@@ -1,9 +1,11 @@
 # 日志  
 
-**2018-04-19**  
+**2018-04-20**  
 - 【上午】翻译《OpenCV-Python》官方教程。  
 - 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
 - 【下午】翻译《OpenCV-Python》官方教程。  
+- 【晚上】做实验。  
+![](images/wisdom.png)  
 
 **2018-04-19**  
 - 【上午】翻译《OpenCV in Python》教程。  
