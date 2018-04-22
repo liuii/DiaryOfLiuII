@@ -1,6 +1,12 @@
 # 日志  
 
-**2018-04-20**  
+**2018-04-22**  
+- 【清晨】做实验。  
+- 【上午】翻译《OpenCV-Python》官方文档。  
+- 【下午】阅读《PyTorch》教程。  
+- 【晚上】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+
+**2018-04-21**  
 - 【上午】做实验。  
 - 【下午】阅读《迁移学习》。  
 
