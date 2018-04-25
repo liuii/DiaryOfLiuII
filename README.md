@@ -1,5 +1,11 @@
 # 日志  
 
+**2018-04-25**  
+- 【上午】翻译《OpenCV3 with Python》。  
+- 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【下午】翻译《OpenCV3 with Python》。  
+- 【晚上】迁移PyTorch代码到0.4。  
+
 **2018-04-24**  
 - 【上午】《Programming Paradigm》上课。  
 - 【下午】翻译《OpenCV3 with Python》。  
