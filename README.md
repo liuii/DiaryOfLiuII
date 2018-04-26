@@ -1,5 +1,10 @@
 # 日志  
 
+**2018-04-26**  
+- 【上午】翻译《OpenCV3 with Python》。  
+- 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【下午】翻译《OpenCV3 with Python》。  
+
 **2018-04-25**  
 - 【上午】翻译《OpenCV3 with Python》。  
 - 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
