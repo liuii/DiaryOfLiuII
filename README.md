@@ -1,5 +1,17 @@
 # 日志  
 
+**2018-04-28**  
+- 【上午】翻译《OpenCV-Python》官方教程。  
+- 【下午】熟悉云GPU节点。  
+- 【下午】研究所组会。  
+- 【晚上】熟悉云GPU节点。  
+
+**2018-04-27**  
+- 【上午】翻译《OpenCV-Python》官方教程。  
+- 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【下午】AWS宣讲。  
+- 【晚上】实验云主机。    
+
 **2018-04-26**  
 - 【上午】翻译《OpenCV3 with Python》。  
 - 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
