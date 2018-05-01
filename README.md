@@ -1,14 +1,15 @@
 # 日志  
 
 **2018-05-01**  
-- 【上午】阅读论文《FuseNet Incorporating Depth into Semantic Segmentation via Fusion-based CNN Architecture》。  
+- 【上午】阅读论文《04 FuseNet Incorporating Depth into Semantic Segmentation via Fusion-based CNN Architecture》。  
+- 【上午】阅读论文《05 Learning Deconvolution Network for Semantic Segmentation》。  
 
 **2018-04-30**  
-- 【上午】阅读论文《Depth Map Prediction from a Single Image using a Multi-Scale Deep Network》。  
-- 【下午】阅读论文《Fully Convolutional Networks for Semantic Segmentation》。  
+- 【上午】阅读论文《02 Depth Map Prediction from a Single Image using a Multi-Scale Deep Network》。  
+- 【下午】阅读论文《03 Fully Convolutional Networks for Semantic Segmentation》。  
 
 **2018-04-29**  
-- 【全天】阅读论文《Deeper Depth Prediction with Fully Convolutional Residual Networks》。  
+- 【全天】阅读论文《01 Deeper Depth Prediction with Fully Convolutional Residual Networks》。  
 
 **2018-04-28**  
 - 【上午】翻译《OpenCV-Python》官方教程。  
