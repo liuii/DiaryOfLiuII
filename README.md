@@ -1,5 +1,11 @@
 # 日志  
 
+**2018-04-30**  
+- 【上午】阅读论文《Depth Map Prediction from a Single Image using a Multi-Scale Deep Network》。  
+
+**2018-04-29**  
+- 【全天】阅读论文《Deeper Depth Prediction with Fully Convolutional Residual Networks》。  
+
 **2018-04-28**  
 - 【上午】翻译《OpenCV-Python》官方教程。  
 - 【下午】熟悉云GPU节点。  
