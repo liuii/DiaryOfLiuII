@@ -1,5 +1,10 @@
 # 日志  
 
+**2018-05-02**  
+- 【上午】《Programming Paradigm》上课。  
+- 【下午】翻译《OpenCV-Python》官方教程。  
+- 【晚上】阅读论文《06 SegNet A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling》。  
+
 **2018-05-01**  
 - 【上午】阅读论文《04 FuseNet Incorporating Depth into Semantic Segmentation via Fusion-based CNN Architecture》。  
 - 【上午】阅读论文《05 Learning Deconvolution Network for Semantic Segmentation》。  
