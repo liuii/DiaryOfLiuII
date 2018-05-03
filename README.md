@@ -1,5 +1,10 @@
 # 日志  
 
+**2018-05-03**  
+- 【上午】翻译《OpenCV-Python》官方文档。  
+- 【下午】翻译《OpenCV-Python》官方文档。  
+- 【晚上】《Programming Paradigm》上课。  
+
 **2018-05-02**  
 - 【上午】《Programming Paradigm》上课。  
 - 【下午】翻译《OpenCV-Python》官方教程。  
