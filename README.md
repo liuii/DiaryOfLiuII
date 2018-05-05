@@ -1,5 +1,14 @@
 # 日志  
 
+**2018-05-05**  
+- 【上午】做AutoEncoder实验。  
+
+**2018-05-04**  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】翻译《OpenCV-Python》官方文档。  
+- 【下午】翻译《OpenCV-Python》官方文档。  
+- 【晚上】配置亚马逊云。  
+
 **2018-05-03**  
 - 【上午】翻译《OpenCV-Python》官方文档。  
 - 【下午】翻译《OpenCV-Python》官方文档。  
