@@ -1,5 +1,9 @@
 # 日志  
 
+**2018-05-09**  
+- 【白天】写PyTorch代码。  
+- 【晚上】翻译《OpenCV-Python》官方文档。  
+
 **2018-05-08**  
 - 【上午】《Programming Paradigm》上课。  
 - 【上午】《Programming Paradigm》实验。  
