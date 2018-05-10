@@ -1,5 +1,11 @@
 # 日志  
 
+**2018-05-10**  
+- 【上午】写PyTorch代码。  
+- 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【下午】翻译《OpenCV-Python》官方文档。  
+- 【晚上】《Programming Paradigm》上课。  
+
 **2018-05-09**  
 - 【白天】写PyTorch代码。  
 - 【晚上】翻译《OpenCV-Python》官方文档。  
