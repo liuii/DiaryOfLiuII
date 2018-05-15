@@ -1,5 +1,17 @@
 # 日志  
 
+**2018-05-15**  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】《Programming Paradigm》实验。  
+- 【下午】《物联网系统综合应用》上课。  
+
+**2018-05-14**  
+- 【上午】《物联网系统综合应用》上课。  
+- 【下午】阅读CRF论文。  
+
+**2018-05-11** - **2018-05-13**  
+- 【期间】阅读CRF论文。  
+
 **2018-05-10**  
 - 【上午】写PyTorch代码。  
 - 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
