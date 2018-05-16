@@ -1,5 +1,9 @@
 # 日志  
 
+**2018-05-16**  
+- 【白天】写程序。  
+- 【晚上】阅读论文《Global Consistent Multi-People Tracking with Motion Pattern》。  
+
 **2018-05-15**  
 - 【上午】《Programming Paradigm》上课。  
 - 【上午】《Programming Paradigm》实验。  
