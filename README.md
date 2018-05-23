@@ -1,5 +1,24 @@
 # 日志  
 
+**2018-05-23**  
+- 【上午】阅读论文《3D Convolutional Neural Networks for Landing Zone Detection from LiDar》  
+- 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【下午】开会。  
+- 【晚上】阅读论文《VAE Generative and Discriminative Voxel Modeling with Convolutional Neural Networks》  
+
+**2018-05-22**  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】《Programming Paradigm》实验。  
+- 【下午】阅读论文《3D ShapeNets A Deep Representation for Volumetric Shapes》。  
+- 【下午】《物联网系统综合应用》上课。  
+- 【晚上】阅读论文《3D Convolutional Neural Networks for Landing Zone Detection from LiDar》
+
+**2018-05-21**  
+- 【上午】阅读论文《3D ShapeNets A Deep Representation for Volumetric Shapes》。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【下午】阅读论文《3D ShapeNets A Deep Representation for Volumetric Shapes》。  
+- 【晚上】《Programming Paradigm》实验。  
+
 **2018-05-18**  
 - 【白天】写程序。  
 - 【晚上】阅读论文。  
