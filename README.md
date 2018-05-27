@@ -1,5 +1,20 @@
 # 日志  
 
+**2018-05-26**  
+- 【上午】阅读论文《GIFT A Real-time and Scalable 3D Shape Search Engine》。  
+- 【下午】阅读论文《ShapedPFCN 3D Shape Segmentation with Projective Convolutional Networks》。  
+
+**2018-05-25**  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】阅读论文《Orientation-boosted Voxel Nets for 3D Object Recognition》。
+- 【下午】开会。  
+- 【晚上】阅读论文《Multi-view Convolutional Neural Networks for 3D Shape Recognition》
+
+**2018-05-24**  
+- 【上午】开会，审阅毕设  
+- 【下午】阅读论文《VoxNet: A 3D Convolutional Neural Network for Real-Time Object Recognition》。  
+- 【晚上】阅读论文《Orientation-boosted Voxel Nets for 3D Object Recognition》。  
+
 **2018-05-23**  
 - 【上午】阅读论文《3D Convolutional Neural Networks for Landing Zone Detection from LiDar》  
 - 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
