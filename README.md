@@ -1,5 +1,27 @@
 # 日志  
 
+**2018-05-31**  
+- 【晚上】《物联网系统综合应用》学生实习报告。  
+
+**2018-05-30**
+- 【上午】阅读论文。  
+- 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【下午】阅读论文。  
+- 【晚上】《物联网系统综合应用》学生实习报告。  
+
+**2018-05-29**  
+- 【上午】《Programming Paradigm》上课。  
+- 【上午】《Programming Paradigm》实验。  
+- 【下午】阅读论文。  
+- 【下午】《物联网系统综合应用》上课。  
+- 【晚上】《物联网系统综合应用》学生实习报告。  
+
+**2018-05-28**  
+- 【上午】阅读论文。  
+- 【上午】《物联网系统综合应用》上课。  
+- 【下午】阅读论文。  
+- 【晚上】《Programming Paradigm》实验。  
+
 **2018-05-26**  
 - 【上午】阅读论文《GIFT A Real-time and Scalable 3D Shape Search Engine》。  
 - 【下午】阅读论文《ShapedPFCN 3D Shape Segmentation with Projective Convolutional Networks》。  
@@ -26,7 +48,7 @@
 - 【上午】《Programming Paradigm》实验。  
 - 【下午】阅读论文《3D ShapeNets A Deep Representation for Volumetric Shapes》。  
 - 【下午】《物联网系统综合应用》上课。  
-- 【晚上】阅读论文《3D Convolutional Neural Networks for Landing Zone Detection from LiDar》
+- 【晚上】阅读论文《3D Convolutional Neural Networks for Landing Zone Detection from LiDar》。  
 
 **2018-05-21**  
 - 【上午】阅读论文《3D ShapeNets A Deep Representation for Volumetric Shapes》。  
