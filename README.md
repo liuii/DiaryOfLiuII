@@ -1,6 +1,13 @@
 # 日志  
 
+**2018-06-01**  
+- 【白天】阅读论文。
+- 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
+- 【晚上】《物联网系统综合应用》学生实习报告。  
+
 **2018-05-31**  
+- 【白天】阅读论文。
+- 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
 - 【晚上】《物联网系统综合应用》学生实习报告。  
 
 **2018-05-30**
