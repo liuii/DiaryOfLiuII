@@ -1,5 +1,11 @@
 # 日志  
 
+**2018-06-03**  
+- 【白天】阅读论文。
+
+**2018-06-02**  
+- 【白天】阅读论文。
+
 **2018-06-01**  
 - 【白天】阅读论文。
 - 【上午】学习《CS231n: Convolutional Neural Networks for Visual Recognition》。  
